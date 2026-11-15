@@ -1,0 +1,46 @@
+player_id,player_name,country,decade,batting_hand,bowling_hand,bowling_type,primary_role,eligible_positions,is_captain,is_wicketkeeper
+SA_1990_01,Gary Kirsten,South Africa,1990,Left,None,None,BAT,1|2,FALSE,FALSE
+SA_1990_02,Andrew Hudson,South Africa,1990,Right,None,None,BAT,1|2,FALSE,FALSE
+SA_1990_03,Jacques Kallis,South Africa,1990,Right,Right,Right Arm Fast Medium,AR,3|4,FALSE,FALSE
+SA_1990_04,Daryll Cullinan,South Africa,1990,Right,None,None,BAT,4|5,FALSE,FALSE
+SA_1990_05,Hansie Cronje,South Africa,1990,Right,Right,Right Arm Medium,BAT,4|5,TRUE,FALSE
+SA_1990_06,Jonty Rhodes,South Africa,1990,Right,Right,Right Arm Medium,BAT,5|6|7,FALSE,FALSE
+SA_1990_07,Shaun Pollock,South Africa,1990,Right,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+SA_1990_08,Dave Richardson,South Africa,1990,Right,None,None,WK,5|6|7,FALSE,TRUE
+SA_1990_09,Lance Klusener,South Africa,1990,Left,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+SA_1990_10,Pat Symcox,South Africa,1990,Right,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+SA_1990_11,Allan Donald,South Africa,1990,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+SA_2000_01,Graeme Smith,South Africa,2000,Left,Right,Off Spin,BAT,1|2,TRUE,FALSE
+SA_2000_02,Herschelle Gibbs,South Africa,2000,Right,None,None,BAT,1|2,FALSE,FALSE
+SA_2000_03,Jacques Kallis,South Africa,2000,Right,Right,Right Arm Fast Medium,AR,3|4,FALSE,FALSE
+SA_2000_04,Ashwell Prince,South Africa,2000,Left,None,None,BAT,4|5,FALSE,FALSE
+SA_2000_05,AB de Villiers,South Africa,2000,Right,Right,Right Arm Medium,BAT,4|5,FALSE,FALSE
+SA_2000_06,Jacques Rudolph,South Africa,2000,Left,Right,Leg Spin,BAT,5|6|7,FALSE,FALSE
+SA_2000_07,Mark Boucher,South Africa,2000,Right,None,None,WK,5|6|7,FALSE,TRUE
+SA_2000_08,Shaun Pollock,South Africa,2000,Right,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+SA_2000_09,Paul Harris,South Africa,2000,Left,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+SA_2000_10,Makhaya Ntini,South Africa,2000,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+SA_2000_11,Dale Steyn,South Africa,2000,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+SA_2010_01,Graeme Smith,South Africa,2010,Left,Right,Off Spin,BAT,1|2,TRUE,FALSE
+SA_2010_02,Dean Elgar,South Africa,2010,Left,Left,Left Arm Orthodox,BAT,1|2,FALSE,FALSE
+SA_2010_03,Hashim Amla,South Africa,2010,Right,Right,Off Spin,BAT,3|4,FALSE,FALSE
+SA_2010_04,Jacques Kallis,South Africa,2010,Right,Right,Right Arm Fast Medium,AR,3|4,FALSE,FALSE
+SA_2010_05,AB de Villiers,South Africa,2010,Right,None,None,BAT,4|5,FALSE,FALSE
+SA_2010_06,Faf du Plessis,South Africa,2010,Right,Right,Leg Spin,BAT,4|5,FALSE,FALSE
+SA_2010_07,Quinton de Kock,South Africa,2010,Left,None,None,WK,5|6|7,FALSE,TRUE
+SA_2010_08,Vernon Philander,South Africa,2010,Right,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+SA_2010_09,Keshav Maharaj,South Africa,2010,Right,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+SA_2010_10,Dale Steyn,South Africa,2010,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+SA_2010_11,Morne Morkel,South Africa,2010,Left,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+SA_2020_01,Dean Elgar,South Africa,2020,Left,Left,Left Arm Orthodox,BAT,1|2,FALSE,FALSE
+SA_2020_02,Aiden Markram,South Africa,2020,Right,Right,Off Spin,BAT,1|2,FALSE,FALSE
+SA_2020_03,Temba Bavuma,South Africa,2020,Right,Right,Right Arm Medium,BAT,3|4,TRUE,FALSE
+SA_2020_04,David Miller,South Africa,2020,Left,None,None,BAT,4|5,FALSE,FALSE
+SA_2020_05,Heinrich Klaasen,South Africa,2020,Right,Right,Off Spin,BAT,5|6|7,FALSE,FALSE
+SA_2020_06,Quinton de Kock,South Africa,2020,Left,None,None,WK,1|2|3,FALSE,TRUE
+SA_2020_07,Marco Jansen,South Africa,2020,Right,Left,Left Arm Fast,AR,6|7|8,FALSE,FALSE
+SA_2020_08,Keshav Maharaj,South Africa,2020,Right,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+SA_2020_09,Kagiso Rabada,South Africa,2020,Left,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+SA_2020_10,Anrich Nortje,South Africa,2020,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+SA_2020_11,Lungi Ngidi,South Africa,2020,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+

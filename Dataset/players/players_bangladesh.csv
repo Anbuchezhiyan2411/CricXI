@@ -1,0 +1,35 @@
+player_id,player_name,country,decade,batting_hand,bowling_hand,bowling_type,primary_role,eligible_positions,is_captain,is_wicketkeeper
+BAN_2000_01,Javed Omar,Bangladesh,2000,Right,Right,Leg Spin,BAT,1|2,FALSE,FALSE
+BAN_2000_02,Tamim Iqbal,Bangladesh,2000,Left,None,None,BAT,1|2,FALSE,FALSE
+BAN_2000_03,Habibul Bashar,Bangladesh,2000,Right,Right,Off Spin,BAT,3|4,TRUE,FALSE
+BAN_2000_04,Mohammad Ashraful,Bangladesh,2000,Right,Right,Leg Spin,BAT,3|4,FALSE,FALSE
+BAN_2000_05,Aftab Ahmed,Bangladesh,2000,Right,Right,Right Arm Medium,BAT,4|5,FALSE,FALSE
+BAN_2000_06,Shakib Al Hasan,Bangladesh,2000,Left,Left,Left Arm Orthodox,AR,5|6|7,FALSE,FALSE
+BAN_2000_07,Khaled Mashud,Bangladesh,2000,Right,None,None,WK,5|6|7,FALSE,TRUE
+BAN_2000_08,Mohammad Rafique,Bangladesh,2000,Left,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+BAN_2000_09,Mashrafe Mortaza,Bangladesh,2000,Right,Right,Right Arm Fast Medium,PACE,8|9,FALSE,FALSE
+BAN_2000_10,Shahadat Hossain,Bangladesh,2000,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+BAN_2000_11,Tapash Baisya,Bangladesh,2000,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+BAN_2010_01,Tamim Iqbal,Bangladesh,2010,Left,None,None,BAT,1|2,FALSE,FALSE
+BAN_2010_02,Imrul Kayes,Bangladesh,2010,Left,None,None,BAT,1|2,FALSE,FALSE
+BAN_2010_03,Mominul Haque,Bangladesh,2010,Left,Left,Left Arm Orthodox,BAT,3|4,FALSE,FALSE
+BAN_2010_04,Mushfiqur Rahim,Bangladesh,2010,Right,None,None,WK,4|5,FALSE,TRUE
+BAN_2010_05,Shakib Al Hasan,Bangladesh,2010,Left,Left,Left Arm Orthodox,AR,5|6|7,FALSE,FALSE
+BAN_2010_06,Mahmudullah,Bangladesh,2010,Right,Right,Off Spin,AR,5|6|7,FALSE,FALSE
+BAN_2010_07,Nasir Hossain,Bangladesh,2010,Right,Right,Off Spin,AR,6|7|8,FALSE,FALSE
+BAN_2010_08,Mashrafe Mortaza,Bangladesh,2010,Right,Right,Right Arm Fast Medium,PACE,8|9,TRUE,FALSE
+BAN_2010_09,Mehidy Hasan Miraz,Bangladesh,2010,Right,Right,Off Spin,AR,8|9,FALSE,FALSE
+BAN_2010_10,Mustafizur Rahman,Bangladesh,2010,Left,Left,Left Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+BAN_2010_11,Rubel Hossain,Bangladesh,2010,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+BAN_2020_01,Litton Das,Bangladesh,2020,Right,None,None,WK,1|2,FALSE,TRUE
+BAN_2020_02,Najmul Hossain Shanto,Bangladesh,2020,Left,Right,Off Spin,BAT,1|2|3,TRUE,FALSE
+BAN_2020_03,Mominul Haque,Bangladesh,2020,Left,Left,Left Arm Orthodox,BAT,3|4,FALSE,FALSE
+BAN_2020_04,Mushfiqur Rahim,Bangladesh,2020,Right,None,None,BAT,4|5,FALSE,FALSE
+BAN_2020_05,Shakib Al Hasan,Bangladesh,2020,Left,Left,Left Arm Orthodox,AR,5|6|7,FALSE,FALSE
+BAN_2020_06,Mahmudullah,Bangladesh,2020,Right,Right,Off Spin,BAT,5|6|7,FALSE,FALSE
+BAN_2020_07,Mehidy Hasan Miraz,Bangladesh,2020,Right,Right,Off Spin,AR,6|7|8,FALSE,FALSE
+BAN_2020_08,Taijul Islam,Bangladesh,2020,Left,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+BAN_2020_09,Taskin Ahmed,Bangladesh,2020,Left,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+BAN_2020_10,Mustafizur Rahman,Bangladesh,2020,Left,Left,Left Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+BAN_2020_11,Shoriful Islam,Bangladesh,2020,Left,Left,Left Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+

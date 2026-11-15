@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="ballGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="60%" stop-color="#DC2626" />
+      <stop offset="100%" stop-color="#991B1B" />
+    </radialGradient>
+  </defs>
+  <!-- Cricket Ball Sphere -->
+  <circle cx="32" cy="32" r="30" fill="url(#ballGrad)" />
+  <!-- Cricket Ball Seam -->
+  <path d="M 12 16 C 24 24, 40 40, 52 48" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="2,2" opacity="0.9" />
+  <path d="M 10 18 C 22 26, 38 42, 50 50" fill="none" stroke="#FEE2E2" stroke-width="1.2" opacity="0.6" />
+  <!-- Highlight reflection -->
+  <ellipse cx="22" cy="20" rx="8" ry="4" transform="rotate(-30 22 20)" fill="#FFFFFF" opacity="0.25" />
+</svg>
+

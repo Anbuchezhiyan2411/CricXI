@@ -1,0 +1,78 @@
+import React from "react";
+import { MessageSquareText } from "lucide-react";
+import { CommentaryEntry } from "../../types";
+
+interface LiveCommentaryFeedProps {
+  commentary: CommentaryEntry[];
+}
+
+export const LiveCommentaryFeed: React.FC<LiveCommentaryFeedProps> = ({
+  commentary,
+}) => {
+  const getOutcomeBadge = (tok: string, isWicket: boolean, isBoundary: boolean) => {
+    if (isWicket) {
+      return "bg-rose-500/20 text-rose-400 border-rose-500/40 font-black";
+    }
+    if (isBoundary) {
+      return "bg-amber-500/20 text-amber-300 border-amber-500/40 font-black";
+    }
+    if (tok.includes("Wd") || tok.includes("Nb")) {
+      return "bg-yellow-500/20 text-yellow-300 border-yellow-500/40 font-bold";
+    }
+    return "bg-slate-800 text-slate-300 border-slate-700 font-semibold";
+  };
+
+  return (
+    <div className="rounded-2xl bg-slate-900 border border-slate-800 p-4 sm:p-5 shadow-lg space-y-3">
+      <div className="flex items-center space-x-2 border-b border-slate-800/80 pb-2.5">
+        <MessageSquareText className="w-4 h-4 text-amber-400" />
+        <h4 className="text-xs font-black uppercase tracking-wider text-slate-300">
+          Ball-by-Ball Live Commentary
+        </h4>
+      </div>
+
+      <div className="max-h-72 overflow-y-auto space-y-2.5 pr-1 divide-y divide-slate-800/40">
+        {commentary.length > 0 ? (
+          commentary.map((entry, idx) => (
+            <div
+              key={entry.id || idx}
+              className={`pt-2.5 flex items-start space-x-3 text-xs leading-relaxed animate-in fade-in duration-300 ${
+                entry.is_wicket
+                  ? "bg-rose-500/5 -mx-2 px-2 py-1.5 rounded-lg border-l-2 border-rose-500"
+                  : entry.is_boundary
+                  ? "bg-amber-500/5 -mx-2 px-2 py-1.5 rounded-lg border-l-2 border-amber-500"
+                  : ""
+              }`}
+            >
+              {/* Over Number */}
+              <div className="font-mono font-bold text-slate-500 w-9 shrink-0 pt-0.5">
+                {entry.over_display}
+              </div>
+
+              {/* Short Outcome Badge */}
+              <div
+                className={`w-6 h-6 shrink-0 rounded-full border flex items-center justify-center text-[11px] ${getOutcomeBadge(
+                  entry.short_outcome,
+                  entry.is_wicket,
+                  entry.is_boundary
+                )}`}
+              >
+                {entry.short_outcome}
+              </div>
+
+              {/* Commentary Prose */}
+              <div className="text-slate-300 font-normal grow">
+                {entry.text}
+              </div>
+            </div>
+          ))
+        ) : (
+          <div className="py-8 text-center text-slate-500 italic text-xs">
+            Simulation starting... awaiting first delivery commentary.
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+

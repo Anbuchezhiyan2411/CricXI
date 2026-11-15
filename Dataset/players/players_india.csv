@@ -1,0 +1,57 @@
+player_id,player_name,country,decade,batting_hand,bowling_hand,bowling_type,primary_role,eligible_positions,is_captain,is_wicketkeeper
+IND_1980_01,Sunil Gavaskar,India,1980,Right,None,None,BAT,1|2,FALSE,FALSE
+IND_1980_02,Kris Srikkanth,India,1980,Right,None,None,BAT,1|2,FALSE,FALSE
+IND_1980_03,Mohinder Amarnath,India,1980,Right,Right,Right Arm Medium,BAT,3|4,FALSE,FALSE
+IND_1980_04,Dilip Vengsarkar,India,1980,Right,None,None,BAT,4|5,FALSE,FALSE
+IND_1980_05,Mohammad Azharuddin,India,1980,Right,None,None,BAT,5|6|7,FALSE,FALSE
+IND_1980_06,Kapil Dev,India,1980,Right,Right,Right Arm Fast Medium,AR,6|7|8,TRUE,FALSE
+IND_1980_07,Ravi Shastri,India,1980,Left,Left,Left Arm Orthodox,AR,6|7|8,FALSE,FALSE
+IND_1980_08,Syed Kirmani,India,1980,Right,None,None,WK,5|6|7,FALSE,TRUE
+IND_1980_09,Maninder Singh,India,1980,Left,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+IND_1980_10,Roger Binny,India,1980,Right,Right,Right Arm Medium,PACE,9|10|11,FALSE,FALSE
+IND_1980_11,Madan Lal,India,1980,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+IND_1990_01,Navjot Singh Sidhu,India,1990,Right,None,None,BAT,1|2,FALSE,FALSE
+IND_1990_02,Sachin Tendulkar,India,1990,Right,Right,Off Spin,BAT,1|2|3,FALSE,FALSE
+IND_1990_03,Rahul Dravid,India,1990,Right,None,None,BAT,3|4,FALSE,FALSE
+IND_1990_04,Mohammad Azharuddin,India,1990,Right,None,None,BAT,4|5,TRUE,FALSE
+IND_1990_05,Sourav Ganguly,India,1990,Left,Right,Right Arm Medium,BAT,4|5,FALSE,FALSE
+IND_1990_06,Ajay Jadeja,India,1990,Right,None,None,BAT,5|6|7,FALSE,FALSE
+IND_1990_07,Nayan Mongia,India,1990,Right,None,None,WK,5|6|7,FALSE,TRUE
+IND_1990_08,Anil Kumble,India,1990,Right,Right,Leg Spin,SPIN,8|9,FALSE,FALSE
+IND_1990_09,Venkatapathy Raju,India,1990,Right,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+IND_1990_10,Javagal Srinath,India,1990,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+IND_1990_11,Venkatesh Prasad,India,1990,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+IND_2000_01,Virender Sehwag,India,2000,Right,Right,Off Spin,BAT,1|2,FALSE,FALSE
+IND_2000_02,Sachin Tendulkar,India,2000,Right,Right,Off Spin,BAT,1|2|3,FALSE,FALSE
+IND_2000_03,Rahul Dravid,India,2000,Right,None,None,BAT,3|4,FALSE,FALSE
+IND_2000_04,Sourav Ganguly,India,2000,Left,Right,Right Arm Medium,BAT,4|5,TRUE,FALSE
+IND_2000_05,VVS Laxman,India,2000,Right,None,None,BAT,4|5,FALSE,FALSE
+IND_2000_06,Yuvraj Singh,India,2000,Left,Left,Left Arm Orthodox,AR,5|6|7,FALSE,FALSE
+IND_2000_07,MS Dhoni,India,2000,Right,None,None,WK,5|6|7,FALSE,TRUE
+IND_2000_08,Harbhajan Singh,India,2000,Right,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+IND_2000_09,Anil Kumble,India,2000,Right,Right,Leg Spin,SPIN,8|9,FALSE,FALSE
+IND_2000_10,Zaheer Khan,India,2000,Left,Left,Left Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+IND_2000_11,Irfan Pathan,India,2000,Left,Left,Left Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+IND_2010_01,Shikhar Dhawan,India,2010,Left,None,None,BAT,1|2,FALSE,FALSE
+IND_2010_02,Rohit Sharma,India,2010,Right,None,None,BAT,1|2,FALSE,FALSE
+IND_2010_03,Cheteshwar Pujara,India,2010,Right,None,None,BAT,3|4,FALSE,FALSE
+IND_2010_04,Virat Kohli,India,2010,Right,None,None,BAT,3|4,TRUE,FALSE
+IND_2010_05,Ajinkya Rahane,India,2010,Right,None,None,BAT,4|5,FALSE,FALSE
+IND_2010_06,Ravindra Jadeja,India,2010,Left,Left,Left Arm Orthodox,AR,6|7|8,FALSE,FALSE
+IND_2010_07,MS Dhoni,India,2010,Right,None,None,WK,5|6|7,FALSE,TRUE
+IND_2010_08,Ravichandran Ashwin,India,2010,Right,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+IND_2010_09,Ishant Sharma,India,2010,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+IND_2010_10,Mohammed Shami,India,2010,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+IND_2010_11,Jasprit Bumrah,India,2010,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+IND_2020_01,Rohit Sharma,India,2020,Right,None,None,BAT,1|2,TRUE,FALSE
+IND_2020_02,Yashasvi Jaiswal,India,2020,Left,None,None,BAT,1|2,FALSE,FALSE
+IND_2020_03,Shubman Gill,India,2020,Right,None,None,BAT,1|2|3,FALSE,FALSE
+IND_2020_04,Virat Kohli,India,2020,Right,None,None,BAT,3|4,FALSE,FALSE
+IND_2020_05,KL Rahul,India,2020,Right,None,None,BAT,4|5,FALSE,FALSE
+IND_2020_06,Ravindra Jadeja,India,2020,Left,Left,Left Arm Orthodox,AR,6|7|8,FALSE,FALSE
+IND_2020_07,Rishabh Pant,India,2020,Left,None,None,WK,5|6|7,FALSE,TRUE
+IND_2020_08,Ravichandran Ashwin,India,2020,Right,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+IND_2020_09,Jasprit Bumrah,India,2020,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+IND_2020_10,Mohammed Shami,India,2020,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+IND_2020_11,Mohammed Siraj,India,2020,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+

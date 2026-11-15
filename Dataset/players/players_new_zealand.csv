@@ -1,0 +1,57 @@
+player_id,player_name,country,decade,batting_hand,bowling_hand,bowling_type,primary_role,eligible_positions,is_captain,is_wicketkeeper
+NZ_1980_01,John Wright,New Zealand,1980,Left,None,None,BAT,1|2,FALSE,FALSE
+NZ_1980_02,Bruce Edgar,New Zealand,1980,Left,None,None,BAT,1|2,FALSE,FALSE
+NZ_1980_03,Martin Crowe,New Zealand,1980,Right,Right,Right Arm Medium,BAT,3|4,FALSE,FALSE
+NZ_1980_04,Geoff Howarth,New Zealand,1980,Right,Right,Off Spin,BAT,3|4,TRUE,FALSE
+NZ_1980_05,Jeremy Coney,New Zealand,1980,Right,Right,Right Arm Medium,BAT,4|5,FALSE,FALSE
+NZ_1980_06,John Reid,New Zealand,1980,Right,Right,Right Arm Fast Medium,BAT,5|6|7,FALSE,FALSE
+NZ_1980_07,Ian Smith,New Zealand,1980,Right,None,None,WK,5|6|7,FALSE,TRUE
+NZ_1980_08,Richard Hadlee,New Zealand,1980,Left,Right,Right Arm Fast,AR,6|7|8,FALSE,FALSE
+NZ_1980_09,John Bracewell,New Zealand,1980,Right,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+NZ_1980_10,Stephen Boock,New Zealand,1980,Right,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+NZ_1980_11,Ewen Chatfield,New Zealand,1980,Right,Right,Right Arm Medium,PACE,9|10|11,FALSE,FALSE
+NZ_1990_01,Mark Greatbatch,New Zealand,1990,Left,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+NZ_1990_02,Bryan Young,New Zealand,1990,Right,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+NZ_1990_03,Andrew Jones,New Zealand,1990,Right,Right,Off Spin,BAT,3|4,FALSE,FALSE
+NZ_1990_04,Martin Crowe,New Zealand,1990,Right,Right,Right Arm Medium,BAT,3|4,TRUE,FALSE
+NZ_1990_05,Stephen Fleming,New Zealand,1990,Left,Right,Right Arm Medium,BAT,4|5,FALSE,FALSE
+NZ_1990_06,Nathan Astle,New Zealand,1990,Right,Right,Right Arm Medium,BAT,5|6|7,FALSE,FALSE
+NZ_1990_07,Chris Cairns,New Zealand,1990,Right,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+NZ_1990_08,Adam Parore,New Zealand,1990,Right,None,None,WK,5|6|7,FALSE,TRUE
+NZ_1990_09,Daniel Vettori,New Zealand,1990,Left,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+NZ_1990_10,Danny Morrison,New Zealand,1990,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+NZ_1990_11,Simon Doull,New Zealand,1990,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+NZ_2000_01,Stephen Fleming,New Zealand,2000,Left,None,None,BAT,1|2|3,TRUE,FALSE
+NZ_2000_02,Nathan Astle,New Zealand,2000,Right,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+NZ_2000_03,Lou Vincent,New Zealand,2000,Right,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+NZ_2000_04,Scott Styris,New Zealand,2000,Right,Right,Right Arm Medium,BAT,4|5,FALSE,FALSE
+NZ_2000_05,Craig McMillan,New Zealand,2000,Right,Right,Right Arm Medium,BAT,5|6|7,FALSE,FALSE
+NZ_2000_06,Chris Cairns,New Zealand,2000,Right,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+NZ_2000_07,Brendon McCullum,New Zealand,2000,Right,Right,Right Arm Medium,WK,5|6|7,FALSE,TRUE
+NZ_2000_08,Jacob Oram,New Zealand,2000,Left,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+NZ_2000_09,Daniel Vettori,New Zealand,2000,Left,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+NZ_2000_10,Shane Bond,New Zealand,2000,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+NZ_2000_11,Chris Martin,New Zealand,2000,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+NZ_2010_01,Martin Guptill,New Zealand,2010,Right,Right,Off Spin,BAT,1|2,FALSE,FALSE
+NZ_2010_02,Tom Latham,New Zealand,2010,Left,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+NZ_2010_03,Kane Williamson,New Zealand,2010,Right,Right,Off Spin,BAT,3|4,TRUE,FALSE
+NZ_2010_04,Ross Taylor,New Zealand,2010,Right,Right,Off Spin,BAT,4|5,FALSE,FALSE
+NZ_2010_05,Brendon McCullum,New Zealand,2010,Right,Right,Right Arm Medium,BAT,5|6|7,FALSE,FALSE
+NZ_2010_06,Corey Anderson,New Zealand,2010,Left,Left,Left Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+NZ_2010_07,BJ Watling,New Zealand,2010,Right,None,None,WK,5|6|7,FALSE,TRUE
+NZ_2010_08,Mitchell Santner,New Zealand,2010,Left,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+NZ_2010_09,Tim Southee,New Zealand,2010,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+NZ_2010_10,Trent Boult,New Zealand,2010,Right,Left,Left Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+NZ_2010_11,Neil Wagner,New Zealand,2010,Left,Left,Left Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+NZ_2020_01,Devon Conway,New Zealand,2020,Left,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+NZ_2020_02,Tom Latham,New Zealand,2020,Left,Right,Right Arm Medium,WK,1|2,FALSE,TRUE
+NZ_2020_03,Kane Williamson,New Zealand,2020,Right,Right,Off Spin,BAT,3|4,TRUE,FALSE
+NZ_2020_04,Daryl Mitchell,New Zealand,2020,Right,Right,Right Arm Medium,BAT,4|5,FALSE,FALSE
+NZ_2020_05,Glenn Phillips,New Zealand,2020,Right,Right,Off Spin,BAT,5|6|7,FALSE,FALSE
+NZ_2020_06,Rachin Ravindra,New Zealand,2020,Left,Left,Left Arm Orthodox,AR,6|7|8,FALSE,FALSE
+NZ_2020_07,Mitchell Santner,New Zealand,2020,Left,Left,Left Arm Orthodox,AR,6|7|8,FALSE,FALSE
+NZ_2020_08,Kyle Jamieson,New Zealand,2020,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+NZ_2020_09,Matt Henry,New Zealand,2020,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+NZ_2020_10,Tim Southee,New Zealand,2020,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+NZ_2020_11,Trent Boult,New Zealand,2020,Right,Left,Left Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+

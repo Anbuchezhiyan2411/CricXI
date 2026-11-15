@@ -1,0 +1,24 @@
+player_id,player_name,country,decade,batting_hand,bowling_hand,bowling_type,primary_role,eligible_positions,is_captain,is_wicketkeeper
+AFG_2010_01,Mohammad Shahzad,Afghanistan,2010,Right,None,None,WK,1|2,FALSE,TRUE
+AFG_2010_02,Javed Ahmadi,Afghanistan,2010,Right,Right,Off Spin,BAT,1|2,FALSE,FALSE
+AFG_2010_03,Rahmat Shah,Afghanistan,2010,Right,Right,Leg Spin,BAT,3|4,FALSE,FALSE
+AFG_2010_04,Asghar Afghan,Afghanistan,2010,Right,Right,Off Spin,BAT,4|5,TRUE,FALSE
+AFG_2010_05,Hashmatullah Shahidi,Afghanistan,2010,Left,Right,Off Spin,BAT,4|5,FALSE,FALSE
+AFG_2010_06,Mohammad Nabi,Afghanistan,2010,Right,Right,Off Spin,AR,5|6|7,FALSE,FALSE
+AFG_2010_07,Samiullah Shinwari,Afghanistan,2010,Right,Right,Leg Spin,AR,6|7|8,FALSE,FALSE
+AFG_2010_08,Gulbadin Naib,Afghanistan,2010,Right,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+AFG_2010_09,Rashid Khan,Afghanistan,2010,Right,Right,Leg Spin,SPIN,8|9,FALSE,FALSE
+AFG_2010_10,Mujeeb Ur Rahman,Afghanistan,2010,Right,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+AFG_2010_11,Dawlat Zadran,Afghanistan,2010,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+AFG_2020_01,Rahmanullah Gurbaz,Afghanistan,2020,Right,None,None,WK,1|2,FALSE,TRUE
+AFG_2020_02,Ibrahim Zadran,Afghanistan,2020,Right,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+AFG_2020_03,Rahmat Shah,Afghanistan,2020,Right,Right,Leg Spin,BAT,3|4,FALSE,FALSE
+AFG_2020_04,Hashmatullah Shahidi,Afghanistan,2020,Left,Right,Off Spin,BAT,4|5,TRUE,FALSE
+AFG_2020_05,Azmatullah Omarzai,Afghanistan,2020,Right,Right,Right Arm Fast Medium,AR,5|6|7,FALSE,FALSE
+AFG_2020_06,Mohammad Nabi,Afghanistan,2020,Right,Right,Off Spin,AR,6|7|8,FALSE,FALSE
+AFG_2020_07,Rashid Khan,Afghanistan,2020,Right,Right,Leg Spin,SPIN,8|9,FALSE,FALSE
+AFG_2020_08,Noor Ahmad,Afghanistan,2020,Right,Left,Left Arm Chinaman,SPIN,8|9,FALSE,FALSE
+AFG_2020_09,Naveen-ul-Haq,Afghanistan,2020,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+AFG_2020_10,Fazalhaq Farooqi,Afghanistan,2020,Right,Left,Left Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+AFG_2020_11,Fareed Ahmad,Afghanistan,2020,Left,Left,Left Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+

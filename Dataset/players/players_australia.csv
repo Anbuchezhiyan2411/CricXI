@@ -1,0 +1,57 @@
+player_id,player_name,country,decade,batting_hand,bowling_hand,bowling_type,primary_role,eligible_positions,is_captain,is_wicketkeeper
+AUS_1980_01,Geoff Marsh,Australia,1980,Right,None,None,BAT,1|2,FALSE,FALSE
+AUS_1980_02,David Boon,Australia,1980,Right,None,None,BAT,1|2|3,FALSE,FALSE
+AUS_1980_03,Greg Chappell,Australia,1980,Right,Right,Right Arm Medium,BAT,3|4,FALSE,FALSE
+AUS_1980_04,Allan Border,Australia,1980,Left,Left,Left Arm Orthodox,BAT,4|5,TRUE,FALSE
+AUS_1980_05,Dean Jones,Australia,1980,Right,None,None,BAT,5|6|7,FALSE,FALSE
+AUS_1980_06,Steve Waugh,Australia,1980,Right,Right,Right Arm Medium,AR,6|7|8,FALSE,FALSE
+AUS_1980_07,Rod Marsh,Australia,1980,Left,None,None,WK,5|6|7,FALSE,TRUE
+AUS_1980_08,Greg Matthews,Australia,1980,Right,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+AUS_1980_09,Dennis Lillee,Australia,1980,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+AUS_1980_10,Craig McDermott,Australia,1980,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+AUS_1980_11,Terry Alderman,Australia,1980,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+AUS_1990_01,Mark Taylor,Australia,1990,Left,None,None,BAT,1|2,TRUE,FALSE
+AUS_1990_02,Michael Slater,Australia,1990,Right,None,None,BAT,1|2,FALSE,FALSE
+AUS_1990_03,David Boon,Australia,1990,Right,None,None,BAT,3|4,FALSE,FALSE
+AUS_1990_04,Mark Waugh,Australia,1990,Right,Right,Right Arm Medium,BAT,4|5,FALSE,FALSE
+AUS_1990_05,Steve Waugh,Australia,1990,Right,Right,Right Arm Medium,BAT,4|5,FALSE,FALSE
+AUS_1990_06,Ricky Ponting,Australia,1990,Right,None,None,BAT,5|6|7,FALSE,FALSE
+AUS_1990_07,Ian Healy,Australia,1990,Right,None,None,WK,5|6|7,FALSE,TRUE
+AUS_1990_08,Shane Warne,Australia,1990,Right,Right,Leg Spin,SPIN,8|9,FALSE,FALSE
+AUS_1990_09,Craig McDermott,Australia,1990,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+AUS_1990_10,Glenn McGrath,Australia,1990,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+AUS_1990_11,Jason Gillespie,Australia,1990,Left,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+AUS_2000_01,Matthew Hayden,Australia,2000,Left,None,None,BAT,1|2,FALSE,FALSE
+AUS_2000_02,Justin Langer,Australia,2000,Left,None,None,BAT,1|2,FALSE,FALSE
+AUS_2000_03,Ricky Ponting,Australia,2000,Right,None,None,BAT,3|4,TRUE,FALSE
+AUS_2000_04,Steve Waugh,Australia,2000,Right,None,None,BAT,4|5,FALSE,FALSE
+AUS_2000_05,Damien Martyn,Australia,2000,Right,None,None,BAT,4|5,FALSE,FALSE
+AUS_2000_06,Andrew Symonds,Australia,2000,Right,Right,Right Arm Medium,AR,6|7|8,FALSE,FALSE
+AUS_2000_07,Adam Gilchrist,Australia,2000,Left,None,None,WK,5|6|7,FALSE,TRUE
+AUS_2000_08,Shane Warne,Australia,2000,Right,Right,Leg Spin,SPIN,8|9,FALSE,FALSE
+AUS_2000_09,Brett Lee,Australia,2000,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+AUS_2000_10,Glenn McGrath,Australia,2000,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+AUS_2000_11,Jason Gillespie,Australia,2000,Left,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+AUS_2010_01,David Warner,Australia,2010,Left,None,None,BAT,1|2,FALSE,FALSE
+AUS_2010_02,Shane Watson,Australia,2010,Right,Right,Right Arm Fast Medium,AR,1|2|3,FALSE,FALSE
+AUS_2010_03,Steve Smith,Australia,2010,Right,None,None,BAT,3|4,TRUE,FALSE
+AUS_2010_04,Michael Clarke,Australia,2010,Left,None,None,BAT,4|5,FALSE,FALSE
+AUS_2010_05,Usman Khawaja,Australia,2010,Left,None,None,BAT,4|5,FALSE,FALSE
+AUS_2010_06,Mitchell Marsh,Australia,2010,Right,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+AUS_2010_07,Brad Haddin,Australia,2010,Right,None,None,WK,5|6|7,FALSE,TRUE
+AUS_2010_08,Nathan Lyon,Australia,2010,Right,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+AUS_2010_09,Mitchell Johnson,Australia,2010,Left,Left,Left Arm Fast,PACE,9|10|11,FALSE,FALSE
+AUS_2010_10,Mitchell Starc,Australia,2010,Left,Left,Left Arm Fast,PACE,9|10|11,FALSE,FALSE
+AUS_2010_11,Pat Cummins,Australia,2010,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+AUS_2020_01,David Warner,Australia,2020,Left,None,None,BAT,1|2,FALSE,FALSE
+AUS_2020_02,Usman Khawaja,Australia,2020,Left,None,None,BAT,1|2,FALSE,FALSE
+AUS_2020_03,Marnus Labuschagne,Australia,2020,Right,Right,Leg Spin,BAT,3|4,FALSE,FALSE
+AUS_2020_04,Steve Smith,Australia,2020,Right,None,None,BAT,3|4,FALSE,FALSE
+AUS_2020_05,Travis Head,Australia,2020,Left,None,None,BAT,5|6|7,FALSE,FALSE
+AUS_2020_06,Cameron Green,Australia,2020,Right,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+AUS_2020_07,Alex Carey,Australia,2020,Left,None,None,WK,5|6|7,FALSE,TRUE
+AUS_2020_08,Pat Cummins,Australia,2020,Right,Right,Right Arm Fast,PACE,9|10|11,TRUE,FALSE
+AUS_2020_09,Mitchell Starc,Australia,2020,Left,Left,Left Arm Fast,PACE,9|10|11,FALSE,FALSE
+AUS_2020_10,Josh Hazlewood,Australia,2020,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+AUS_2020_11,Nathan Lyon,Australia,2020,Right,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+

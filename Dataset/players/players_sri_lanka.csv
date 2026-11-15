@@ -1,0 +1,46 @@
+player_id,player_name,country,decade,batting_hand,bowling_hand,bowling_type,primary_role,eligible_positions,is_captain,is_wicketkeeper
+SL_1990_01,Sanath Jayasuriya,Sri Lanka,1990,Left,Left,Left Arm Orthodox,AR,1|2,FALSE,FALSE
+SL_1990_02,Romesh Kaluwitharana,Sri Lanka,1990,Right,None,None,WK,1|2,FALSE,TRUE
+SL_1990_03,Asanka Gurusinha,Sri Lanka,1990,Left,Right,Right Arm Medium,BAT,3|4,FALSE,FALSE
+SL_1990_04,Aravinda de Silva,Sri Lanka,1990,Right,Right,Off Spin,BAT,3|4,FALSE,FALSE
+SL_1990_05,Arjuna Ranatunga,Sri Lanka,1990,Left,Right,Right Arm Medium,BAT,4|5,TRUE,FALSE
+SL_1990_06,Hashan Tillakaratne,Sri Lanka,1990,Left,Right,Off Spin,BAT,5|6|7,FALSE,FALSE
+SL_1990_07,Roshan Mahanama,Sri Lanka,1990,Right,None,None,BAT,5|6|7,FALSE,FALSE
+SL_1990_08,Kumar Dharmasena,Sri Lanka,1990,Right,Right,Off Spin,AR,6|7|8,FALSE,FALSE
+SL_1990_09,Chaminda Vaas,Sri Lanka,1990,Left,Left,Left Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+SL_1990_10,Muttiah Muralitharan,Sri Lanka,1990,Right,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+SL_1990_11,Pramodya Wickramasinghe,Sri Lanka,1990,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+SL_2000_01,Sanath Jayasuriya,Sri Lanka,2000,Left,Left,Left Arm Orthodox,AR,1|2,FALSE,FALSE
+SL_2000_02,Marvan Atapattu,Sri Lanka,2000,Right,Right,Leg Spin,BAT,1|2,TRUE,FALSE
+SL_2000_03,Kumar Sangakkara,Sri Lanka,2000,Left,Right,Right Arm Medium,WK,3|4,FALSE,TRUE
+SL_2000_04,Mahela Jayawardene,Sri Lanka,2000,Right,Right,Right Arm Medium,BAT,4|5,FALSE,FALSE
+SL_2000_05,Tillakaratne Dilshan,Sri Lanka,2000,Right,Right,Off Spin,BAT,5|6|7,FALSE,FALSE
+SL_2000_06,Thilan Samaraweera,Sri Lanka,2000,Right,Right,Off Spin,BAT,5|6|7,FALSE,FALSE
+SL_2000_07,Chaminda Vaas,Sri Lanka,2000,Left,Left,Left Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+SL_2000_08,Muttiah Muralitharan,Sri Lanka,2000,Right,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+SL_2000_09,Lasith Malinga,Sri Lanka,2000,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+SL_2000_10,Nuwan Kulasekara,Sri Lanka,2000,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+SL_2000_11,Dilhara Fernando,Sri Lanka,2000,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+SL_2010_01,Tillakaratne Dilshan,Sri Lanka,2010,Right,Right,Off Spin,BAT,1|2,FALSE,FALSE
+SL_2010_02,Dimuth Karunaratne,Sri Lanka,2010,Left,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+SL_2010_03,Kumar Sangakkara,Sri Lanka,2010,Left,None,None,BAT,3|4,FALSE,FALSE
+SL_2010_04,Mahela Jayawardene,Sri Lanka,2010,Right,Right,Right Arm Medium,BAT,4|5,FALSE,FALSE
+SL_2010_05,Angelo Mathews,Sri Lanka,2010,Right,Right,Right Arm Medium,AR,5|6|7,TRUE,FALSE
+SL_2010_06,Dinesh Chandimal,Sri Lanka,2010,Right,Right,Off Spin,WK,5|6|7,FALSE,TRUE
+SL_2010_07,Thisara Perera,Sri Lanka,2010,Left,Right,Right Arm Medium,AR,6|7|8,FALSE,FALSE
+SL_2010_08,Rangana Herath,Sri Lanka,2010,Left,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+SL_2010_09,Lasith Malinga,Sri Lanka,2010,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+SL_2010_10,Suranga Lakmal,Sri Lanka,2010,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+SL_2010_11,Nuwan Pradeep,Sri Lanka,2010,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+SL_2020_01,Dimuth Karunaratne,Sri Lanka,2020,Left,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+SL_2020_02,Pathum Nissanka,Sri Lanka,2020,Right,None,None,BAT,1|2,FALSE,FALSE
+SL_2020_03,Kusal Mendis,Sri Lanka,2020,Right,Right,Leg Spin,WK,3|4,FALSE,TRUE
+SL_2020_04,Charith Asalanka,Sri Lanka,2020,Left,Right,Off Spin,BAT,4|5,TRUE,FALSE
+SL_2020_05,Dhananjaya de Silva,Sri Lanka,2020,Right,Right,Off Spin,BAT,4|5,FALSE,FALSE
+SL_2020_06,Dasun Shanaka,Sri Lanka,2020,Right,Right,Right Arm Medium,AR,6|7|8,FALSE,FALSE
+SL_2020_07,Wanindu Hasaranga,Sri Lanka,2020,Right,Right,Leg Spin,AR,6|7|8,FALSE,FALSE
+SL_2020_08,Maheesh Theekshana,Sri Lanka,2020,Right,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+SL_2020_09,Prabath Jayasuriya,Sri Lanka,2020,Right,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+SL_2020_10,Kasun Rajitha,Sri Lanka,2020,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+SL_2020_11,Matheesha Pathirana,Sri Lanka,2020,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+

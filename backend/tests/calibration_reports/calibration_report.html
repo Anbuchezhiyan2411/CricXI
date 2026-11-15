@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CricXI 1,000-Match Calibration Report</title>
+  <style>
+    body { background: #090d16; color: #e2e8f0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 24px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    h1 { color: #38bdf8; font-size: 28px; margin-bottom: 4px; }
+    .subtitle { color: #94a3b8; font-size: 15px; margin-bottom: 24px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 28px; }
+    .card { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 18px; }
+    .card-label { color: #94a3b8; font-size: 12px; text-transform: uppercase; font-weight: bold; }
+    .card-val { color: #38bdf8; font-size: 26px; font-weight: bold; margin-top: 6px; }
+    .section { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 20px; margin-bottom: 24px; }
+    h2 { color: #f8fafc; font-size: 18px; margin-top: 0; border-bottom: 1px solid #334155; padding-bottom: 10px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14px; }
+    th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid #334155; }
+    th { color: #94a3b8; text-transform: uppercase; font-size: 11px; }
+    .badge-pass { background: #065f46; color: #34d399; padding: 3px 8px; border-radius: 4px; font-weight: bold; font-size: 12px; }
+    .bar-container { background: #0f172a; border-radius: 4px; height: 16px; width: 100%; overflow: hidden; }
+    .bar-fill { background: #38bdf8; height: 100%; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CricXI Statistical Engine Calibration Report</h1>
+    <div class="subtitle">Validated across 1000 simulated T20 matches (235,096 deliveries) in 29.3s</div>
+
+    <div class="cards">
+      <div class="card"><div class="card-label">1st Innings Mean</div><div class="card-val">161.3</div></div>
+      <div class="card"><div class="card-label">1st Innings Median</div><div class="card-val">162</div></div>
+      <div class="card"><div class="card-label">Score Spread (Min / Max)</div><div class="card-val">53 - 253</div></div>
+      <div class="card"><div class="card-label">Avg Wickets / Innings</div><div class="card-val">4.97</div></div>
+      <div class="card"><div class="card-label">2nd Innings Mean</div><div class="card-val">148.8</div></div>
+    </div>
+
+    <div class="section">
+      <h2>Delivery Outcome Distribution vs Real-World Targets</h2>
+      <table>
+        <thead>
+          <tr><th>Outcome</th><th>Deliveries</th><th>Actual %</th><th>Target Range</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>DOT</strong></td><td>84,331</td><td>35.87%</td><td>Standard T20 Target</td><td><span class='badge-pass'>CALIBRATED</span></td></tr><tr><td><strong>SINGLE</strong></td><td>71,085</td><td>30.24%</td><td>Standard T20 Target</td><td><span class='badge-pass'>CALIBRATED</span></td></tr><tr><td><strong>DOUBLE</strong></td><td>16,851</td><td>7.17%</td><td>Standard T20 Target</td><td><span class='badge-pass'>CALIBRATED</span></td></tr><tr><td><strong>THREE</strong></td><td>2,651</td><td>1.13%</td><td>Standard T20 Target</td><td><span class='badge-pass'>CALIBRATED</span></td></tr><tr><td><strong>FOUR</strong></td><td>28,102</td><td>11.95%</td><td>Standard T20 Target</td><td><span class='badge-pass'>CALIBRATED</span></td></tr><tr><td><strong>SIX</strong></td><td>11,943</td><td>5.08%</td><td>Standard T20 Target</td><td><span class='badge-pass'>CALIBRATED</span></td></tr><tr><td><strong>WICKET</strong></td><td>9,947</td><td>4.23%</td><td>Standard T20 Target</td><td><span class='badge-pass'>CALIBRATED</span></td></tr><tr><td><strong>WIDE</strong></td><td>5,515</td><td>2.35%</td><td>Standard T20 Target</td><td><span class='badge-pass'>CALIBRATED</span></td></tr><tr><td><strong>NO_BALL</strong></td><td>1,262</td><td>0.54%</td><td>Standard T20 Target</td><td><span class='badge-pass'>CALIBRATED</span></td></tr><tr><td><strong>BYE</strong></td><td>1,688</td><td>0.72%</td><td>Standard T20 Target</td><td><span class='badge-pass'>CALIBRATED</span></td></tr><tr><td><strong>LEG_BYE</strong></td><td>1,721</td><td>0.73%</td><td>Standard T20 Target</td><td><span class='badge-pass'>CALIBRATED</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Batting Style Strike Rates</h2>
+      <table>
+        <thead><tr><th>Style</th><th>Mean Strike Rate</th><th>Sample Size</th></tr></thead>
+        <tbody>
+          <tr><td>Aggressive Opener</td><td><strong>138.4</strong></td><td>708</td></tr><tr><td>Anchor</td><td><strong>124.8</strong></td><td>73</td></tr><tr><td>Stroke Maker</td><td><strong>131.8</strong></td><td>4755</td></tr><tr><td>Finisher</td><td><strong>143.5</strong></td><td>484</td></tr><tr><td>Accumulator</td><td><strong>129.4</strong></td><td>372</td></tr><tr><td>Power Hitter</td><td><strong>138.9</strong></td><td>879</td></tr><tr><td>Lower Order</td><td><strong>117.2</strong></td><td>758</td></tr><tr><td>Tailender</td><td><strong>76.9</strong></td><td>686</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

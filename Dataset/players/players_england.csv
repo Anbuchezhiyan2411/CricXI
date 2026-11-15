@@ -1,0 +1,57 @@
+player_id,player_name,country,decade,batting_hand,bowling_hand,bowling_type,primary_role,eligible_positions,is_captain,is_wicketkeeper
+ENG_1980_01,Graham Gooch,England,1980,Right,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+ENG_1980_02,Chris Broad,England,1980,Left,None,None,BAT,1|2,FALSE,FALSE
+ENG_1980_03,David Gower,England,1980,Left,None,None,BAT,3|4,TRUE,FALSE
+ENG_1980_04,Allan Lamb,England,1980,Right,None,None,BAT,4|5,FALSE,FALSE
+ENG_1980_05,Mike Gatting,England,1980,Right,Right,Right Arm Medium,BAT,4|5,FALSE,FALSE
+ENG_1980_06,Ian Botham,England,1980,Right,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+ENG_1980_07,Paul Downton,England,1980,Right,None,None,WK,5|6|7,FALSE,TRUE
+ENG_1980_08,John Emburey,England,1980,Right,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+ENG_1980_09,Derek Pringle,England,1980,Right,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+ENG_1980_10,Bob Willis,England,1980,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+ENG_1980_11,Neil Foster,England,1980,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+ENG_1990_01,Michael Atherton,England,1990,Right,None,None,BAT,1|2,TRUE,FALSE
+ENG_1990_02,Graham Gooch,England,1990,Right,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+ENG_1990_03,Alec Stewart,England,1990,Right,None,None,WK,1|2|3,FALSE,TRUE
+ENG_1990_04,Robin Smith,England,1990,Right,None,None,BAT,3|4,FALSE,FALSE
+ENG_1990_05,Graham Thorpe,England,1990,Left,None,None,BAT,4|5,FALSE,FALSE
+ENG_1990_06,Nasser Hussain,England,1990,Right,None,None,BAT,4|5,FALSE,FALSE
+ENG_1990_07,Dominic Cork,England,1990,Right,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+ENG_1990_08,Robert Croft,England,1990,Right,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+ENG_1990_09,Darren Gough,England,1990,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+ENG_1990_10,Angus Fraser,England,1990,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+ENG_1990_11,Devon Malcolm,England,1990,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+ENG_2000_01,Marcus Trescothick,England,2000,Left,None,None,BAT,1|2,FALSE,FALSE
+ENG_2000_02,Michael Vaughan,England,2000,Right,Right,Off Spin,BAT,1|2|3,TRUE,FALSE
+ENG_2000_03,Kevin Pietersen,England,2000,Right,Right,Off Spin,BAT,3|4,FALSE,FALSE
+ENG_2000_04,Ian Bell,England,2000,Right,None,None,BAT,4|5,FALSE,FALSE
+ENG_2000_05,Paul Collingwood,England,2000,Right,Right,Right Arm Medium,BAT,5|6|7,FALSE,FALSE
+ENG_2000_06,Andrew Flintoff,England,2000,Right,Right,Right Arm Fast,AR,6|7|8,FALSE,FALSE
+ENG_2000_07,Geraint Jones,England,2000,Right,None,None,WK,5|6|7,FALSE,TRUE
+ENG_2000_08,Ashley Giles,England,2000,Right,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+ENG_2000_09,Matthew Hoggard,England,2000,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+ENG_2000_10,Steve Harmison,England,2000,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+ENG_2000_11,James Anderson,England,2000,Left,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+ENG_2010_01,Alastair Cook,England,2010,Left,None,None,BAT,1|2,TRUE,FALSE
+ENG_2010_02,Andrew Strauss,England,2010,Left,None,None,BAT,1|2,FALSE,FALSE
+ENG_2010_03,Jonathan Trott,England,2010,Right,Right,Right Arm Medium,BAT,3|4,FALSE,FALSE
+ENG_2010_04,Joe Root,England,2010,Right,Right,Off Spin,BAT,3|4,FALSE,FALSE
+ENG_2010_05,Ben Stokes,England,2010,Left,Right,Right Arm Fast Medium,AR,5|6|7,FALSE,FALSE
+ENG_2010_06,Jonny Bairstow,England,2010,Right,None,None,BAT,5|6|7,FALSE,FALSE
+ENG_2010_07,Matt Prior,England,2010,Right,None,None,WK,5|6|7,FALSE,TRUE
+ENG_2010_08,Graeme Swann,England,2010,Right,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+ENG_2010_09,Stuart Broad,England,2010,Left,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+ENG_2010_10,James Anderson,England,2010,Left,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+ENG_2010_11,Steven Finn,England,2010,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+ENG_2020_01,Zak Crawley,England,2020,Right,None,None,BAT,1|2,FALSE,FALSE
+ENG_2020_02,Ben Duckett,England,2020,Left,None,None,BAT,1|2,FALSE,FALSE
+ENG_2020_03,Ollie Pope,England,2020,Right,None,None,BAT,3|4,FALSE,FALSE
+ENG_2020_04,Joe Root,England,2020,Right,Right,Off Spin,BAT,3|4,FALSE,FALSE
+ENG_2020_05,Harry Brook,England,2020,Right,Right,Right Arm Medium,BAT,4|5,FALSE,FALSE
+ENG_2020_06,Ben Stokes,England,2020,Left,Right,Right Arm Fast Medium,AR,6|7|8,TRUE,FALSE
+ENG_2020_07,Jos Buttler,England,2020,Right,None,None,WK,5|6|7,FALSE,TRUE
+ENG_2020_08,Chris Woakes,England,2020,Right,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+ENG_2020_09,Mark Wood,England,2020,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+ENG_2020_10,Stuart Broad,England,2020,Left,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+ENG_2020_11,James Anderson,England,2020,Left,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+

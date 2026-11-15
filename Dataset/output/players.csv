@@ -1,0 +1,507 @@
+player_id,player_name,country,decade,batting_hand,bowling_hand,bowling_type,primary_role,eligible_positions,is_captain,is_wicketkeeper,matches,innings,not_outs,runs,balls_faced,highest_score,fifties,hundreds,strike_rate,batting_average,fours,sixes,dot_balls,dot_ball_percentage,wickets,balls_bowled,runs_conceded,maidens,economy,bowling_average,bowling_strike_rate,best_bowling,catches,stumpings,run_outs,batting_rating,bowling_rating,fielding_rating,overall_rating
+1,Asghar Afghan,Afghanistan,2010,Right,Right,Off Spin,BAT,3|4|5,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,80.0,30.0,74.0,76.6
+2,Dawlat Zadran,Afghanistan,2010,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,36.0,83.0,70.0,77.0
+3,Gulbadin Naib,Afghanistan,2010,Right,Right,Right Arm Fast Medium,AR,5|6|7,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,79.0,77.0,79.0,78.1
+4,Hashmatullah Shahidi,Afghanistan,2010,Left,Right,Off Spin,BAT,3|4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,81.0,25.0,76.0,77.5
+5,Javed Ahmadi,Afghanistan,2010,Right,Right,Off Spin,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,75.0,35.0,73.0,72.7
+6,Mohammad Nabi,Afghanistan,2010,Right,Right,Off Spin,AR,5|6|7,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,83.0,84.0,82.0,83.4
+7,Mohammad Shahzad,Afghanistan,2010,Right,,,WK,1|2,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,84.0,5.0,80.0,82.6
+8,Mujeeb Ur Rahman,Afghanistan,2010,Right,Right,Off Spin,SPIN,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,18.0,89.0,74.0,80.4
+9,Rahmat Shah,Afghanistan,2010,Right,Right,Leg Spin,BAT,2|3,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,83.0,38.0,78.0,80.0
+10,Rashid Khan,Afghanistan,2010,Right,Right,Leg Spin,SPIN,7|8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,58.0,96.0,88.0,91.4
+11,Samiullah Shinwari,Afghanistan,2010,Right,Right,Leg Spin,AR,6|7|8,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,76.0,74.0,75.0,75.0
+12,Azmatullah Omarzai,Afghanistan,2020,Right,Right,Right Arm Fast Medium,AR,5|6|7,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,84.0,83.0,82.0,83.4
+13,Fareed Ahmad,Afghanistan,2020,Left,Left,Left Arm Fast Medium,PACE,8|9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,20.0,80.0,72.0,73.2
+14,Fazalhaq Farooqi,Afghanistan,2020,Right,Left,Left Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,15.0,88.0,74.0,79.3
+15,Hashmatullah Shahidi,Afghanistan,2020,Left,Right,Off Spin,BAT,3|4|5,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,83.0,25.0,76.0,79.1
+16,Ibrahim Zadran,Afghanistan,2020,Right,Right,Right Arm Medium,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,86.0,15.0,82.0,81.8
+17,Mohammad Nabi,Afghanistan,2020,Right,Right,Off Spin,AR,6|7|8,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,80.0,82.0,78.0,80.7
+18,Naveen-ul-Haq,Afghanistan,2020,Right,Right,Right Arm Fast Medium,PACE,8|9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,24.0,86.0,76.0,78.8
+19,Noor Ahmad,Afghanistan,2020,Right,Left,Left Arm Chinaman,SPIN,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,18.0,86.0,75.0,78.1
+20,Rahmanullah Gurbaz,Afghanistan,2020,Right,,,WK,1|2,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,87.0,5.0,85.0,86.3
+21,Rahmat Shah,Afghanistan,2020,Right,Right,Leg Spin,BAT,2|3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,82.0,25.0,76.0,78.3
+22,Rashid Khan,Afghanistan,2020,Right,Right,Leg Spin,SPIN,7|8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,62.0,96.0,89.0,91.9
+23,Allan Border,Australia,1980,Left,Left,Left Arm Orthodox,BAT,4|5,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,91.0,45.0,84.0,87.6
+24,Craig McDermott,Australia,1980,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,22.0,86.0,70.0,78.0
+25,David Boon,Australia,1980,Right,,,BAT,1|2|3,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,87.0,15.0,84.0,83.0
+26,Dean Jones,Australia,1980,Right,,,BAT,3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,90.0,25.0,87.0,86.3
+27,Dennis Lillee,Australia,1980,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,26.0,94.0,76.0,85.4
+28,Geoff Marsh,Australia,1980,Right,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,81.0,10.0,78.0,77.0
+29,Greg Chappell,Australia,1980,Right,Right,Right Arm Medium,BAT,3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,94.0,52.0,88.0,91.0
+30,Greg Matthews,Australia,1980,Right,Right,Off Spin,AR,7|8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,72.0,78.0,78.0,75.3
+31,Rod Marsh,Australia,1980,Left,,,WK,5|6|7,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,79.0,5.0,88.0,82.2
+32,Steve Waugh,Australia,1980,Right,Right,Right Arm Medium,AR,6|7|8,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,82.0,74.0,85.0,78.7
+33,Terry Alderman,Australia,1980,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,14.0,87.0,68.0,77.8
+34,Craig McDermott,Australia,1990,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,20.0,85.0,69.0,76.9
+35,David Boon,Australia,1990,Right,,,BAT,2|3,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,85.0,10.0,82.0,80.8
+36,Glenn McGrath,Australia,1990,Right,Right,Right Arm Fast,PACE,10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,12.0,95.0,70.0,84.2
+37,Ian Healy,Australia,1990,Right,,,WK,5|6|7,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,76.0,5.0,92.0,81.6
+38,Jason Gillespie,Australia,1990,Left,Right,Right Arm Fast,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,34.0,87.0,75.0,80.5
+39,Mark Taylor,Australia,1990,Left,,,BAT,1|2,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,84.0,10.0,88.0,80.9
+40,Mark Waugh,Australia,1990,Right,Right,Off Spin,BAT,3|4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,89.0,55.0,95.0,88.2
+41,Michael Slater,Australia,1990,Right,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,86.0,15.0,82.0,81.8
+42,Ricky Ponting,Australia,1990,Right,,,BAT,3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,89.0,25.0,94.0,86.5
+43,Shane Warne,Australia,1990,Right,Right,Leg Spin,SPIN,7|8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,42.0,95.0,85.0,88.7
+44,Steve Waugh,Australia,1990,Right,Right,Right Arm Medium,AR,5|6|7,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,91.0,68.0,85.0,80.1
+45,Adam Gilchrist,Australia,2000,Left,,,WK,1|2|6|7,False,True,13,13,1,272,192,48,0,0,141.67,22.67,27,13,84,43.75,0,0,0,0,0.0,0.0,0.0,0/0,17,0,2,92.0,5.0,95.0,93.1
+46,Andrew Symonds,Australia,2000,Right,Right,Right Arm Fast Medium,AR,5|6|7,False,False,14,11,4,337,199,85*,2,0,169.35,48.14,33,10,47,23.62,8,185,277,0,8.98,34.62,23.12,2/14,3,0,2,88.0,78.0,96.0,84.3
+47,Brett Lee,Australia,2000,Right,Right,Right Arm Fast,PACE,8|9|10,False,False,17,9,4,91,63,43*,0,0,144.44,18.2,8,4,23,36.51,17,355,454,0,7.67,26.71,20.88,3/27,5,0,0,44.0,91.0,85.0,85.7
+48,Damien Martyn,Australia,2000,Right,,,BAT,4|5,False,False,4,4,0,120,74,96,1,0,162.16,30.0,11,5,22,29.73,0,0,0,0,0.0,0.0,0.0,0/0,1,0,0,87.0,20.0,85.0,83.4
+49,Glenn McGrath,Australia,2000,Right,Right,Right Arm Fast,PACE,10|11,False,False,2,1,0,5,12,5,0,0,41.67,5.0,0,0,9,75.0,5,48,79,0,9.88,15.8,9.6,3/31,1,0,1,10.0,95.0,68.0,83.8
+50,Jason Gillespie,Australia,2000,Left,Right,Right Arm Fast,PACE,9|10|11,False,False,1,1,0,24,18,24,0,0,133.33,24.0,4,0,8,44.44,1,24,49,0,12.25,49.0,24.0,1/49,0,0,0,28.0,86.0,74.0,79.0
+51,Justin Langer,Australia,2000,Left,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,86.0,10.0,82.0,81.6
+52,Matthew Hayden,Australia,2000,Left,,,BAT,1|2,False,False,9,9,3,308,214,73*,4,0,143.93,51.33,37,13,95,44.39,0,0,0,0,0.0,0.0,0.0,0/0,1,0,0,92.0,10.0,85.0,86.9
+53,Ricky Ponting,Australia,2000,Right,,,BAT,3|4,True,False,17,16,2,401,302,98*,2,0,132.78,28.64,42,11,109,36.09,0,0,0,0,0.0,0.0,0.0,0/0,8,0,2,95.0,20.0,95.0,91.2
+54,Shane Warne,Australia,2000,Right,Right,Leg Spin,SPIN,8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,38.0,95.0,84.0,88.2
+55,Steve Waugh,Australia,2000,Right,,Right Arm Medium,BAT,4|5|6,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,88.0,25.0,80.0,83.7
+56,Brad Haddin,Australia,2010,Right,,,WK,6|7,False,True,24,20,3,293,239,49,0,0,122.59,17.24,24,10,93,38.91,0,0,0,0,0.0,0.0,0.0,0/0,13,6,4,81.0,5.0,89.0,83.8
+57,David Warner,Australia,2010,Left,,,BAT,1|2,False,False,68,68,8,1811,1285,100*,13,1,140.93,30.18,178,77,517,40.23,0,0,0,0,0.0,0.0,0.0,0/0,42,0,1,92.0,20.0,92.0,88.4
+58,Michael Clarke,Australia,2010,Left,,Left Arm Orthodox,BAT,4|5,False,False,15,13,1,272,262,67,1,0,103.82,22.67,20,4,94,35.88,1,48,72,0,9.0,72.0,48.0,1/2,7,0,0,88.0,40.0,88.0,85.6
+59,Mitchell Johnson,Australia,2010,Left,Left,Left Arm Fast,PACE,9|10|11,False,False,18,11,4,48,58,22*,0,0,82.76,6.86,2,1,29,50.0,24,423,521,2,7.39,21.71,17.62,3/15,2,0,2,42.0,91.0,80.0,85.0
+60,Mitchell Marsh,Australia,2010,Right,Right,Right Arm Fast Medium,AR,5|6|7,False,False,11,11,3,175,151,36,0,0,115.89,21.88,7,9,56,37.09,6,114,156,0,8.21,26.0,19.0,2/6,4,0,0,84.0,77.0,82.0,80.7
+61,Mitchell Starc,Australia,2010,Left,Left,Left Arm Fast,PACE,8|9|10,False,False,28,5,1,12,18,4,0,0,66.67,3.0,0,0,9,50.0,39,639,718,1,6.74,18.41,16.38,3/11,8,0,1,48.0,93.0,82.0,87.4
+62,Nathan Lyon,Australia,2010,Right,Right,Off Spin,SPIN,9|10|11,False,False,2,1,1,4,4,4*,0,0,100.0,4.0,0,0,2,50.0,1,30,48,0,9.6,48.0,30.0,1/33,0,0,0,20.0,88.0,78.0,80.2
+63,Pat Cummins,Australia,2010,Right,Right,Right Arm Fast,PACE,7|8|9,False,False,25,9,2,35,37,13,0,0,94.59,5.0,2,1,18,48.65,32,576,656,3,6.83,20.5,18.0,3/15,7,0,1,64.0,90.0,86.0,87.0
+64,Shane Watson,Australia,2010,Right,Right,Right Arm Fast Medium,AR,1|2|3,False,False,51,50,5,1379,935,124*,10,1,147.49,30.64,107,81,359,38.4,45,855,1079,2,7.57,23.98,19.0,4/15,18,0,2,90.0,83.0,86.0,86.4
+65,Steve Smith,Australia,2010,Right,Right,Leg Spin,BAT,3|4,True,False,38,28,7,577,448,90,4,0,128.79,27.48,54,12,140,31.25,18,339,424,1,7.5,23.56,18.83,3/20,21,0,3,93.0,45.0,92.0,90.5
+66,Usman Khawaja,Australia,2010,Left,,,BAT,3|4|5,False,False,9,9,0,241,182,58,1,0,132.42,26.78,31,5,70,38.46,0,0,0,0,0.0,0.0,0.0,0/0,5,0,0,85.0,10.0,80.0,80.5
+67,Alex Carey,Australia,2020,Left,,,WK,6|7,False,True,55,34,13,300,289,27,0,0,103.81,14.29,26,3,104,35.99,15,386,495,0,7.69,33.0,25.73,2/16,25,1,3,80.0,5.0,88.0,82.8
+68,Cameron Green,Australia,2020,Right,Right,Right Arm Fast Medium,AR,6|7|8,False,False,28,26,5,637,421,62*,6,0,151.31,30.33,49,36,146,34.68,14,243,373,0,9.21,26.64,17.36,3/35,27,0,0,82.0,78.0,91.0,81.1
+69,David Warner,Australia,2020,Left,,,BAT,1|2,False,False,32,32,4,1170,798,89*,13,0,146.62,41.79,129,36,268,33.58,0,0,0,0,0.0,0.0,0.0,0/0,16,0,0,88.0,15.0,86.0,84.1
+70,Josh Hazlewood,Australia,2020,Right,Right,Right Arm Fast,PACE,10|11,False,False,51,9,6,24,21,13*,0,0,114.29,8.0,2,1,10,47.62,69,1138,1343,7,7.08,19.46,16.49,4/12,12,0,1,16.0,92.0,78.0,83.0
+71,Marnus Labuschagne,Australia,2020,Right,Right,Leg Spin,BAT,3|4,False,False,1,1,0,2,4,2,0,0,50.0,2.0,0,0,2,50.0,0,0,0,0,0.0,0.0,0.0,0/0,1,0,0,86.0,40.0,88.0,84.0
+72,Mitchell Starc,Australia,2020,Left,Left,Left Arm Fast,PACE,8|9|10,False,False,37,14,8,86,82,14,0,0,104.88,14.33,4,2,30,36.59,40,819,1163,1,8.52,29.07,20.48,4/20,14,0,0,42.0,90.0,82.0,84.4
+73,Nathan Lyon,Australia,2020,Right,Right,Off Spin,SPIN,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,20.0,87.0,78.0,79.4
+74,Pat Cummins,Australia,2020,Right,Right,Right Arm Fast,PACE,7|8|9,True,False,30,13,7,120,85,28,0,0,141.18,20.0,9,6,30,35.29,31,636,862,1,8.13,27.81,20.52,3/29,8,0,0,66.0,91.0,88.0,88.2
+75,Steve Smith,Australia,2020,Right,,Leg Spin,BAT,3|4,False,False,30,26,4,513,420,52,1,0,122.14,23.32,42,14,139,33.1,0,0,0,0,0.0,0.0,0.0,0/0,20,0,3,89.0,30.0,90.0,86.2
+76,Travis Head,Australia,2020,Left,,Off Spin,BAT,1|2|5,False,False,36,35,1,1016,604,91,6,0,168.21,29.88,130,50,258,42.72,0,12,17,0,8.5,0.0,0.0,0/17,5,0,1,91.0,45.0,85.0,87.8
+77,Usman Khawaja,Australia,2020,Left,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,86.0,10.0,80.0,81.3
+78,Aftab Ahmed,Bangladesh,2000,Right,Right,Right Arm Medium,BAT,3|4|5,False,False,8,8,1,187,142,62*,1,0,131.69,26.71,21,4,50,35.21,0,0,0,0,0.0,0.0,0.0,0/0,2,0,0,76.0,30.0,76.0,73.7
+79,Habibul Bashar,Bangladesh,2000,Right,Right,Off Spin,BAT,3|4,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,79.0,15.0,76.0,75.4
+80,Javed Omar,Bangladesh,2000,Right,Right,Leg Spin,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,74.0,10.0,74.0,70.8
+81,Khaled Mashud,Bangladesh,2000,Right,,,WK,5|6|7,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,73.0,5.0,84.0,76.8
+82,Mashrafe Mortaza,Bangladesh,2000,Right,Right,Right Arm Fast Medium,PACE,7|8|9,False,False,10,9,3,98,83,33*,0,0,118.07,16.33,3,6,35,42.17,7,225,339,0,9.04,48.43,32.14,2/29,1,0,0,58.0,84.0,74.0,80.4
+83,Mohammad Ashraful,Bangladesh,2000,Right,Right,Leg Spin,BAT,3|4|5,False,False,12,12,0,189,113,61,1,0,167.26,15.75,22,6,31,27.43,7,108,178,0,9.89,25.43,15.43,3/42,3,0,0,78.0,45.0,77.0,76.2
+84,Mohammad Rafique,Bangladesh,2000,Left,Left,Left Arm Orthodox,SPIN,8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,50.0,84.0,70.0,79.2
+85,Shahadat Hossain,Bangladesh,2000,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,3,2,1,4,5,4*,0,0,80.0,4.0,0,0,2,40.0,2,54,94,0,10.44,47.0,27.0,1/31,0,0,0,16.0,79.0,68.0,71.6
+86,Shakib Al Hasan,Bangladesh,2000,Left,Left,Left Arm Orthodox,AR,5|6|7,False,False,14,14,0,136,142,19,0,0,95.77,9.71,13,1,62,43.66,12,210,230,0,6.57,19.17,17.5,4/34,5,0,1,82.0,85.0,82.0,83.4
+87,Tamim Iqbal,Bangladesh,2000,Left,,,BAT,1|2,False,False,12,12,0,160,179,32,0,0,89.39,13.33,23,0,99,55.31,0,0,0,0,0.0,0.0,0.0,0/0,2,0,1,83.0,10.0,78.0,78.6
+88,Tapash Baisya,Bangladesh,2000,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,22.0,78.0,68.0,71.4
+89,Imrul Kayes,Bangladesh,2010,Left,,,BAT,1|2,False,False,14,13,0,119,134,36,0,0,88.81,9.15,14,3,75,55.97,0,0,0,0,0.0,0.0,0.0,0/0,4,0,0,77.0,10.0,76.0,73.5
+90,Mahmudullah,Bangladesh,2010,Right,Right,Off Spin,AR,5|6|7,False,False,68,61,17,1240,954,64*,4,0,129.98,28.18,98,44,322,33.75,23,514,655,1,7.65,28.48,22.35,3/18,20,0,1,84.0,72.0,82.0,78.4
+91,Mashrafe Mortaza,Bangladesh,2010,Right,Right,Right Arm Fast Medium,PACE,7|8|9,True,False,41,27,8,195,144,22,0,0,135.42,10.26,23,9,69,47.92,27,842,1114,1,7.94,41.26,31.19,2/12,7,0,3,54.0,82.0,72.0,78.2
+92,Mehidy Hasan Miraz,Bangladesh,2010,Right,Right,Off Spin,AR,7|8|9,False,False,12,11,2,94,80,19*,0,0,117.5,10.44,7,4,33,41.25,4,204,303,0,8.91,75.75,51.0,2/31,6,0,0,72.0,82.0,82.0,77.5
+93,Mominul Haque,Bangladesh,2010,Left,Left,Left Arm Orthodox,BAT,3|4,False,False,28,25,5,436,385,58,1,0,113.25,21.8,45,11,170,44.16,0,18,32,0,10.67,0.0,0.0,0/14,8,0,2,79.0,25.0,75.0,75.7
+94,Mushfiqur Rahim,Bangladesh,2010,Right,,,WK,4|5|6,False,True,63,58,8,1048,856,72*,5,0,122.43,20.96,95,27,291,34.0,0,0,0,0,0.0,0.0,0.0,0/0,22,17,10,86.0,5.0,86.0,86.0
+95,Mustafizur Rahman,Bangladesh,2010,Left,Left,Left Arm Fast Medium,PACE,9|10|11,False,False,139,114,17,1826,1826,80,6,0,100.0,18.82,162,54,868,47.54,61,929,1223,3,7.9,20.05,15.23,5/22,46,0,6,18.0,91.0,76.0,82.2
+96,Nasir Hossain,Bangladesh,2010,Right,Right,Off Spin,AR,6|7|8,False,False,29,22,4,308,286,50,1,0,107.69,17.11,24,5,107,37.41,7,203,303,0,8.96,43.29,29.0,2/26,14,0,1,77.0,70.0,83.0,74.5
+97,Rubel Hossain,Bangladesh,2010,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,24,10,6,9,24,2*,0,0,37.5,2.25,0,0,15,62.5,25,482,751,0,9.35,30.04,19.28,3/31,0,0,1,16.0,81.0,72.0,73.6
+98,Shakib Al Hasan,Bangladesh,2010,Left,Left,Left Arm Orthodox,AR,3|4|5,False,False,72,68,11,1434,1137,84,8,0,126.12,25.16,146,32,397,34.92,73,1294,1523,1,7.06,20.86,17.73,5/20,17,4,3,89.0,88.0,85.0,88.2
+99,Tamim Iqbal,Bangladesh,2010,Left,,,BAT,1|2,False,False,54,54,6,1308,1051,103*,6,1,124.45,27.25,132,40,431,41.01,0,0,0,0,0.0,0.0,0.0,0/0,14,0,0,87.0,10.0,80.0,82.1
+100,Litton Das,Bangladesh,2020,Right,,,WK,1|2,False,True,93,91,4,2019,1606,83,12,0,125.72,23.21,202,57,609,37.92,0,0,0,0,0.0,0.0,0.0,0/0,60,15,14,85.0,5.0,87.0,85.7
+101,Mahmudullah,Bangladesh,2020,Right,Right,Off Spin,BAT,5|6|7,False,False,54,50,10,952,859,54,4,0,110.83,23.8,66,28,321,37.37,9,237,272,0,6.89,30.22,26.33,3/10,18,0,1,81.0,45.0,78.0,78.8
+102,Mehidy Hasan Miraz,Bangladesh,2020,Right,Right,Off Spin,AR,6|7|8,False,False,19,17,2,316,272,46,0,0,116.18,21.07,29,6,101,37.13,13,240,324,0,8.1,24.92,18.46,4/12,8,0,1,77.0,83.0,84.0,80.4
+103,Mominul Haque,Bangladesh,2020,Left,Left,Left Arm Orthodox,BAT,3|4,False,False,6,6,0,85,80,26,0,0,106.25,14.17,8,2,35,43.75,0,0,0,0,0.0,0.0,0.0,0/0,2,1,0,77.0,20.0,75.0,73.8
+104,Mushfiqur Rahim,Bangladesh,2020,Right,,,WK,4|5,False,True,16,15,3,204,215,57*,1,0,94.88,17.0,12,6,87,40.47,0,0,0,0,0.0,0.0,0.0,0/0,11,1,0,84.0,5.0,84.0,84.0
+105,Mustafizur Rahman,Bangladesh,2020,Left,Left,Left Arm Fast Medium,PACE,9|10|11,False,False,90,27,11,111,151,14,0,0,73.51,6.94,6,4,89,58.94,102,1805,2159,5,7.18,21.17,17.7,6/10,21,0,7,18.0,88.0,76.0,79.8
+106,Najmul Hossain Shanto,Bangladesh,2020,Left,Right,Off Spin,BAT,1|2|3,True,False,45,43,5,948,865,71,4,0,109.6,24.95,87,19,345,39.88,0,18,26,0,8.67,0.0,0.0,0/3,24,0,2,83.0,20.0,84.0,80.0
+107,Shakib Al Hasan,Bangladesh,2020,Left,Left,Left Arm Orthodox,AR,3|4|5,False,False,222,190,39,3034,2561,89,15,0,118.47,20.09,258,106,1037,40.49,129,2547,2915,5,6.87,22.6,19.74,5/22,89,5,11,85.0,87.0,83.0,85.7
+108,Shoriful Islam,Bangladesh,2020,Left,Left,Left Arm Fast Medium,PACE,9|10|11,False,False,66,22,2,112,125,16*,0,0,89.6,5.6,7,5,68,54.4,68,1215,1654,2,8.17,24.32,17.87,3/17,12,0,4,20.0,84.0,76.0,76.8
+109,Taijul Islam,Bangladesh,2020,Left,Left,Left Arm Orthodox,SPIN,8|9|10,False,False,6,3,2,12,16,8,0,0,75.0,12.0,1,0,8,50.0,4,102,136,0,8.0,34.0,25.5,1/17,1,0,0,24.0,84.0,72.0,76.8
+110,Taskin Ahmed,Bangladesh,2020,Left,Right,Right Arm Fast,PACE,9|10|11,False,False,65,32,14,198,187,31,0,0,105.88,11.0,17,7,93,49.73,86,1431,1856,2,7.78,21.58,16.64,4/16,9,0,3,26.0,87.0,75.0,79.7
+111,Allan Lamb,England,1980,Right,,,BAT,4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,86.0,15.0,80.0,81.5
+112,Bob Willis,England,1980,Right,Right,Right Arm Fast,PACE,10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,16.0,92.0,68.0,82.0
+113,Chris Broad,England,1980,Left,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,83.0,10.0,78.0,78.6
+114,David Gower,England,1980,Left,,Right Arm Medium,BAT,3|4,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,91.0,20.0,82.0,86.1
+115,Derek Pringle,England,1980,Right,Right,Right Arm Fast Medium,AR,6|7|8,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,71.0,78.0,74.0,74.5
+116,Graham Gooch,England,1980,Right,Right,Right Arm Medium,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,93.0,45.0,84.0,89.2
+117,Ian Botham,England,1980,Right,Right,Right Arm Fast Medium,AR,5|6|7,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,88.0,90.0,87.0,88.8
+118,John Emburey,England,1980,Right,Right,Off Spin,SPIN,8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,52.0,83.0,76.0,79.2
+119,Mike Gatting,England,1980,Right,Right,Right Arm Medium,BAT,4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,85.0,25.0,80.0,81.2
+120,Neil Foster,England,1980,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,22.0,82.0,70.0,74.8
+121,Paul Downton,England,1980,Right,,,WK,5|6|7,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,74.0,5.0,85.0,77.8
+122,Alec Stewart,England,1990,Right,,,WK,1|2|3,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,89.0,5.0,89.0,89.0
+123,Angus Fraser,England,1990,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,18.0,85.0,68.0,76.6
+124,Darren Gough,England,1990,Right,Right,Right Arm Fast,PACE,8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,42.0,88.0,78.0,82.4
+125,Devon Malcolm,England,1990,Right,Right,Right Arm Fast,PACE,10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,10.0,85.0,60.0,75.0
+126,Dominic Cork,England,1990,Right,Right,Right Arm Fast Medium,AR,6|7|8,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,68.0,82.0,76.0,75.1
+127,Graham Gooch,England,1990,Right,Right,Right Arm Medium,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,88.0,30.0,80.0,83.9
+128,Graham Thorpe,England,1990,Left,,Right Arm Medium,BAT,4|5|6,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,89.0,20.0,85.0,85.0
+129,Michael Atherton,England,1990,Right,,Leg Spin,BAT,1|2,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,86.0,20.0,82.0,82.1
+130,Nasser Hussain,England,1990,Right,,,BAT,3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,83.0,15.0,85.0,79.9
+131,Robert Croft,England,1990,Right,Right,Off Spin,SPIN,7|8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,48.0,79.0,74.0,75.4
+132,Robin Smith,England,1990,Right,,,BAT,3|4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,87.0,15.0,78.0,82.1
+133,Andrew Flintoff,England,2000,Right,Right,Right Arm Fast,AR,5|6|7,False,False,7,7,1,76,60,31,0,0,126.67,12.67,7,2,20,33.33,5,150,161,0,6.44,32.2,30.0,2/23,5,0,0,85.0,88.0,87.0,86.5
+134,Ashley Giles,England,2000,Right,Left,Left Arm Orthodox,SPIN,8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,45.0,80.0,76.0,76.1
+135,Geraint Jones,England,2000,Right,,,WK,6|7,False,True,2,2,1,33,25,19,0,0,132.0,33.0,5,0,10,40.0,0,0,0,0,0.0,0.0,0.0,0/0,2,0,1,76.0,5.0,82.0,78.1
+136,Ian Bell,England,2000,Right,,,BAT,3|4|5,False,False,5,5,1,109,99,60*,1,0,110.1,27.25,14,1,41,41.41,0,0,0,0,0.0,0.0,0.0,0/0,4,0,1,88.0,15.0,85.0,83.9
+137,James Anderson,England,2000,Left,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,19,2,1,1,2,1*,0,0,50.0,1.0,0,0,1,50.0,18,422,552,1,7.85,30.67,23.44,3/23,3,0,1,18.0,87.0,72.0,78.6
+138,Kevin Pietersen,England,2000,Right,Right,Off Spin,BAT,3|4,False,False,20,20,1,558,380,79,2,0,146.84,29.37,59,14,109,28.68,1,18,36,0,12.0,36.0,18.0,1/27,7,0,1,93.0,40.0,88.0,89.6
+139,Marcus Trescothick,England,2000,Left,,Right Arm Medium,BAT,1|2,False,False,3,3,0,166,131,72,2,0,126.72,55.33,23,1,45,34.35,0,0,0,0,0.0,0.0,0.0,0/0,2,0,0,88.0,20.0,85.0,84.2
+140,Matthew Hoggard,England,2000,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,20.0,85.0,70.0,77.0
+141,Michael Vaughan,England,2000,Right,Right,Off Spin,BAT,1|2|3,True,False,2,2,0,27,22,27,0,0,122.73,13.5,4,0,10,45.45,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,88.0,30.0,86.0,84.8
+142,Paul Collingwood,England,2000,Right,Right,Right Arm Medium,BAT,5|6,False,False,22,20,0,464,333,79,3,0,139.34,23.2,33,19,95,28.53,16,192,282,0,8.81,17.62,12.0,4/22,7,0,2,84.0,68.0,95.0,84.9
+143,Steve Harmison,England,2000,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,2,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,1,39,42,0,6.46,42.0,39.0,1/13,1,0,0,18.0,87.0,68.0,78.2
+144,Alastair Cook,England,2010,Left,,,BAT,1|2,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,92.0,10.0,86.0,87.0
+145,Andrew Strauss,England,2010,Left,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,86.0,10.0,85.0,82.0
+146,Ben Stokes,England,2010,Left,Right,Right Arm Fast Medium,AR,5|6|7,False,False,22,19,5,225,170,38,0,0,132.35,16.07,19,9,61,35.88,9,316,468,1,8.89,52.0,35.11,3/26,8,0,6,89.0,83.0,91.0,86.5
+147,Graeme Swann,England,2010,Right,Right,Off Spin,SPIN,8|9,False,False,29,10,7,71,61,34,0,0,116.39,23.67,7,1,22,36.07,38,606,619,2,6.13,16.29,15.95,3/13,5,0,2,54.0,90.0,84.0,85.8
+148,James Anderson,England,2010,Left,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,22.0,94.0,75.0,84.9
+149,Joe Root,England,2010,Right,Right,Off Spin,BAT,3|4,False,False,31,29,5,881,699,90*,5,0,126.04,36.71,91,15,226,32.33,6,84,139,0,9.93,23.17,14.0,2/9,16,0,0,93.0,55.0,89.0,90.5
+150,Jonathan Trott,England,2010,Right,Right,Right Arm Medium,BAT,3|4,False,False,2,2,0,43,61,39,0,0,70.49,21.5,3,0,33,54.1,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,87.0,20.0,80.0,82.6
+151,Jonny Bairstow,England,2010,Right,,,WK,4|5|6,False,True,33,28,6,599,448,68,4,0,133.71,27.23,55,25,181,40.4,0,0,0,0,0.0,0.0,0.0,0/0,29,0,2,88.0,5.0,88.0,88.0
+152,Matt Prior,England,2010,Right,,,WK,6|7,False,True,2,1,1,1,1,1*,0,0,100.0,1.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,2,1,0,83.0,5.0,88.0,84.8
+153,Steven Finn,England,2010,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,20,3,3,14,19,8*,0,0,73.68,14.0,1,0,8,42.11,26,456,559,0,7.36,21.5,17.54,3/16,5,0,2,18.0,84.0,72.0,76.2
+154,Stuart Broad,England,2010,Left,Right,Right Arm Fast Medium,PACE,8|9|10,False,False,37,15,5,82,89,18*,0,0,92.13,8.2,4,2,42,47.19,41,765,963,1,7.55,23.49,18.66,4/24,13,0,0,48.0,90.0,80.0,84.8
+155,Ben Duckett,England,2020,Left,,,BAT,1|2,False,False,20,20,2,518,337,84,3,0,153.71,28.78,68,8,91,27.0,0,0,0,0,0.0,0.0,0.0,0/0,13,0,0,85.0,10.0,82.0,80.8
+156,Ben Stokes,England,2020,Left,Right,Right Arm Fast Medium,AR,5|6|7,True,False,19,15,4,351,275,52*,1,0,127.64,31.91,22,13,88,32.0,14,254,341,0,8.06,24.36,18.14,2/26,12,0,0,87.0,82.0,89.0,85.0
+157,Chris Woakes,England,2020,Right,Right,Right Arm Fast Medium,AR,7|8,False,False,24,10,4,56,54,13*,0,0,103.7,9.33,5,2,25,46.3,23,425,545,1,7.69,23.7,18.48,3/4,10,0,0,74.0,85.0,80.0,79.6
+158,Harry Brook,England,2020,Right,Right,Right Arm Medium,BAT,4|5,False,False,70,61,15,1695,1026,114*,8,2,165.2,36.85,138,85,294,28.65,0,0,0,0,0.0,0.0,0.0,0/0,41,0,4,89.0,25.0,86.0,85.4
+159,James Anderson,England,2020,Left,Right,Right Arm Fast Medium,PACE,10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,16.0,90.0,72.0,80.8
+160,Joe Root,England,2020,Right,Right,Off Spin,BAT,3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,92.0,52.0,88.0,89.4
+161,Jos Buttler,England,2020,Right,,,WK,1|2|5|6,False,True,96,91,13,3106,1990,131,23,2,156.08,39.82,304,139,682,34.27,0,0,0,0,0.0,0.0,0.0,0/0,75,18,21,93.0,5.0,90.0,92.0
+162,Mark Wood,England,2020,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,49,7,4,21,21,10*,0,0,100.0,7.0,1,0,6,28.57,60,953,1384,1,8.71,23.07,15.88,3/12,12,0,2,32.0,89.0,82.0,82.6
+163,Ollie Pope,England,2020,Right,,,BAT,3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,84.0,10.0,85.0,80.5
+164,Stuart Broad,England,2020,Left,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,35.0,88.0,78.0,81.7
+165,Zak Crawley,England,2020,Right,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,83.0,10.0,84.0,79.5
+166,Dilip Vengsarkar,India,1980,Right,,,BAT,3|4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,88.0,15.0,80.0,83.2
+167,Kapil Dev,India,1980,Right,Right,Right Arm Fast Medium,AR,5|6|7,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,87.0,90.0,88.0,88.5
+168,Kris Srikkanth,India,1980,Right,,Right Arm Medium,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,84.0,25.0,80.0,80.5
+169,Madan Lal,India,1980,Right,Right,Right Arm Fast Medium,PACE,7|8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,55.0,83.0,76.0,79.5
+170,Maninder Singh,India,1980,Left,Left,Left Arm Orthodox,SPIN,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,16.0,82.0,70.0,74.2
+171,Mohammad Azharuddin,India,1980,Right,,,BAT,4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,87.0,20.0,90.0,84.1
+172,Mohinder Amarnath,India,1980,Right,Right,Right Arm Medium,BAT,3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,87.0,72.0,80.0,85.2
+173,Ravi Shastri,India,1980,Left,Left,Left Arm Orthodox,AR,6|7|8,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,83.0,78.0,78.0,80.2
+174,Roger Binny,India,1980,Right,Right,Right Arm Fast Medium,PACE,7|8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,58.0,84.0,78.0,80.8
+175,Sunil Gavaskar,India,1980,Right,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,95.0,15.0,84.0,89.3
+176,Syed Kirmani,India,1980,Right,,,WK,6|7|8|9,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,75.0,5.0,88.0,79.5
+177,Ajay Jadeja,India,1990,Right,,Right Arm Medium,BAT,5|6|7,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,85.0,45.0,88.0,83.5
+178,Anil Kumble,India,1990,Right,Right,Leg Spin,SPIN,8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,42.0,94.0,80.0,87.4
+179,Javagal Srinath,India,1990,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,32.0,89.0,75.0,81.9
+180,Mohammad Azharuddin,India,1990,Right,,,BAT,4|5,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,88.0,20.0,91.0,85.1
+181,Navjot Singh Sidhu,India,1990,Right,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,85.0,10.0,75.0,79.8
+182,Nayan Mongia,India,1990,Right,,,WK,6|7|8,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,73.0,5.0,88.0,78.2
+183,Rahul Dravid,India,1990,Right,,,BAT,3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,92.0,10.0,88.0,87.3
+184,Sachin Tendulkar,India,1990,Right,Right,Off Spin,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,98.0,60.0,89.0,94.8
+185,Sourav Ganguly,India,1990,Left,Right,Right Arm Medium,BAT,1|2|3,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,90.0,65.0,76.0,86.7
+186,Venkatapathy Raju,India,1990,Right,Left,Left Arm Orthodox,SPIN,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,14.0,81.0,70.0,73.2
+187,Venkatesh Prasad,India,1990,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,18.0,84.0,72.0,76.2
+188,Anil Kumble,India,2000,Right,Right,Leg Spin,SPIN,8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,40.0,93.0,80.0,86.4
+189,Harbhajan Singh,India,2000,Right,Right,Off Spin,SPIN,8|9|10,False,False,16,6,1,57,54,21,0,0,105.56,11.4,7,1,26,48.15,16,360,393,1,6.55,24.56,22.5,3/30,5,0,2,52.0,90.0,82.0,85.4
+190,Irfan Pathan,India,2000,Left,Left,Left Arm Fast Medium,AR,7|8,False,False,26,20,9,255,179,33*,0,0,142.46,23.18,12,15,59,32.96,22,437,596,1,8.18,27.09,19.86,3/16,7,0,1,76.0,86.0,82.0,81.1
+191,MS Dhoni,India,2000,Right,,,WK,5|6|7,False,True,19,19,4,356,336,46,0,0,105.95,23.73,23,7,117,34.82,0,0,0,0,0.0,0.0,0.0,0/0,5,2,6,91.0,15.0,94.0,92.0
+192,Rahul Dravid,India,2000,Right,,,BAT,3|4,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,92.0,10.0,90.0,87.6
+193,Sachin Tendulkar,India,2000,Right,Right,Off Spin,BAT,1|2,False,False,1,1,0,10,12,10,0,0,83.33,10.0,2,0,9,75.0,1,15,12,0,4.8,12.0,15.0,1/12,1,0,0,96.0,45.0,84.0,91.7
+194,Sourav Ganguly,India,2000,Left,Right,Right Arm Medium,BAT,3|4,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,88.0,55.0,76.0,84.6
+195,VVS Laxman,India,2000,Right,,,BAT,4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,89.0,15.0,85.0,84.7
+196,Virender Sehwag,India,2000,Right,Right,Off Spin,BAT,1|2,False,False,13,13,0,313,204,68,2,0,153.43,24.08,34,14,81,39.71,0,6,20,0,20.0,0.0,0.0,0/20,1,0,1,93.0,45.0,82.0,89.0
+197,Yuvraj Singh,India,2000,Left,Left,Left Arm Orthodox,AR,4|5|6,False,False,16,16,3,481,291,70,5,0,165.29,37.0,29,35,97,33.33,5,96,144,0,9.0,28.8,19.2,3/23,5,0,3,91.0,74.0,92.0,83.5
+198,Zaheer Khan,India,2000,Left,Left,Left Arm Fast Medium,PACE,9|10|11,False,False,9,1,0,4,3,4,0,0,133.33,4.0,0,0,1,33.33,11,184,222,0,7.24,20.18,16.73,4/19,1,0,0,28.0,90.0,72.0,82.0
+199,Ajinkya Rahane,India,2010,Right,,,BAT,3|4|5,False,False,20,20,2,375,331,61,1,0,113.29,20.83,32,6,116,35.05,0,0,0,0,0.0,0.0,0.0,0/0,16,0,0,86.0,10.0,90.0,82.8
+200,Cheteshwar Pujara,India,2010,Right,,,BAT,3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,87.0,10.0,78.0,81.8
+201,Ishant Sharma,India,2010,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,3,1,0,0,1,0,0,0,0.0,0.0,0,0,1,100.0,2,72,109,0,9.08,54.5,36.0,1/23,2,0,0,18.0,86.0,74.0,78.0
+202,Jasprit Bumrah,India,2010,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,42,4,2,8,13,7,0,0,61.54,4.0,1,0,8,61.54,51,919,1029,5,6.72,20.18,18.02,3/11,6,0,1,20.0,95.0,78.0,85.8
+203,MS Dhoni,India,2010,Right,,,WK,5|6|7,False,True,76,63,35,1228,931,56,2,0,131.9,43.86,91,42,296,31.79,0,0,0,0,0.0,0.0,0.0,0/0,47,32,15,90.0,5.0,95.0,91.8
+204,Mohammed Shami,India,2010,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,8,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,10,166,275,0,9.94,27.5,16.6,3/38,0,0,1,28.0,89.0,75.0,81.5
+205,Ravichandran Ashwin,India,2010,Right,Right,Off Spin,SPIN,7|8|9,False,False,45,11,7,123,115,31*,0,0,106.96,30.75,14,1,43,37.39,50,1002,1173,2,7.02,23.46,20.04,4/8,7,0,2,68.0,92.0,78.0,88.2
+206,Ravindra Jadeja,India,2010,Left,Left,Left Arm Orthodox,AR,6|7|8,False,False,40,16,5,107,101,19,0,0,105.94,9.73,5,3,34,33.66,31,775,963,3,7.46,31.06,25.0,3/48,16,0,6,78.0,89.0,97.0,84.9
+207,Rohit Sharma,India,2010,Right,,,BAT,1|2,False,False,91,82,8,2391,1706,118,17,4,140.15,32.31,213,112,627,36.75,3,76,122,0,9.63,40.67,25.33,2/29,35,0,3,93.0,20.0,86.0,88.3
+208,Shikhar Dhawan,India,2010,Left,,,BAT,1|2,False,False,59,58,4,1505,1175,92,9,0,128.09,27.87,166,46,469,39.91,1,24,42,0,10.5,42.0,24.0,1/42,20,0,1,88.0,10.0,84.0,83.5
+209,Virat Kohli,India,2010,Right,,,BAT,3|4,True,False,74,69,20,2583,1868,94*,23,0,138.28,52.71,243,69,530,28.37,4,146,198,0,8.14,49.5,36.5,1/13,37,0,3,97.0,25.0,93.0,92.8
+210,Jasprit Bumrah,India,2020,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,52,4,0,4,5,4,0,0,80.0,1.0,1,0,4,80.0,69,1095,1196,6,6.55,17.33,15.87,4/15,9,0,1,22.0,96.0,82.0,87.2
+211,KL Rahul,India,2020,Right,,,BAT,4|5,False,True,35,35,3,1011,767,65,12,0,131.81,31.59,79,46,282,36.77,0,0,0,0,0.0,0.0,0.0,0/0,10,1,1,88.0,5.0,87.0,83.7
+212,Mohammed Shami,India,2020,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,16,3,1,7,10,7,0,0,70.0,3.5,0,1,8,80.0,14,320,454,1,8.51,32.43,22.86,3/15,1,0,0,25.0,91.0,74.0,82.7
+213,Mohammed Siraj,India,2020,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,14,4,2,14,16,7*,0,0,87.5,7.0,1,0,9,56.25,14,300,333,2,6.66,23.79,21.43,4/17,6,0,5,18.0,87.0,80.0,79.4
+214,Ravichandran Ashwin,India,2020,Right,Right,Off Spin,SPIN,7|8|9,False,False,17,7,4,61,45,15*,0,0,135.56,20.33,3,3,13,28.89,17,378,438,1,6.95,25.76,22.24,3/20,2,0,0,66.0,90.0,76.0,86.2
+215,Ravindra Jadeja,India,2020,Left,Left,Left Arm Orthodox,AR,6|7|8,False,False,26,18,9,345,235,46*,0,0,146.81,38.33,31,10,56,23.83,17,407,480,0,7.08,28.24,23.94,3/15,4,0,3,80.0,88.0,96.0,85.2
+216,Rishabh Pant,India,2020,Left,,,WK,4|5|6,False,True,46,39,8,733,574,52*,1,0,127.7,23.65,75,23,220,38.33,0,0,0,0,0.0,0.0,0.0,0/0,31,8,9,88.0,5.0,90.0,88.7
+217,Rohit Sharma,India,2020,Right,,,BAT,1|2,True,False,50,50,1,1410,970,92,12,0,145.36,28.78,129,76,391,40.31,0,0,0,0,0.0,0.0,0.0,0/0,23,0,1,91.0,15.0,84.0,86.1
+218,Shubman Gill,India,2020,Right,,,BAT,1|2|3,False,False,35,35,5,846,615,126*,3,1,137.56,28.2,93,26,237,38.54,0,0,0,0,0.0,0.0,0.0,0/0,9,0,0,88.0,10.0,85.0,83.7
+219,Virat Kohli,India,2020,Right,,,BAT,3|4,False,False,44,43,10,1386,1049,85,14,0,132.13,42.0,106,46,311,29.65,0,6,6,0,6.0,0.0,0.0,0/6,14,0,1,94.0,15.0,91.0,89.6
+220,Yashasvi Jaiswal,India,2020,Left,,Leg Spin,BAT,1|2,False,False,20,20,2,651,400,100,4,1,162.75,36.17,77,32,160,40.0,0,6,11,0,11.0,0.0,0.0,0/11,15,0,0,87.0,25.0,86.0,83.8
+221,Bruce Edgar,New Zealand,1980,Left,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,81.0,10.0,78.0,77.0
+222,Ewen Chatfield,New Zealand,1980,Right,Right,Right Arm Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,14.0,84.0,70.0,75.6
+223,Geoff Howarth,New Zealand,1980,Right,Right,Off Spin,BAT,3|4,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,83.0,15.0,82.0,79.5
+224,Ian Smith,New Zealand,1980,Right,,,WK,5|6|7,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,78.0,5.0,86.0,80.8
+225,Jeremy Coney,New Zealand,1980,Right,Right,Right Arm Medium,AR,4|5|6,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,84.0,65.0,86.0,75.7
+226,John Bracewell,New Zealand,1980,Right,Right,Off Spin,AR,7|8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,68.0,80.0,78.0,74.4
+227,John Reid,New Zealand,1980,Right,Right,,BAT,3|4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,82.0,20.0,78.0,78.3
+228,John Wright,New Zealand,1980,Left,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,86.0,10.0,80.0,81.3
+229,Martin Crowe,New Zealand,1980,Right,Right,Right Arm Medium,BAT,3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,94.0,25.0,88.0,89.7
+230,Richard Hadlee,New Zealand,1980,Left,Right,Right Arm Fast,PACE,7|8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,76.0,96.0,84.0,92.8
+231,Stephen Boock,New Zealand,1980,Right,Left,Left Arm Orthodox,SPIN,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,16.0,81.0,70.0,73.4
+232,Adam Parore,New Zealand,1990,Right,,,WK,5|6|7,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,79.0,5.0,88.0,82.2
+233,Andrew Jones,New Zealand,1990,Right,Right,Off Spin,BAT,3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,86.0,20.0,80.0,81.8
+234,Bryan Young,New Zealand,1990,Right,Right,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,80.0,10.0,78.0,76.2
+235,Chris Cairns,New Zealand,1990,Right,Right,Right Arm Fast Medium,AR,5|6|7|8,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,86.0,87.0,85.0,86.3
+236,Daniel Vettori,New Zealand,1990,Left,Left,Left Arm Orthodox,SPIN,7|8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,68.0,88.0,82.0,85.4
+237,Danny Morrison,New Zealand,1990,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,12.0,85.0,68.0,76.0
+238,Mark Greatbatch,New Zealand,1990,Left,Right,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,84.0,10.0,76.0,79.1
+239,Martin Crowe,New Zealand,1990,Right,Right,Right Arm Medium,BAT,3|4,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,93.0,20.0,87.0,88.5
+240,Nathan Astle,New Zealand,1990,Right,Right,Right Arm Medium,BAT,1|2|5|6,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,88.0,60.0,86.0,86.3
+241,Simon Doull,New Zealand,1990,Right,Right,Right Arm Fast Medium,PACE,8|9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,28.0,83.0,72.0,76.4
+242,Stephen Fleming,New Zealand,1990,Left,Right,,BAT,3|4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,87.0,10.0,90.0,83.6
+243,Brendon McCullum,New Zealand,2000,Right,,,WK,1|2|5|6,False,True,42,36,6,856,700,69*,5,0,122.29,28.53,81,29,294,42.0,9,146,159,0,6.53,17.67,16.22,3/15,21,3,7,86.0,5.0,92.0,88.1
+244,Chris Cairns,New Zealand,2000,Right,Right,Right Arm Fast Medium,AR,5|6|7,False,False,2,2,0,3,13,2,0,0,23.08,1.5,0,0,10,76.92,1,48,52,0,6.5,52.0,48.0,1/28,1,0,1,85.0,85.0,82.0,84.7
+245,Chris Martin,New Zealand,2000,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,6,1,1,5,6,5*,0,0,83.33,5.0,0,0,1,16.67,7,138,193,1,8.39,27.57,19.71,2/14,1,0,1,6.0,85.0,62.0,74.8
+246,Craig McMillan,New Zealand,2000,Right,Right,Right Arm Medium,BAT,4|5|6,False,False,8,7,1,187,117,57,1,0,159.83,31.17,8,14,35,29.91,0,0,0,0,0.0,0.0,0.0,0/0,3,0,1,83.0,50.0,80.0,80.9
+247,Daniel Vettori,New Zealand,2000,Left,Left,Left Arm Orthodox,AR,7|8|9,False,False,18,13,3,67,63,17*,0,0,106.35,6.7,7,0,24,38.1,27,432,415,0,5.76,15.37,16.0,4/20,7,0,3,74.0,89.0,84.0,81.8
+248,Jacob Oram,New Zealand,2000,Left,Right,Right Arm Fast Medium,AR,6|7|8,False,False,20,19,5,385,270,66*,2,0,142.59,27.5,29,19,90,33.33,7,282,420,0,8.94,60.0,40.29,3/33,9,0,0,79.0,82.0,82.0,80.7
+249,Lou Vincent,New Zealand,2000,Right,Right,Right Arm Medium,BAT,1|2,False,False,9,9,0,174,174,42,0,0,100.0,19.33,17,3,81,46.55,0,0,0,0,0.0,0.0,0.0,0/0,1,0,3,81.0,10.0,84.0,77.9
+250,Nathan Astle,New Zealand,2000,Right,Right,Right Arm Medium,BAT,1|2,False,False,4,4,1,74,67,40*,0,0,110.45,24.67,7,2,27,40.3,4,41,50,0,7.32,12.5,10.25,3/20,3,0,0,87.0,50.0,85.0,84.9
+251,Scott Styris,New Zealand,2000,Right,Right,Right Arm Medium,AR,3|4|5|6,False,False,22,21,2,400,346,66,1,0,115.61,21.05,24,18,137,39.6,8,207,269,0,7.8,33.62,25.88,2/33,6,0,2,85.0,72.0,82.0,78.9
+252,Shane Bond,New Zealand,2000,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,13,7,2,20,20,8*,0,0,100.0,4.0,2,0,7,35.0,17,303,339,2,6.71,19.94,17.82,3/18,4,0,0,25.0,94.0,80.0,85.7
+253,Stephen Fleming,New Zealand,2000,Left,,,BAT,1|2|3|4,True,False,5,5,0,110,85,38,0,0,129.41,22.0,20,0,41,48.24,0,0,0,0,0.0,0.0,0.0,0/0,2,0,0,88.0,10.0,91.0,84.6
+254,BJ Watling,New Zealand,2010,Right,,,WK,6|7,False,True,3,2,0,9,13,8,0,0,69.23,4.5,1,0,9,69.23,0,0,0,0,0.0,0.0,0.0,0/0,1,0,0,83.0,5.0,89.0,85.1
+255,Brendon McCullum,New Zealand,2010,Right,,Right Arm Medium,WK,1|2,False,True,92,72,16,1588,1173,123,8,2,135.38,28.36,137,70,451,38.45,49,977,1119,0,6.87,22.84,19.94,4/16,42,5,10,90.0,5.0,93.0,91.0
+256,Corey Anderson,New Zealand,2010,Left,Left,Left Arm Fast Medium,AR,5|6|7,False,False,31,24,4,485,351,94*,2,0,138.18,24.25,30,26,124,35.33,14,360,495,0,8.25,35.36,25.71,2/17,19,0,0,84.0,76.0,82.0,80.2
+257,Kane Williamson,New Zealand,2010,Right,Right,Off Spin,BAT,3|4,True,False,57,55,7,1505,1236,73*,9,0,121.76,31.35,158,26,438,35.44,6,118,164,0,8.34,27.33,19.67,2/16,27,0,2,93.0,45.0,89.0,90.0
+258,Martin Guptill,New Zealand,2010,Right,Right,,BAT,1|2,False,False,71,69,6,2206,1618,105,15,2,136.34,35.02,196,103,625,38.63,0,6,11,0,11.0,0.0,0.0,0/11,43,0,3,90.0,10.0,94.0,86.6
+259,Mitchell Santner,New Zealand,2010,Left,Left,Left Arm Orthodox,AR,7|8,False,False,39,27,10,263,205,37,0,0,128.29,15.47,22,7,72,35.12,49,773,928,1,7.2,18.94,15.78,4/11,14,0,1,72.0,86.0,88.0,79.9
+260,Neil Wagner,New Zealand,2010,Left,Left,Left Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,25.0,87.0,75.0,79.6
+261,Ross Taylor,New Zealand,2010,Right,Right,Off Spin,BAT,4|5,False,False,71,64,15,1289,1050,76*,2,0,122.76,26.31,82,43,339,32.29,0,0,0,0,0.0,0.0,0.0,0/0,26,0,1,91.0,15.0,86.0,86.5
+262,Tim Southee,New Zealand,2010,Right,Right,Right Arm Fast Medium,PACE,8|9|10,False,False,57,23,8,199,132,39,0,0,150.76,13.27,12,14,53,40.15,65,1208,1697,2,8.43,26.11,18.58,5/18,25,0,3,48.0,89.0,85.0,84.5
+263,Tom Latham,New Zealand,2010,Left,Right,,BAT,1|2|5,False,False,13,10,0,163,157,39,0,0,103.82,16.3,12,2,59,37.58,0,0,0,0,0.0,0.0,0.0,0/0,6,0,1,84.0,5.0,84.0,80.0
+264,Trent Boult,New Zealand,2010,Right,Left,Left Arm Fast Medium,PACE,9|10|11,False,False,27,7,2,22,32,8,0,0,68.75,4.4,1,0,16,50.0,39,593,854,1,8.64,21.9,15.21,4/34,12,0,1,24.0,92.0,86.0,84.6
+265,Daryl Mitchell,New Zealand,2020,Right,Right,Right Arm Medium,AR,4|5|6,False,False,96,83,17,1912,1329,89*,9,0,143.87,28.97,129,80,365,27.46,4,54,107,0,11.89,26.75,13.5,1/6,52,0,0,88.0,68.0,86.0,78.8
+266,Devon Conway,New Zealand,2020,Left,,Right Arm Medium,BAT,1|2,False,True,67,61,10,1795,1388,99*,13,0,129.32,35.2,173,52,494,35.59,0,0,0,0,0.0,0.0,0.0,0/0,43,6,0,89.0,5.0,86.0,84.4
+267,Glenn Phillips,New Zealand,2020,Right,Right,Off Spin,BAT,4|5|6,False,False,87,78,14,2427,1603,108,14,3,151.4,37.92,182,122,503,31.38,9,224,315,0,8.44,35.0,24.89,3/6,56,0,2,87.0,72.0,95.0,87.5
+268,Kane Williamson,New Zealand,2020,Right,Right,Off Spin,BAT,3|4,True,False,34,33,4,1032,805,106,8,1,128.2,35.59,84,33,277,34.41,0,0,0,0,0.0,0.0,0.0,0/0,16,0,2,92.0,30.0,87.0,88.2
+269,Kyle Jamieson,New Zealand,2020,Right,Right,Right Arm Fast Medium,PACE,8|9|10,False,False,33,13,4,95,77,30,0,0,123.38,10.56,10,0,22,28.57,32,691,1118,2,9.71,34.94,21.59,3/8,8,0,0,50.0,87.0,78.0,82.4
+270,Matt Henry,New Zealand,2020,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,36,11,5,25,28,9*,0,0,89.29,4.17,2,0,11,39.29,43,717,1036,2,8.67,24.09,16.67,3/26,9,0,2,30.0,88.0,78.0,81.2
+271,Mitchell Santner,New Zealand,2020,Left,Left,Left Arm Orthodox,AR,7|8,False,False,100,63,26,833,638,77*,2,0,130.56,22.51,66,35,249,39.03,102,2113,2525,2,7.17,24.75,20.72,4/16,37,0,5,74.0,88.0,90.0,81.9
+272,Rachin Ravindra,New Zealand,2020,Left,Left,Left Arm Orthodox,AR,1|2|3,False,False,50,45,9,759,560,69,4,0,135.54,21.08,60,32,188,33.57,25,384,440,1,6.88,17.6,15.36,4/27,19,0,0,87.0,75.0,84.0,81.3
+273,Tim Southee,New Zealand,2020,Right,Right,Right Arm Fast Medium,PACE,8|9|10,False,False,59,20,11,83,68,8,0,0,122.06,9.22,6,3,32,47.06,88,1339,1729,5,7.75,19.65,15.22,5/25,35,0,1,45.0,88.0,82.0,83.1
+274,Tom Latham,New Zealand,2020,Left,,,WK,5|6|7,False,True,16,16,4,434,388,65*,4,0,111.86,36.17,39,9,143,36.86,0,0,0,0,0.0,0.0,0.0,0/0,12,5,3,84.0,5.0,87.0,85.0
+275,Trent Boult,New Zealand,2020,Right,Left,Left Arm Fast Medium,PACE,9|10|11,False,False,32,5,3,33,25,16,0,0,132.0,16.5,2,2,8,32.0,39,748,886,3,7.11,22.72,19.18,4/13,10,0,0,20.0,91.0,85.0,83.3
+276,Abdul Qadir,Pakistan,1980,Right,Right,Leg Spin,SPIN,8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,32.0,91.0,68.0,82.8
+277,Imran Khan,Pakistan,1980,Right,Right,Right Arm Fast,AR,5|6|7,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,88.0,94.0,86.0,90.5
+278,Iqbal Qasim,Pakistan,1980,Left,Left,Left Arm Orthodox,SPIN,8|9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,26.0,84.0,70.0,76.8
+279,Javed Miandad,Pakistan,1980,Right,Right,Leg Spin,BAT,3|4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,94.0,30.0,82.0,89.0
+280,Mohsin Khan,Pakistan,1980,Right,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,83.0,15.0,75.0,78.4
+281,Mudassar Nazar,Pakistan,1980,Right,Right,Right Arm Medium,AR,1|2|6,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,82.0,74.0,75.0,77.7
+282,Saleem Malik,Pakistan,1980,Right,Right,Off Spin,BAT,4|5|6,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,86.0,25.0,76.0,81.5
+283,Sarfaraz Nawaz,Pakistan,1980,Right,Right,Right Arm Fast Medium,PACE,8|9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,35.0,87.0,68.0,79.9
+284,Wasim Akram,Pakistan,1980,Left,Left,Left Arm Fast,PACE,7|8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,55.0,93.0,82.0,88.1
+285,Wasim Bari,Pakistan,1980,Right,,,WK,6|7|8,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,55.0,5.0,86.0,65.8
+286,Zaheer Abbas,Pakistan,1980,Right,Right,Off Spin,BAT,3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,92.0,25.0,74.0,86.0
+287,Aamer Sohail,Pakistan,1990,Left,Left,Left Arm Orthodox,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,84.0,55.0,78.0,81.7
+288,Ijaz Ahmed,Pakistan,1990,Right,Right,Right Arm Medium,BAT,3|4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,85.0,30.0,85.0,82.2
+289,Inzamam-ul-Haq,Pakistan,1990,Right,Right,,BAT,3|4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,93.0,15.0,65.0,84.9
+290,Moin Khan,Pakistan,1990,Right,,,WK,6|7|8,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,76.0,5.0,88.0,80.2
+291,Mushtaq Ahmed,Pakistan,1990,Right,Right,Leg Spin,SPIN,8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,28.0,88.0,72.0,80.4
+292,Saeed Anwar,Pakistan,1990,Left,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,93.0,20.0,78.0,87.1
+293,Saleem Malik,Pakistan,1990,Right,Right,Off Spin,BAT,4|5|6,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,84.0,25.0,72.0,79.2
+294,Saqlain Mushtaq,Pakistan,1990,Right,Right,Off Spin,SPIN,8|9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,30.0,94.0,74.0,85.6
+295,Shoaib Akhtar,Pakistan,1990,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,22.0,93.0,68.0,83.4
+296,Waqar Younis,Pakistan,1990,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,26.0,95.0,74.0,86.0
+297,Wasim Akram,Pakistan,1990,Left,Left,Left Arm Fast,AR,6|7|8,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,75.0,97.0,86.0,86.0
+298,Abdul Razzaq,Pakistan,2000,Right,Right,Right Arm Fast Medium,AR,6|7|8,False,False,8,7,5,100,72,26*,0,0,138.89,50.0,10,2,22,30.56,10,117,113,1,5.79,11.3,11.7,3/20,2,0,1,84.0,84.0,76.0,83.2
+299,Danish Kaneria,Pakistan,2000,Right,Right,Leg Spin,SPIN,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,16.0,86.0,62.0,76.6
+300,Inzamam-ul-Haq,Pakistan,2000,Right,,,BAT,4|5,True,False,1,1,1,11,15,11*,0,0,73.33,11.0,0,1,9,60.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,92.0,10.0,60.0,83.1
+301,Kamran Akmal,Pakistan,2000,Right,,,WK,1|2|6|7,False,True,27,23,4,453,379,59*,3,0,119.53,23.84,39,16,166,43.8,0,0,0,0,0.0,0.0,0.0,0/0,13,16,4,80.0,5.0,75.0,78.2
+302,Mohammad Yousuf,Pakistan,2000,Right,,,BAT,3|4,False,False,1,1,0,20,19,20,0,0,105.26,20.0,2,1,11,57.89,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,94.0,15.0,70.0,86.5
+303,Saeed Anwar,Pakistan,2000,Left,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,88.0,15.0,72.0,82.0
+304,Saqlain Mushtaq,Pakistan,2000,Right,Right,Off Spin,SPIN,8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,25.0,90.0,72.0,81.7
+305,Shahid Afridi,Pakistan,2000,Right,Right,Leg Spin,AR,1|2|6|7,False,False,23,21,2,448,292,54*,3,0,153.42,23.58,39,15,81,27.74,35,543,522,2,5.77,14.91,15.51,4/11,7,0,4,82.0,88.0,86.0,85.1
+306,Shoaib Akhtar,Pakistan,2000,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,6,1,1,1,1,1*,0,0,100.0,1.0,0,0,0,0.0,6,121,172,0,8.53,28.67,20.17,2/22,2,0,1,20.0,94.0,68.0,84.0
+307,Umar Gul,Pakistan,2000,Right,Right,Right Arm Fast Medium,PACE,8|9|10|11,False,False,21,4,3,19,13,9*,0,0,146.15,19.0,1,1,5,38.46,37,445,426,1,5.74,11.51,12.03,5/6,9,0,2,38.0,93.0,78.0,86.0
+308,Younis Khan,Pakistan,2000,Right,Right,Leg Spin,BAT,3|4|5,False,False,20,18,3,418,323,51,2,0,129.41,27.87,31,12,104,32.2,3,22,18,0,4.91,6.0,7.33,3/18,10,0,1,89.0,25.0,88.0,85.7
+309,Asad Shafiq,Pakistan,2010,Right,Right,Off Spin,BAT,5|6,False,False,10,10,0,192,185,38,0,0,103.78,19.2,19,2,79,42.7,0,0,0,0,0.0,0.0,0.0,0/0,3,0,0,82.0,20.0,80.0,78.6
+310,Azhar Ali,Pakistan,2010,Right,Right,Leg Spin,BAT,1|2|3,False,False,42,34,9,440,335,46,0,0,131.34,17.6,21,25,113,33.73,10,277,381,0,8.25,38.1,27.7,2/27,14,0,0,83.0,25.0,78.0,79.4
+311,Junaid Khan,Pakistan,2010,Right,Left,Left Arm Fast Medium,PACE,9|10|11,False,False,71,62,7,955,1048,74*,3,0,91.13,17.36,110,1,514,49.05,8,180,250,0,8.33,31.25,22.5,2/23,10,0,5,20.0,84.0,74.0,76.6
+312,Misbah-ul-Haq,Pakistan,2010,Right,Right,Leg Spin,BAT,4|5,True,False,16,15,5,279,294,48*,0,0,94.9,27.9,14,8,113,38.44,0,0,0,0,0.0,0.0,0.0,0/0,7,0,2,86.0,15.0,76.0,81.0
+313,Mohammad Amir,Pakistan,2010,Left,Left,Left Arm Fast,PACE,8|9|10,False,False,38,11,5,57,70,21*,0,0,81.43,9.5,2,3,36,51.43,50,851,973,3,6.86,19.46,17.02,4/13,2,0,0,36.0,92.0,78.0,85.0
+314,Mohammad Hafeez,Pakistan,2010,Right,Right,Off Spin,AR,1|2|4,False,False,79,76,7,1684,1457,86,10,0,115.58,24.41,171,46,633,43.45,47,961,1031,2,6.44,21.94,20.45,4/10,20,0,5,83.0,84.0,86.0,83.8
+315,Saeed Ajmal,Pakistan,2010,Right,Right,Off Spin,SPIN,8|9|10|11,False,False,53,20,9,91,86,21*,0,0,105.81,8.27,7,2,34,39.53,66,1173,1274,2,6.52,19.3,17.77,4/23,10,0,8,28.0,95.0,75.0,86.3
+316,Sarfaraz Ahmed,Pakistan,2010,Right,,,WK,6|7|8,False,True,58,39,10,812,641,89*,3,0,126.68,28.0,79,16,209,32.61,0,0,0,0,0.0,0.0,0.0,0/0,35,10,4,80.0,5.0,86.0,82.1
+317,Wahab Riaz,Pakistan,2010,Right,Left,Left Arm Fast,PACE,7|8|9|10,False,False,60,41,7,484,507,35*,0,0,95.46,14.24,39,14,244,48.13,43,917,1220,2,7.98,28.37,21.33,3/18,12,0,1,38.0,85.0,78.0,79.6
+318,Yasir Shah,Pakistan,2010,Right,Right,Leg Spin,SPIN,9|10|11,False,False,2,1,1,11,7,11*,0,0,157.14,11.0,1,0,0,0.0,0,24,39,0,9.75,0.0,0.0,0/8,4,0,0,26.0,88.0,72.0,80.2
+319,Younis Khan,Pakistan,2010,Right,,,BAT,3|4|5,False,False,3,3,0,10,18,5,0,0,55.56,3.33,0,0,8,44.44,0,0,0,0,0.0,0.0,0.0,0/0,1,0,0,88.0,15.0,86.0,84.1
+320,Abdullah Shafique,Pakistan,2020,Right,,,BAT,1|2|3,False,False,3,3,1,41,37,41*,0,0,110.81,20.5,4,1,16,43.24,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,83.0,15.0,78.0,78.9
+321,Babar Azam,Pakistan,2020,Right,Right,Off Spin,BAT,1|2|3,True,False,106,98,10,3140,2440,122,26,3,128.69,35.68,334,60,817,33.48,0,0,0,0,0.0,0.0,0.0,0/0,51,0,6,94.0,20.0,84.0,88.8
+322,Haris Rauf,Pakistan,2020,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,92,30,12,119,121,13*,0,0,98.35,6.61,10,5,69,57.02,126,1920,2675,1,8.36,21.23,15.24,4/18,28,0,4,18.0,87.0,80.0,79.4
+323,Imam-ul-Haq,Pakistan,2020,Left,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,84.0,15.0,76.0,79.4
+324,Mohammad Rizwan,Pakistan,2020,Right,,,WK,1|2|3|4|5,False,True,88,78,18,3206,2503,104*,30,1,128.09,53.43,270,92,824,32.92,0,0,0,0,0.0,0.0,0.0,0/0,50,10,8,90.0,5.0,94.0,91.4
+325,Naseem Shah,Pakistan,2020,Right,Right,Right Arm Fast,PACE,8|9|10|11,False,False,36,12,4,46,46,16,0,0,100.0,5.75,6,1,26,56.52,33,756,1036,0,8.22,31.39,22.91,3/21,4,0,0,32.0,89.0,78.0,82.2
+326,Noman Ali,Pakistan,2020,Left,Left,Left Arm Orthodox,SPIN,8|9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,28.0,83.0,70.0,76.2
+327,Salman Ali Agha,Pakistan,2020,Right,Right,Off Spin,AR,5|6|7,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,81.0,72.0,82.0,77.0
+328,Saud Shakeel,Pakistan,2020,Left,Left,Left Arm Orthodox,BAT,4|5|6,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,85.0,30.0,80.0,81.5
+329,Shaheen Shah Afridi,Pakistan,2020,Left,Left,Left Arm Fast,PACE,7|8|9|10,False,False,89,39,16,343,267,33*,0,0,128.46,14.91,19,25,128,47.94,118,1911,2539,3,7.97,21.52,16.19,4/22,28,0,4,38.0,94.0,82.0,87.2
+330,Shan Masood,Pakistan,2020,Left,Right,Right Arm Medium,BAT,1|2|3|4,False,False,20,18,5,407,329,65*,3,0,123.71,31.31,30,9,104,31.61,0,18,33,0,11.0,0.0,0.0,0/33,5,0,1,82.0,20.0,80.0,78.6
+331,Allan Donald,South Africa,1990,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,20.0,96.0,75.0,86.3
+332,Andrew Hudson,South Africa,1990,Right,,,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,81.0,15.0,75.0,76.8
+333,Daryll Cullinan,South Africa,1990,Right,,Right Arm Off Break,BAT,3|4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,85.0,25.0,75.0,80.5
+334,Dave Richardson,South Africa,1990,Right,,,WK,6|7|8,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,75.0,5.0,85.0,78.5
+335,Gary Kirsten,South Africa,1990,Left,,Right Arm Off Break,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,87.0,15.0,80.0,82.4
+336,Hansie Cronje,South Africa,1990,Right,Right,Right Arm Medium,AR,4|5|6,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,84.0,75.0,84.0,80.0
+337,Jacques Kallis,South Africa,1990,Right,Right,Right Arm Fast Medium,AR,3|4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,88.0,82.0,88.0,85.3
+338,Jonty Rhodes,South Africa,1990,Right,Right,Right Arm Medium,BAT,4|5|6,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,83.0,20.0,98.0,82.1
+339,Lance Klusener,South Africa,1990,Left,Right,Right Arm Fast Medium,AR,6|7|8,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,88.0,85.0,85.0,86.3
+340,Pat Symcox,South Africa,1990,Right,Right,Right Arm Off Break,SPIN,7|8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,68.0,82.0,72.0,79.6
+341,Shaun Pollock,South Africa,1990,Right,Right,Right Arm Fast Medium,AR,7|8|9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,79.0,94.0,85.0,86.4
+342,AB de Villiers,South Africa,2000,Right,,Right Arm Medium,BAT,3|4|5,False,True,22,21,4,396,307,79*,3,0,128.99,23.29,37,11,113,36.81,0,0,0,0,0.0,0.0,0.0,0/0,20,2,1,93.0,20.0,96.0,89.8
+343,Ashwell Prince,South Africa,2000,Left,,Left Arm Slow,BAT,4|5|6,False,False,1,1,0,5,6,5,0,0,83.33,5.0,0,0,1,16.67,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,80.0,20.0,78.0,76.7
+344,Dale Steyn,South Africa,2000,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,14,2,1,2,3,1*,0,0,66.67,2.0,0,0,1,33.33,23,306,359,0,7.04,15.61,13.3,4/9,3,0,0,22.0,97.0,82.0,88.0
+345,Graeme Smith,South Africa,2000,Left,Right,Right Arm Off Break,BAT,1|2,True,False,20,20,1,615,497,89*,3,0,123.74,32.37,78,15,222,44.67,0,24,57,0,14.25,0.0,0.0,0/16,10,0,2,91.0,25.0,82.0,86.3
+346,Herschelle Gibbs,South Africa,2000,Right,,Right Arm Medium,BAT,1|2|3,False,False,20,20,1,359,277,90*,3,0,129.6,18.89,43,10,123,44.4,0,0,0,0,0.0,0.0,0.0,0/0,3,0,1,89.0,15.0,92.0,85.8
+347,Jacques Kallis,South Africa,2000,Right,Right,Right Arm Fast Medium,AR,3|4|5,False,False,10,10,1,288,235,64,2,0,122.55,32.0,33,6,91,38.72,3,84,120,0,8.57,40.0,28.0,2/20,4,0,1,95.0,86.0,90.0,90.5
+348,Jacques Rudolph,South Africa,2000,Left,Right,Leg Spin,BAT,3|4|5,False,False,1,1,1,6,7,6*,0,0,85.71,6.0,0,0,1,14.29,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,78.0,20.0,75.0,74.7
+349,Makhaya Ntini,South Africa,2000,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,9,3,1,9,9,5,0,0,100.0,4.5,2,0,6,66.67,6,168,252,0,9.0,42.0,28.0,2/22,1,0,2,20.0,89.0,78.0,81.0
+350,Mark Boucher,South Africa,2000,Right,,,WK,6|7|8,False,True,20,15,3,239,241,36*,0,0,99.17,19.92,21,2,93,38.59,0,0,0,0,0.0,0.0,0.0,0/0,13,1,3,82.0,5.0,92.0,85.5
+351,Paul Harris,South Africa,2000,Left,Left,Left Arm Orthodox,SPIN,8|9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,25.0,80.0,70.0,73.5
+352,Shaun Pollock,South Africa,2000,Right,Right,Right Arm Fast Medium,AR,7|8|9,False,False,11,9,2,86,70,36*,0,0,122.86,12.29,4,4,27,38.57,14,219,283,1,7.75,20.21,15.64,3/28,2,0,0,82.0,92.0,84.0,86.7
+353,AB de Villiers,South Africa,2010,Right,,Right Arm Medium,BAT,3|4|5,True,True,53,51,6,1195,880,71,6,0,135.8,26.56,98,43,294,33.41,0,0,0,0,0.0,0.0,0.0,0/0,40,5,10,97.0,20.0,96.0,93.0
+354,Dale Steyn,South Africa,2010,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,31,6,2,13,19,5,0,0,68.42,3.25,1,0,11,57.89,36,619,703,3,6.81,19.53,17.19,4/17,7,0,4,24.0,96.0,84.0,87.6
+355,Dean Elgar,South Africa,2010,Left,Left,Left Arm Orthodox,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,82.0,25.0,78.0,78.6
+356,Faf du Plessis,South Africa,2010,Right,Right,Leg Spin,BAT,3|4|5|6,False,False,40,40,6,1260,934,119,8,1,134.9,37.06,114,41,329,35.22,0,8,3,0,2.25,0.0,0.0,0/0,19,0,1,89.0,15.0,94.0,86.0
+357,Graeme Smith,South Africa,2010,Left,Right,Right Arm Off Break,BAT,1|2,False,False,17,14,1,315,270,58,1,0,116.67,24.23,35,7,118,43.7,2,24,40,0,10.0,20.0,12.0,2/24,8,0,0,88.0,20.0,80.0,83.4
+358,Hashim Amla,South Africa,2010,Right,Right,Right Arm Medium,BAT,2|3|4,False,False,38,38,5,1101,828,97*,7,0,132.97,33.36,128,22,285,34.42,0,0,0,0,0.0,0.0,0.0,0/0,18,0,1,93.0,10.0,84.0,87.5
+359,Jacques Kallis,South Africa,2010,Right,Right,Right Arm Fast Medium,AR,3|4|5,False,False,14,12,3,344,290,73,3,0,118.62,38.22,23,12,103,35.52,9,192,213,1,6.66,23.67,21.33,4/15,1,0,1,91.0,83.0,88.0,87.1
+360,Keshav Maharaj,South Africa,2010,Right,Left,Left Arm Orthodox,SPIN,8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,35.0,87.0,76.0,80.7
+361,Morne Morkel,South Africa,2010,Left,Right,Right Arm Fast,PACE,9|10|11,False,False,56,21,8,208,139,40,0,0,149.64,16.0,6,17,45,32.37,40,948,1260,3,7.97,31.5,23.7,3/12,10,0,4,20.0,91.0,76.0,82.4
+362,Quinton de Kock,South Africa,2010,Left,,,WK,1|2|6|7,False,True,37,36,4,973,756,79*,4,0,128.7,30.41,111,30,317,41.93,0,0,0,0,0.0,0.0,0.0,0/0,33,9,5,92.0,5.0,90.0,91.3
+363,Vernon Philander,South Africa,2010,Right,Right,Right Arm Fast Medium,AR,6|7|8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,68.0,88.0,78.0,78.0
+364,Aiden Markram,South Africa,2020,Right,Right,Right Arm Off Break,BAT,3|4|5,False,False,73,69,10,1920,1286,86*,14,0,149.3,32.54,177,82,409,31.8,16,402,589,2,8.79,36.81,25.12,3/21,45,0,1,88.0,65.0,89.0,87.0
+365,Anrich Nortje,South Africa,2020,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,45,14,6,30,50,12,0,0,60.0,3.75,1,1,30,60.0,54,942,1153,0,7.34,21.35,17.44,4/7,10,0,7,15.0,92.0,78.0,82.9
+366,David Miller,South Africa,2020,Left,,Right Arm Off Break,BAT,5|6|7,False,False,66,60,21,1475,1033,106*,7,1,142.79,37.82,92,83,328,31.75,0,0,0,0,0.0,0.0,0.0,0/0,35,0,3,90.0,10.0,88.0,85.7
+367,Dean Elgar,South Africa,2020,Left,Left,Left Arm Orthodox,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,80.0,20.0,76.0,76.4
+368,Heinrich Klaasen,South Africa,2020,Right,,Right Arm Off Break,WK,4|5|6,False,True,48,44,8,844,598,81,4,0,141.14,23.44,64,41,200,33.44,0,6,14,0,14.0,0.0,0.0,0/14,25,5,9,93.0,5.0,86.0,90.5
+369,Kagiso Rabada,South Africa,2020,Left,Right,Right Arm Fast,PACE,8|9|10,False,False,56,24,13,179,147,22,0,0,121.77,16.27,18,6,62,42.18,52,1193,1678,2,8.44,32.27,22.94,3/18,23,0,2,32.0,93.0,84.0,86.0
+370,Keshav Maharaj,South Africa,2020,Right,Left,Left Arm Orthodox,SPIN,8|9|10,False,False,52,19,7,107,127,41,0,0,84.25,8.92,6,5,68,53.54,54,1073,1414,1,7.91,26.19,19.87,3/24,15,0,0,38.0,88.0,78.0,82.0
+371,Lungi Ngidi,South Africa,2020,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,56,16,12,53,63,13*,0,0,84.13,13.25,5,1,36,57.14,76,1155,1712,1,8.89,22.53,15.2,5/39,9,0,2,15.0,87.0,75.0,78.6
+372,Marco Jansen,South Africa,2020,Right,Left,Left Arm Fast,AR,7|8|9,False,False,32,22,8,303,210,55*,2,0,144.29,21.64,20,21,87,41.43,40,707,1060,1,9.0,26.5,17.68,4/22,16,0,3,72.0,88.0,80.0,80.0
+373,Quinton de Kock,South Africa,2020,Left,,,WK,1|2,False,True,70,69,4,2013,1340,115,14,2,150.22,30.97,190,98,486,36.27,0,0,0,0,0.0,0.0,0.0,0/0,61,9,8,91.0,5.0,90.0,90.6
+374,Temba Bavuma,South Africa,2020,Right,Right,Right Arm Medium,BAT,1|2|3,True,False,34,33,2,594,501,72,1,0,118.56,19.16,57,14,195,38.92,0,0,0,0,0.0,0.0,0.0,0/0,14,0,5,81.0,10.0,86.0,78.2
+375,Aravinda de Silva,Sri Lanka,1990,Right,Right,Right Arm Off Break,BAT,3|4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,93.0,60.0,82.0,89.7
+376,Arjuna Ranatunga,Sri Lanka,1990,Left,Right,Right Arm Medium,BAT,4|5|6,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,88.0,30.0,72.0,82.7
+377,Asanka Gurusinha,Sri Lanka,1990,Left,Right,Right Arm Medium,BAT,3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,82.0,25.0,74.0,78.0
+378,Chaminda Vaas,Sri Lanka,1990,Left,Left,Left Arm Fast Medium,PACE,8|9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,52.0,92.0,80.0,86.8
+379,Hashan Tillakaratne,Sri Lanka,1990,Left,Right,Right Arm Off Break,BAT,5|6|7,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,81.0,20.0,78.0,77.5
+380,Kumar Dharmasena,Sri Lanka,1990,Right,Right,Right Arm Off Break,AR,7|8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,65.0,82.0,80.0,74.2
+381,Muttiah Muralitharan,Sri Lanka,1990,Right,Right,Right Arm Off Break,SPIN,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,20.0,97.0,75.0,87.1
+382,Pramodya Wickramasinghe,Sri Lanka,1990,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,18.0,82.0,72.0,74.6
+383,Romesh Kaluwitharana,Sri Lanka,1990,Right,,Right Arm Medium,WK,1|2,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,83.0,5.0,82.0,82.7
+384,Roshan Mahanama,Sri Lanka,1990,Right,,Right Arm Medium,BAT,1|2|3,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,82.0,15.0,88.0,79.6
+385,Sanath Jayasuriya,Sri Lanka,1990,Left,Left,Left Arm Orthodox,AR,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,92.0,82.0,85.0,86.8
+386,Chaminda Vaas,Sri Lanka,2000,Left,Left,Left Arm Fast Medium,PACE,7|8|9,False,False,6,2,1,33,41,21,0,0,80.49,33.0,1,0,12,29.27,6,132,128,1,5.82,21.33,22.0,2/14,0,0,0,58.0,91.0,80.0,86.6
+387,Dilhara Fernando,Sri Lanka,2000,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,13,3,0,24,20,21,0,0,120.0,8.0,4,0,10,50.0,13,282,341,3,7.26,26.23,21.69,3/19,1,0,2,16.0,83.0,72.0,75.2
+388,Kumar Sangakkara,Sri Lanka,2000,Left,,,WK,3|4,False,True,20,19,2,572,451,78,5,0,126.83,33.65,62,8,155,34.37,0,0,0,0,0.0,0.0,0.0,0/0,9,7,7,95.0,5.0,88.0,92.5
+389,Lasith Malinga,Sri Lanka,2000,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,20,8,5,60,50,27,0,0,120.0,20.0,3,3,21,42.0,24,401,500,0,7.48,20.83,16.71,3/17,9,0,3,22.0,96.0,78.0,86.8
+390,Mahela Jayawardene,Sri Lanka,2000,Right,Right,Right Arm Medium,BAT,3|4|5,True,False,21,21,3,406,313,78,2,0,129.71,22.56,42,9,118,37.7,0,6,8,0,8.0,0.0,0.0,0/8,5,0,0,94.0,20.0,92.0,90.0
+391,Marvan Atapattu,Sri Lanka,2000,Right,Right,Leg Spin,BAT,1|2,False,False,2,1,0,5,8,5,0,0,62.5,5.0,0,0,3,37.5,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,85.0,15.0,78.0,80.5
+392,Muttiah Muralitharan,Sri Lanka,2000,Right,Right,Right Arm Off Break,SPIN,9|10|11,False,False,9,2,0,1,5,1,0,0,20.0,0.5,0,0,4,80.0,11,210,215,0,6.14,19.55,19.09,3/29,0,0,1,20.0,98.0,75.0,87.9
+393,Nuwan Kulasekara,Sri Lanka,2000,Right,Right,Right Arm Fast Medium,PACE,8|9|10,False,False,8,7,1,27,34,12,0,0,79.41,4.5,0,0,11,32.35,5,185,297,0,9.63,59.4,37.0,1/21,5,0,4,55.0,87.0,82.0,83.3
+394,Sanath Jayasuriya,Sri Lanka,2000,Left,Left,Left Arm Orthodox,AR,1|2,False,False,22,22,1,592,426,88,4,0,138.97,28.19,73,22,193,45.31,16,281,341,0,7.28,21.31,17.56,3/21,3,0,2,90.0,80.0,84.0,84.9
+395,Thilan Samaraweera,Sri Lanka,2000,Right,Right,Right Arm Off Break,BAT,4|5|6,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,81.0,40.0,76.0,78.2
+396,Tillakaratne Dilshan,Sri Lanka,2000,Right,Right,Right Arm Off Break,AR,5|6|7,False,False,21,20,3,548,411,96*,5,0,133.33,32.24,68,10,148,36.01,4,96,128,0,8.0,32.0,24.0,2/4,11,1,3,88.0,74.0,90.0,81.9
+397,Angelo Mathews,Sri Lanka,2010,Right,Right,Right Arm Fast Medium,AR,5|6|7,True,False,59,45,10,887,784,81*,5,0,113.14,25.34,54,28,272,34.69,27,782,860,4,6.6,31.85,28.96,3/16,20,0,5,87.0,78.0,80.0,82.2
+398,Dimuth Karunaratne,Sri Lanka,2010,Left,Right,Right Arm Medium,BAT,1|2,False,False,6,6,2,94,145,44*,0,0,64.83,23.5,7,0,76,52.41,0,24,33,0,8.25,0.0,0.0,0/15,1,0,0,83.0,15.0,78.0,78.9
+399,Dinesh Chandimal,Sri Lanka,2010,Right,,Right Arm Off Break,WK,3|4|5,False,True,55,47,4,865,800,83,5,0,108.12,20.12,78,18,332,41.5,0,0,0,0,0.0,0.0,0.0,0/0,30,6,5,82.0,5.0,82.0,82.0
+400,Kumar Sangakkara,Sri Lanka,2010,Left,,,WK,3|4,False,True,36,34,7,810,705,68,3,0,114.89,30.0,77,12,263,37.3,0,0,0,0,0.0,0.0,0.0,0/0,16,13,13,96.0,5.0,88.0,93.2
+401,Lasith Malinga,Sri Lanka,2010,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,59,20,5,68,103,13*,0,0,66.02,4.53,6,1,61,59.22,83,1321,1580,1,7.18,19.04,15.92,5/6,11,0,6,22.0,96.0,78.0,86.8
+402,Mahela Jayawardene,Sri Lanka,2010,Right,Right,Right Arm Medium,BAT,1|2|3,False,False,32,32,5,1056,790,100,7,1,133.67,39.11,126,24,298,37.72,0,0,0,0,0.0,0.0,0.0,0/0,12,0,3,92.0,15.0,92.0,88.2
+403,Nuwan Pradeep,Sri Lanka,2010,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,14,4,3,10,15,8*,0,0,66.67,10.0,1,0,9,60.0,15,265,407,0,9.22,27.13,17.67,4/25,2,0,0,15.0,84.0,72.0,75.9
+404,Rangana Herath,Sri Lanka,2010,Left,Left,Left Arm Orthodox,SPIN,8|9|10|11,False,False,16,5,2,8,12,3,0,0,66.67,2.67,0,0,5,41.67,16,341,349,3,6.14,21.81,21.31,5/3,0,0,2,30.0,91.0,74.0,83.2
+405,Suranga Lakmal,Sri Lanka,2010,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,11,5,2,7,11,5*,0,0,63.64,2.33,1,0,7,63.64,8,208,330,0,9.52,41.25,26.0,2/26,3,0,0,20.0,83.0,74.0,75.8
+406,Thisara Perera,Sri Lanka,2010,Left,Right,Right Arm Medium Fast,AR,6|7|8,False,False,147,134,23,2449,1896,84,13,0,129.17,22.06,216,92,744,39.24,45,1018,1546,1,9.11,34.36,22.62,3/24,44,4,11,80.0,80.0,80.0,80.0
+407,Tillakaratne Dilshan,Sri Lanka,2010,Right,Right,Right Arm Off Break,AR,1|2,False,False,56,56,8,1199,1044,104*,7,1,114.85,24.98,142,19,439,42.05,5,162,185,0,6.85,37.0,32.4,2/8,19,0,7,89.0,75.0,92.0,83.0
+408,Charith Asalanka,Sri Lanka,2020,Left,Right,Right Arm Off Break,BAT,4|5|6,False,False,73,71,9,1472,1152,80*,6,0,127.78,23.74,102,70,421,36.55,7,190,247,0,7.8,35.29,27.14,3/50,22,0,1,85.0,45.0,82.0,82.5
+409,Dasun Shanaka,Sri Lanka,2020,Right,Right,Right Arm Medium,AR,6|7|8,True,False,97,86,16,1613,1202,76*,8,0,134.19,23.04,105,93,455,37.85,36,706,993,1,8.44,27.58,19.61,3/21,44,0,4,81.0,74.0,82.0,78.0
+410,Dhananjaya de Silva,Sri Lanka,2020,Right,Right,Right Arm Off Break,AR,3|4|5|6,False,False,31,31,3,529,443,57,1,0,119.41,18.89,50,11,154,34.76,11,214,244,0,6.84,22.18,19.45,2/24,17,0,1,84.0,72.0,82.0,78.4
+411,Dimuth Karunaratne,Sri Lanka,2020,Left,Right,Right Arm Medium,BAT,1|2,False,False,58,44,18,344,355,25*,0,0,96.9,13.23,19,11,159,44.79,24,719,973,0,8.12,40.54,29.96,2/22,18,0,1,84.0,15.0,78.0,79.7
+412,Kasun Rajitha,Sri Lanka,2020,Right,Right,Right Arm Medium Fast,PACE,9|10|11,False,False,7,4,3,23,30,9*,0,0,76.67,23.0,2,0,16,53.33,6,150,226,1,9.04,37.67,25.0,2/22,1,0,0,15.0,83.0,72.0,75.1
+413,Kusal Mendis,Sri Lanka,2020,Right,,Leg Spin,WK,1|2|3,False,True,131,125,9,2896,2267,87*,18,0,127.75,24.97,250,111,866,38.2,7,192,253,0,7.91,36.14,27.43,1/10,59,19,21,86.0,10.0,84.0,85.3
+414,Maheesh Theekshana,Sri Lanka,2020,Right,Right,Right Arm Off Break,SPIN,8|9|10|11,False,False,84,39,13,147,212,32*,0,0,69.34,5.65,11,2,122,57.55,86,1891,2264,1,7.18,26.33,21.99,3/17,21,0,0,18.0,88.0,74.0,79.6
+415,Matheesha Pathirana,Sri Lanka,2020,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,24,9,4,9,21,6,0,0,42.86,1.8,1,0,15,71.43,32,449,628,1,8.39,19.62,14.03,4/40,3,0,0,12.0,90.0,74.0,80.6
+416,Pathum Nissanka,Sri Lanka,2020,Right,,,BAT,1|2,False,False,90,89,4,2642,2063,107,18,2,128.07,31.08,262,80,789,38.25,0,0,0,0,0.0,0.0,0.0,0/0,22,0,2,88.0,10.0,82.0,83.2
+417,Prabath Jayasuriya,Sri Lanka,2020,Right,Left,Left Arm Slow,SPIN,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,20.0,86.0,74.0,78.2
+418,Wanindu Hasaranga,Sri Lanka,2020,Right,Right,Leg Spin,AR,7|8,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,76.0,92.0,86.0,84.2
+419,Andy Roberts,West Indies,1980,Right,Right,Right Arm Fast,PACE,8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,28.0,93.0,76.0,84.8
+420,Clive Lloyd,West Indies,1980,Left,Right,Right Arm Medium,BAT,4|5|6,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,91.0,35.0,84.0,87.1
+421,Courtney Walsh,West Indies,1980,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,15.0,92.0,74.0,82.5
+422,Desmond Haynes,West Indies,1980,Right,Right,Right Arm Medium,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,91.0,20.0,82.0,86.1
+423,Gordon Greenidge,West Indies,1980,Right,Right,Right Arm Medium,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,92.0,20.0,84.0,87.2
+424,Jeff Dujon,West Indies,1980,Right,,,WK,6|7|8,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,78.0,5.0,92.0,82.9
+425,Joel Garner,West Indies,1980,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,24.0,96.0,78.0,87.0
+426,Larry Gomes,West Indies,1980,Left,Right,Off Spin,BAT,3|4|5,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,85.0,25.0,80.0,81.2
+427,Malcolm Marshall,West Indies,1980,Right,Right,Right Arm Fast,PACE,7|8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,48.0,97.0,84.0,90.8
+428,Michael Holding,West Indies,1980,Right,Right,Right Arm Fast,PACE,8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,32.0,95.0,82.0,87.4
+429,Vivian Richards,West Indies,1980,Right,Right,Off Spin,BAT,3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,97.0,60.0,88.0,93.8
+430,Brian Lara,West Indies,1990,Left,Right,Leg Spin,BAT,3|4,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,97.0,20.0,82.0,90.9
+431,Carl Hooper,West Indies,1990,Right,Right,Off Spin,AR,5|6|7,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,86.0,78.0,88.0,82.6
+432,Courtney Walsh,West Indies,1990,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,15.0,94.0,74.0,84.1
+433,Curtly Ambrose,West Indies,1990,Left,Right,Right Arm Fast,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,20.0,96.0,80.0,86.8
+434,Desmond Haynes,West Indies,1990,Right,Right,Right Arm Medium,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,88.0,15.0,80.0,83.2
+435,Ian Bishop,West Indies,1990,Right,Right,Right Arm Fast,PACE,8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,28.0,90.0,76.0,82.4
+436,Jimmy Adams,West Indies,1990,Left,Left,Left Arm Orthodox,BAT,4|5|6,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,84.0,45.0,84.0,82.0
+437,Kenneth Benjamin,West Indies,1990,Right,Right,Right Arm Fast,PACE,8|9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,20.0,84.0,72.0,76.4
+438,Richie Richardson,West Indies,1990,Right,Right,Right Arm Medium,BAT,2|3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,88.0,15.0,82.0,83.5
+439,Ridley Jacobs,West Indies,1990,Left,,,WK,6|7|8,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,76.0,5.0,88.0,80.2
+440,Sherwin Campbell,West Indies,1990,Right,Right,Right Arm Medium,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,82.0,15.0,78.0,78.1
+441,Brian Lara,West Indies,2000,Left,Right,Leg Spin,BAT,3|4,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,96.0,15.0,80.0,89.6
+442,Chris Gayle,West Indies,2000,Left,Right,Off Spin,AR,1|2,False,False,12,12,1,479,312,117,4,1,153.53,43.55,45,27,129,41.35,7,171,189,0,6.63,27.0,24.43,2/16,4,0,0,91.0,74.0,80.0,82.2
+443,Corey Collymore,West Indies,2000,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,16.0,84.0,72.0,76.0
+444,Dwayne Bravo,West Indies,2000,Right,Right,Right Arm Fast Medium,AR,6|7|8,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,82.0,86.0,92.0,84.8
+445,Fidel Edwards,West Indies,2000,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,12,2,1,3,4,2*,0,0,75.0,3.0,0,0,1,25.0,10,219,308,0,8.44,30.8,21.9,3/24,2,0,0,15.0,86.0,74.0,77.7
+446,Jerome Taylor,West Indies,2000,Right,Right,Right Arm Fast,PACE,8|9|10,False,False,12,4,2,20,19,11*,0,0,105.26,10.0,1,1,10,52.63,17,252,344,1,8.19,20.24,14.82,3/6,3,0,1,38.0,87.0,76.0,81.0
+447,Mervyn Dillon,West Indies,2000,Right,Right,Right Arm Fast Medium,PACE,8|9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,20.0,83.0,72.0,75.6
+448,Ramnaresh Sarwan,West Indies,2000,Right,Right,Leg Spin,BAT,3|4|5,False,False,11,10,3,201,169,59,2,0,118.93,28.71,12,6,55,32.54,2,12,10,0,5.0,5.0,6.0,2/10,4,0,2,88.0,30.0,82.0,84.2
+449,Ridley Jacobs,West Indies,2000,Left,,,WK,6|7|8,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,74.0,5.0,86.0,78.2
+450,Shivnarine Chanderpaul,West Indies,2000,Left,Right,Leg Spin,BAT,4|5|6,False,False,15,15,4,207,199,41,0,0,104.02,18.82,22,2,83,41.71,0,0,0,0,0.0,0.0,0.0,0/0,6,0,1,93.0,25.0,82.0,88.0
+451,Wavell Hinds,West Indies,2000,Left,Right,Right Arm Medium,BAT,1|2,False,False,1,1,0,14,18,14,0,0,77.78,14.0,1,0,9,50.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,81.0,35.0,78.0,78.2
+452,Chris Gayle,West Indies,2010,Left,Right,Off Spin,BAT,1|2,False,False,46,42,3,1181,836,100*,9,1,141.27,30.28,94,82,375,44.86,10,148,188,0,7.62,18.8,14.8,2/15,11,0,0,95.0,60.0,76.0,90.4
+453,Darren Bravo,West Indies,2010,Left,Right,Right Arm Medium,BAT,3|4,False,False,70,62,8,1218,1098,55,2,0,110.93,22.56,78,50,446,40.62,38,794,1101,0,8.32,28.97,20.89,4/28,34,0,7,84.0,15.0,78.0,79.7
+454,Denesh Ramdin,West Indies,2010,Right,,,WK,6|7|8,False,True,52,35,12,437,372,55*,1,0,117.47,19.0,31,16,133,35.75,0,0,0,0,0.0,0.0,0.0,0/0,28,19,10,76.0,5.0,88.0,80.2
+455,Jason Holder,West Indies,2010,Right,Right,Right Arm Fast Medium,AR,6|7|8,True,False,14,9,2,92,70,26*,0,0,131.43,13.14,7,4,24,34.29,10,301,446,0,8.89,44.6,30.1,2/27,5,0,2,81.0,86.0,85.0,83.7
+456,Kemar Roach,West Indies,2010,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,9,1,1,3,2,3*,0,0,150.0,3.0,0,0,0,0.0,8,192,240,1,7.5,30.0,24.0,2/25,1,0,0,28.0,88.0,75.0,80.7
+457,Kieron Pollard,West Indies,2010,Right,Right,Right Arm Medium,AR,5|6|7,False,False,55,48,9,922,718,68,4,0,128.41,23.64,57,56,291,40.53,18,414,594,0,8.61,33.0,23.0,3/30,26,0,0,88.0,74.0,90.0,81.9
+458,Kraigg Brathwaite,West Indies,2010,Right,Right,Off Spin,BAT,1|2,False,False,37,25,5,289,261,37*,0,0,110.73,14.45,13,19,122,46.74,27,649,947,1,8.76,35.07,24.04,3/20,18,0,1,81.0,40.0,78.0,78.5
+459,Marlon Samuels,West Indies,2010,Right,Right,Off Spin,BAT,3|4|5,False,False,57,55,9,1338,1182,85*,8,0,113.2,29.09,123,53,537,45.43,20,413,510,0,7.41,25.5,20.65,3/23,11,0,1,87.0,55.0,80.0,84.4
+460,Shannon Gabriel,West Indies,2010,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,2,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,3,42,56,0,8.0,18.67,14.0,3/44,1,0,0,14.0,86.0,70.0,77.2
+461,Shivnarine Chanderpaul,West Indies,2010,Left,Right,Leg Spin,BAT,4|5,False,False,7,7,1,136,148,29,0,0,91.89,22.67,12,3,79,53.38,0,0,0,0,0.0,0.0,0.0,0/0,1,0,0,90.0,20.0,78.0,84.7
+462,Sunil Narine,West Indies,2010,Left,Right,Off Spin,SPIN,7|8|9|10,False,False,48,21,6,155,138,30,0,0,112.32,10.33,13,5,60,43.48,48,1036,1043,1,6.04,21.73,21.58,4/12,5,0,2,65.0,94.0,80.0,89.7
+463,Alzarri Joseph,West Indies,2020,Right,Right,Right Arm Fast,PACE,8|9|10,False,False,119,64,17,727,698,63,2,0,104.15,15.47,80,26,374,53.58,112,1839,2717,0,8.86,24.26,16.42,5/33,36,0,6,34.0,88.0,78.0,81.6
+464,Gudakesh Motie,West Indies,2020,Left,Left,Left Arm Orthodox,SPIN,8|9|10|11,False,False,51,20,7,166,130,33,0,0,127.69,12.77,11,11,62,47.69,50,924,1246,1,8.09,24.92,18.48,4/28,14,0,3,35.0,86.0,78.0,80.1
+465,Jason Holder,West Indies,2020,Right,Right,Right Arm Fast Medium,AR,6|7|8,False,False,87,61,19,827,594,49,0,0,139.23,19.69,46,58,235,39.56,99,1688,2446,2,8.69,24.71,17.05,5/27,45,0,8,80.0,84.0,86.0,82.4
+466,Jayden Seales,West Indies,2020,Left,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,8,2,1,4,4,4*,0,0,100.0,4.0,1,0,3,75.0,6,156,281,0,10.81,46.83,26.0,3/32,2,0,0,18.0,85.0,74.0,77.2
+467,Kemar Roach,West Indies,2020,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,25.0,85.0,74.0,77.9
+468,Kraigg Brathwaite,West Indies,2020,Right,Right,Off Spin,BAT,1|2,True,False,4,4,0,106,63,57,1,0,168.25,26.5,8,9,30,47.62,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,82.0,35.0,78.0,79.1
+469,Nicholas Pooran,West Indies,2020,Left,,,WK,3|4|5,False,True,92,83,7,1923,1408,82,10,0,136.58,25.3,128,127,570,40.48,0,0,0,0,0.0,0.0,0.0,0/0,57,8,12,91.0,5.0,90.0,90.6
+470,Rovman Powell,West Indies,2020,Right,Right,Right Arm Medium,BAT,5|6|7,False,False,101,91,14,2063,1428,107,8,1,144.47,26.79,121,143,539,37.75,3,85,150,0,10.59,50.0,28.33,2/31,52,0,4,86.0,50.0,88.0,84.5
+471,Shai Hope,West Indies,2020,Right,,,WK,2|3|4,False,True,61,60,12,1741,1221,102*,11,3,142.59,36.27,129,100,438,35.87,0,0,0,0,0.0,0.0,0.0,0/0,24,3,9,89.0,5.0,90.0,89.3
+472,Shimron Hetmyer,West Indies,2020,Left,,,BAT,4|5|6,False,False,67,58,6,1418,983,85,8,0,144.25,27.27,103,83,345,35.1,0,0,0,0,0.0,0.0,0.0,0/0,39,0,2,87.0,15.0,84.0,83.0
+473,Tagenarine Chanderpaul,West Indies,2020,Left,Right,Leg Spin,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,81.0,15.0,76.0,77.0
+474,Alistair Campbell,Zimbabwe,1990,Left,Right,Right Arm Medium,BAT,3|4,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,83.0,25.0,78.0,79.4
+475,Andy Flower,Zimbabwe,1990,Left,,,WK,3|4|5,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,91.0,5.0,88.0,89.9
+476,Bryan Strang,Zimbabwe,1990,Right,Left,Left Arm Medium,PACE,8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,25.0,81.0,72.0,74.5
+477,Eddo Brandes,Zimbabwe,1990,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,24.0,83.0,72.0,76.0
+478,Grant Flower,Zimbabwe,1990,Right,Left,Left Arm Orthodox,AR,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,83.0,74.0,84.0,79.1
+479,Guy Whittall,Zimbabwe,1990,Right,Right,Right Arm Medium,AR,6|7|8,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,78.0,76.0,78.0,77.1
+480,Heath Streak,Zimbabwe,1990,Right,Right,Right Arm Fast Medium,AR,7|8|9,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,72.0,87.0,82.0,79.8
+481,Mark Dekker,Zimbabwe,1990,Left,Right,Right Arm Medium,BAT,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,76.0,20.0,74.0,72.9
+482,Murray Goodwin,Zimbabwe,1990,Right,Right,Leg Spin,BAT,4|5|6,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,85.0,20.0,78.0,80.7
+483,Neil Johnson,Zimbabwe,1990,Left,Right,Right Arm Fast Medium,AR,1|2|3,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,84.0,82.0,84.0,83.1
+484,Paul Strang,Zimbabwe,1990,Right,Right,Leg Spin,SPIN,8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,45.0,81.0,76.0,76.9
+485,Andy Blignaut,Zimbabwe,2000,Left,Right,Right Arm Fast Medium,AR,6|7|8,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,76.0,80.0,80.0,78.2
+486,Andy Flower,Zimbabwe,2000,Left,,,WK,3|4|5,False,True,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,92.0,5.0,88.0,90.6
+487,Christopher Mpofu,Zimbabwe,2000,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,15.0,81.0,70.0,73.3
+488,Dion Ebrahim,Zimbabwe,2000,Right,Right,Right Arm Medium,BAT,1|2|3,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,78.0,15.0,76.0,74.6
+489,Grant Flower,Zimbabwe,2000,Right,Left,Left Arm Orthodox,AR,1|2,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,82.0,72.0,82.0,77.5
+490,Hamilton Masakadza,Zimbabwe,2000,Right,Right,Right Arm Medium,BAT,3|4|5,False,False,2,2,0,54,51,27,0,0,105.88,27.0,3,0,16,31.37,1,6,9,0,9.0,9.0,6.0,1/9,2,0,0,82.0,45.0,78.0,79.6
+491,Heath Streak,Zimbabwe,2000,Right,Right,Right Arm Fast Medium,AR,7|8|9,True,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,74.0,86.0,82.0,80.2
+492,Henry Olonga,Zimbabwe,2000,Right,Right,Right Arm Fast,PACE,9|10|11,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,20.0,83.0,74.0,75.8
+493,Ray Price,Zimbabwe,2000,Right,Left,Left Arm Orthodox,SPIN,8|9|10,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,28.0,84.0,76.0,77.6
+494,Stuart Carlisle,Zimbabwe,2000,Right,Right,Right Arm Medium,BAT,3|4,False,False,0,0,0,0,0,0,0,0,0.0,0.0,0,0,0,0.0,0,0,0,0,0.0,0.0,0.0,0/0,0,0,0,79.0,15.0,76.0,75.4
+495,Tatenda Taibu,Zimbabwe,2000,Right,,,WK,5|6|7,False,True,2,2,0,2,10,2,0,0,20.0,1.0,0,0,8,80.0,0,24,41,0,10.25,0.0,0.0,0/20,0,0,0,80.0,10.0,86.0,82.1
+496,Brendan Taylor,Zimbabwe,2010,Right,,Off Spin,WK,3|4,True,True,31,31,4,653,533,75*,5,0,122.51,24.19,67,17,200,37.52,1,30,17,0,3.4,17.0,30.0,1/16,11,0,5,88.0,15.0,88.0,88.0
+497,Brian Vitori,Zimbabwe,2010,Left,Left,Left Arm Fast Medium,PACE,9|10|11,False,False,11,2,2,8,7,7*,0,0,114.29,8.0,0,0,5,71.43,4,238,323,0,8.14,80.75,59.5,1/24,2,0,0,18.0,81.0,72.0,73.8
+498,Craig Ervine,Zimbabwe,2010,Left,Right,Off Spin,BAT,3|4|5,False,False,19,18,1,447,440,68*,3,0,101.59,26.29,41,13,208,47.27,0,0,0,0,0.0,0.0,0.0,0/0,11,0,0,82.0,25.0,82.0,79.2
+499,Elton Chigumbura,Zimbabwe,2010,Right,Right,Right Arm Fast Medium,AR,6|7|8,False,False,42,41,8,716,489,54*,3,0,146.42,21.7,51,43,179,36.61,5,156,265,0,10.19,53.0,31.2,2/23,16,0,2,78.0,76.0,80.0,77.3
+500,Graeme Cremer,Zimbabwe,2010,Right,Right,Leg Spin,SPIN,8|9|10,False,False,24,14,3,62,89,17,0,0,69.66,5.64,2,0,44,49.44,27,474,560,1,7.09,20.74,17.56,3/11,6,0,1,38.0,83.0,78.0,78.0
+501,Hamilton Masakadza,Zimbabwe,2010,Right,Right,Right Arm Medium,BAT,1|2,False,False,68,61,5,1209,1098,93*,7,0,110.11,21.59,115,40,510,46.45,16,357,529,0,8.89,33.06,22.31,4/28,27,0,2,83.0,45.0,80.0,80.7
+502,Kyle Jarvis,Zimbabwe,2010,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,18,8,2,39,47,27,0,0,82.98,6.5,1,2,26,55.32,24,360,539,0,8.98,22.46,15.0,3/15,4,0,0,22.0,83.0,74.0,76.0
+503,Sean Williams,Zimbabwe,2010,Left,Left,Left Arm Orthodox,AR,4|5|6,False,False,32,32,4,679,505,66,5,0,134.46,24.25,61,20,153,30.3,26,606,740,0,7.33,28.46,23.31,3/15,14,0,3,85.0,78.0,88.0,82.1
+504,Sikandar Raza,Zimbabwe,2010,Right,Right,Off Spin,AR,5|6|7,False,False,25,23,0,250,261,36,0,0,95.79,10.87,20,4,117,44.83,10,222,286,0,7.73,28.6,22.2,2/7,12,0,4,86.0,84.0,88.0,85.3
+505,Tendai Chatara,Zimbabwe,2010,Right,Right,Right Arm Fast Medium,PACE,9|10|11,False,False,17,1,0,0,1,0,0,0,0.0,0.0,0,0,1,100.0,20,372,470,1,7.58,23.5,18.6,2/21,4,0,3,16.0,83.0,74.0,75.4
+506,Vusi Sibanda,Zimbabwe,2010,Right,Right,Right Arm Medium,BAT,1|2,False,False,29,23,1,446,442,59,1,0,100.9,20.27,42,11,213,48.19,6,97,82,0,5.07,13.67,16.17,2/18,14,0,1,79.0,30.0,82.0,77.0

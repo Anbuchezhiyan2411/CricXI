@@ -1,0 +1,35 @@
+player_id,player_name,country,decade,batting_hand,bowling_hand,bowling_type,primary_role,eligible_positions,is_captain,is_wicketkeeper
+ZIM_1990_01,Grant Flower,Zimbabwe,1990,Right,Left,Left Arm Orthodox,BAT,1|2,FALSE,FALSE
+ZIM_1990_02,Mark Dekker,Zimbabwe,1990,Left,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+ZIM_1990_03,Alistair Campbell,Zimbabwe,1990,Left,Right,Right Arm Medium,BAT,3|4,TRUE,FALSE
+ZIM_1990_04,Andy Flower,Zimbabwe,1990,Left,Right,Off Spin,WK,3|4,FALSE,TRUE
+ZIM_1990_05,Murray Goodwin,Zimbabwe,1990,Right,Right,Leg Spin,BAT,4|5,FALSE,FALSE
+ZIM_1990_06,Neil Johnson,Zimbabwe,1990,Left,Right,Right Arm Fast Medium,AR,1|2|3,FALSE,FALSE
+ZIM_1990_07,Guy Whittall,Zimbabwe,1990,Right,Right,Right Arm Medium,AR,6|7|8,FALSE,FALSE
+ZIM_1990_08,Paul Strang,Zimbabwe,1990,Right,Right,Leg Spin,SPIN,8|9,FALSE,FALSE
+ZIM_1990_09,Heath Streak,Zimbabwe,1990,Right,Right,Right Arm Fast Medium,PACE,8|9,FALSE,FALSE
+ZIM_1990_10,Bryan Strang,Zimbabwe,1990,Right,Left,Left Arm Medium,PACE,9|10|11,FALSE,FALSE
+ZIM_1990_11,Eddo Brandes,Zimbabwe,1990,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+ZIM_2000_01,Grant Flower,Zimbabwe,2000,Right,Left,Left Arm Orthodox,BAT,1|2,FALSE,FALSE
+ZIM_2000_02,Dion Ebrahim,Zimbabwe,2000,Right,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+ZIM_2000_03,Stuart Carlisle,Zimbabwe,2000,Right,Right,Right Arm Medium,BAT,3|4,FALSE,FALSE
+ZIM_2000_04,Andy Flower,Zimbabwe,2000,Left,Right,Off Spin,BAT,4|5,FALSE,FALSE
+ZIM_2000_05,Tatenda Taibu,Zimbabwe,2000,Right,Right,Right Arm Medium,WK,5|6|7,FALSE,TRUE
+ZIM_2000_06,Hamilton Masakadza,Zimbabwe,2000,Right,Right,Right Arm Medium,BAT,5|6|7,FALSE,FALSE
+ZIM_2000_07,Heath Streak,Zimbabwe,2000,Right,Right,Right Arm Fast Medium,AR,6|7|8,TRUE,FALSE
+ZIM_2000_08,Andy Blignaut,Zimbabwe,2000,Left,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+ZIM_2000_09,Ray Price,Zimbabwe,2000,Right,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+ZIM_2000_10,Henry Olonga,Zimbabwe,2000,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+ZIM_2000_11,Christopher Mpofu,Zimbabwe,2000,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+ZIM_2010_01,Hamilton Masakadza,Zimbabwe,2010,Right,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+ZIM_2010_02,Vusi Sibanda,Zimbabwe,2010,Right,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+ZIM_2010_03,Brendan Taylor,Zimbabwe,2010,Right,Right,Off Spin,WK,3|4,TRUE,TRUE
+ZIM_2010_04,Craig Ervine,Zimbabwe,2010,Left,Right,Off Spin,BAT,4|5,FALSE,FALSE
+ZIM_2010_05,Sean Williams,Zimbabwe,2010,Left,Left,Left Arm Orthodox,BAT,4|5,FALSE,FALSE
+ZIM_2010_06,Sikandar Raza,Zimbabwe,2010,Right,Right,Off Spin,AR,5|6|7,FALSE,FALSE
+ZIM_2010_07,Elton Chigumbura,Zimbabwe,2010,Right,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+ZIM_2010_08,Graeme Cremer,Zimbabwe,2010,Right,Right,Leg Spin,SPIN,8|9,FALSE,FALSE
+ZIM_2010_09,Tendai Chatara,Zimbabwe,2010,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+ZIM_2010_10,Kyle Jarvis,Zimbabwe,2010,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+ZIM_2010_11,Brian Vitori,Zimbabwe,2010,Left,Left,Left Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+

@@ -1,0 +1,57 @@
+player_id,player_name,country,decade,batting_hand,bowling_hand,bowling_type,primary_role,eligible_positions,is_captain,is_wicketkeeper
+WI_1980_01,Gordon Greenidge,West Indies,1980,Right,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+WI_1980_02,Desmond Haynes,West Indies,1980,Right,Right,Leg Spin,BAT,1|2,FALSE,FALSE
+WI_1980_03,Vivian Richards,West Indies,1980,Right,Right,Off Spin,BAT,3|4,TRUE,FALSE
+WI_1980_04,Clive Lloyd,West Indies,1980,Left,Right,Right Arm Medium,BAT,4|5,FALSE,FALSE
+WI_1980_05,Larry Gomes,West Indies,1980,Left,Right,Off Spin,BAT,4|5,FALSE,FALSE
+WI_1980_06,Jeff Dujon,West Indies,1980,Right,None,None,WK,5|6|7,FALSE,TRUE
+WI_1980_07,Malcolm Marshall,West Indies,1980,Right,Right,Right Arm Fast,PACE,8|9,FALSE,FALSE
+WI_1980_08,Michael Holding,West Indies,1980,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+WI_1980_09,Joel Garner,West Indies,1980,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+WI_1980_10,Andy Roberts,West Indies,1980,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+WI_1980_11,Courtney Walsh,West Indies,1980,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+WI_1990_01,Desmond Haynes,West Indies,1990,Right,Right,Leg Spin,BAT,1|2,FALSE,FALSE
+WI_1990_02,Sherwin Campbell,West Indies,1990,Right,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+WI_1990_03,Brian Lara,West Indies,1990,Left,Right,Leg Spin,BAT,3|4,TRUE,FALSE
+WI_1990_04,Richie Richardson,West Indies,1990,Right,Right,Right Arm Medium,BAT,3|4,FALSE,FALSE
+WI_1990_05,Carl Hooper,West Indies,1990,Right,Right,Off Spin,BAT,4|5,FALSE,FALSE
+WI_1990_06,Jimmy Adams,West Indies,1990,Left,Left,Left Arm Orthodox,BAT,5|6|7,FALSE,FALSE
+WI_1990_07,Ridley Jacobs,West Indies,1990,Left,None,None,WK,5|6|7,FALSE,TRUE
+WI_1990_08,Ian Bishop,West Indies,1990,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+WI_1990_09,Curtly Ambrose,West Indies,1990,Left,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+WI_1990_10,Courtney Walsh,West Indies,1990,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+WI_1990_11,Kenneth Benjamin,West Indies,1990,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+WI_2000_01,Chris Gayle,West Indies,2000,Left,Right,Off Spin,BAT,1|2,FALSE,FALSE
+WI_2000_02,Wavell Hinds,West Indies,2000,Left,Right,Right Arm Medium,BAT,1|2,FALSE,FALSE
+WI_2000_03,Ramnaresh Sarwan,West Indies,2000,Right,Right,Leg Spin,BAT,3|4,FALSE,FALSE
+WI_2000_04,Brian Lara,West Indies,2000,Left,Right,Leg Spin,BAT,3|4,TRUE,FALSE
+WI_2000_05,Shivnarine Chanderpaul,West Indies,2000,Left,Right,Leg Spin,BAT,4|5,FALSE,FALSE
+WI_2000_06,Dwayne Bravo,West Indies,2000,Right,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+WI_2000_07,Ridley Jacobs,West Indies,2000,Left,None,None,WK,5|6|7,FALSE,TRUE
+WI_2000_08,Mervyn Dillon,West Indies,2000,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+WI_2000_09,Jerome Taylor,West Indies,2000,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+WI_2000_10,Fidel Edwards,West Indies,2000,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+WI_2000_11,Corey Collymore,West Indies,2000,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+WI_2010_01,Chris Gayle,West Indies,2010,Left,Right,Off Spin,BAT,1|2,FALSE,FALSE
+WI_2010_02,Kraigg Brathwaite,West Indies,2010,Right,Right,Off Spin,BAT,1|2,FALSE,FALSE
+WI_2010_03,Darren Bravo,West Indies,2010,Left,Right,Right Arm Medium,BAT,3|4,FALSE,FALSE
+WI_2010_04,Marlon Samuels,West Indies,2010,Right,Right,Off Spin,BAT,4|5,FALSE,FALSE
+WI_2010_05,Shivnarine Chanderpaul,West Indies,2010,Left,Right,Leg Spin,BAT,4|5,FALSE,FALSE
+WI_2010_06,Kieron Pollard,West Indies,2010,Right,Right,Right Arm Medium,BAT,5|6|7,FALSE,FALSE
+WI_2010_07,Denesh Ramdin,West Indies,2010,Right,None,None,WK,5|6|7,FALSE,TRUE
+WI_2010_08,Jason Holder,West Indies,2010,Right,Right,Right Arm Fast Medium,AR,6|7|8,TRUE,FALSE
+WI_2010_09,Sunil Narine,West Indies,2010,Left,Right,Off Spin,SPIN,8|9,FALSE,FALSE
+WI_2010_10,Kemar Roach,West Indies,2010,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+WI_2010_11,Shannon Gabriel,West Indies,2010,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+WI_2020_01,Kraigg Brathwaite,West Indies,2020,Right,Right,Off Spin,BAT,1|2,TRUE,FALSE
+WI_2020_02,Tagenarine Chanderpaul,West Indies,2020,Left,Right,Leg Spin,BAT,1|2,FALSE,FALSE
+WI_2020_03,Shai Hope,West Indies,2020,Right,None,None,WK,3|4,FALSE,TRUE
+WI_2020_04,Nicholas Pooran,West Indies,2020,Left,Right,Off Spin,BAT,4|5,FALSE,FALSE
+WI_2020_05,Shimron Hetmyer,West Indies,2020,Left,None,None,BAT,4|5,FALSE,FALSE
+WI_2020_06,Rovman Powell,West Indies,2020,Right,Right,Right Arm Medium,BAT,5|6|7,FALSE,FALSE
+WI_2020_07,Jason Holder,West Indies,2020,Right,Right,Right Arm Fast Medium,AR,6|7|8,FALSE,FALSE
+WI_2020_08,Gudakesh Motie,West Indies,2020,Left,Left,Left Arm Orthodox,SPIN,8|9,FALSE,FALSE
+WI_2020_09,Alzarri Joseph,West Indies,2020,Right,Right,Right Arm Fast,PACE,9|10|11,FALSE,FALSE
+WI_2020_10,Kemar Roach,West Indies,2020,Right,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+WI_2020_11,Jayden Seales,West Indies,2020,Left,Right,Right Arm Fast Medium,PACE,9|10|11,FALSE,FALSE
+
