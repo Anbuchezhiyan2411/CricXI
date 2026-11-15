@@ -275,8 +275,9 @@ class DraftService:
         if not room:
             raise ValueError(f"Room '{code}' does not exist.")
 
-        if len(room.players) < 2:
-            raise ValueError("Draft requires exactly 2 players in the room.")
+        players = db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).all()
+        if len(players) < 2:
+            raise ValueError(f"Draft requires exactly 2 players in room '{code}' (currently has {len(players)}).")
 
         draft_state = db.query(DraftState).filter(DraftState.room_id == room.id).first()
         if draft_state:
@@ -307,7 +308,7 @@ class DraftService:
         else:
             country_history_obj = [[c_val, d_val]]
 
-        host_player = next((p for p in room.players if p.is_host), room.players[0])
+        host_player = next((p for p in players if p.user_id == room.host_id or p.is_host), players[0])
 
         now = datetime.now(timezone.utc)
         turn_deadline = now + timedelta(seconds=TURN_DURATION_SECONDS)
@@ -327,9 +328,17 @@ class DraftService:
             updated_at=now,
         )
         room.status = "DRAFTING"
-        db.add(draft_state)
-        db.commit()
-        db.refresh(draft_state)
+        try:
+            db.add(draft_state)
+            db.commit()
+            db.refresh(draft_state)
+        except Exception as e:
+            db.rollback()
+            existing = db.query(DraftState).filter(DraftState.room_id == room.id).first()
+            if existing:
+                return existing
+            logger.error("Failed to commit DraftState for room %s: %s", code, e)
+            raise
 
         logger.info(
             "Draft initialized for room %s. Round 1: %s %d (single_pool=%s). First picker: %s",
@@ -365,16 +374,34 @@ class DraftService:
         if not room:
             raise ValueError(f"Room '{code}' does not exist.")
 
+        players = db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).all()
+        if len(players) < 2:
+            raise ValueError(f"Draft requires exactly 2 players in room '{code}' (currently has {len(players)}).")
+
         draft_state = db.query(DraftState).filter(DraftState.room_id == room.id).first()
         if not draft_state:
             # Initialize if not present
-            draft_state = cls.initialize_draft(db, code)
+            try:
+                draft_state = cls.initialize_draft(db, code)
+            except Exception:
+                db.rollback()
+                draft_state = db.query(DraftState).filter(DraftState.room_id == room.id).first()
+                if not draft_state:
+                    raise
         elif draft_state.is_finished and room.status == "DRAFTING":
             # Room has been reset or started for a new match; generate fresh draft state
-            draft_state = cls.initialize_draft(db, code, force_fresh=True)
+            try:
+                draft_state = cls.initialize_draft(db, code, force_fresh=True)
+            except Exception:
+                db.rollback()
+                draft_state = db.query(DraftState).filter(DraftState.room_id == room.id).first()
+                if not draft_state:
+                    raise
 
-        host_player = next((p for p in room.players if p.is_host), room.players[0])
-        guest_player = next((p for p in room.players if not p.is_host), room.players[1] if len(room.players) > 1 else host_player)
+        host_player = next((p for p in players if p.user_id == room.host_id or p.is_host), players[0])
+        guest_player = next((p for p in players if p.user_id != host_player.user_id), None)
+        if not guest_player:
+            guest_player = players[1] if len(players) > 1 else host_player
 
         # Calculate live remaining timer seconds
         now = datetime.now(timezone.utc)
@@ -479,8 +506,9 @@ class DraftService:
         available_pool.sort(key=lambda p: p.overall_rating, reverse=True)
 
         # Current picker name
-        current_picker_player = next((p for p in room.players if p.user_id == draft_state.current_picker_id), None)
-        current_picker_name = current_picker_player.username if current_picker_player else "Unknown"
+        current_picker_id = draft_state.current_picker_id or host_player.user_id
+        current_picker_player = next((p for p in players if p.user_id == current_picker_id), None)
+        current_picker_name = current_picker_player.username if current_picker_player else (host_player.username if host_player else "Host")
 
         # Format all picks
         all_picks_resp = []
@@ -506,18 +534,18 @@ class DraftService:
 
         return DraftStateResponse(
             room_code=code,
-            current_round=draft_state.current_round,
+            current_round=draft_state.current_round or 1,
             total_rounds=11,
-            current_turn=draft_state.current_turn,
-            current_picker_id=draft_state.current_picker_id,
+            current_turn=draft_state.current_turn or 1,
+            current_picker_id=current_picker_id,
             current_picker_name=current_picker_name,
             round_country=draft_state.round_country,
             round_decade=draft_state.round_decade,
             remaining_seconds=remaining_seconds,
-            is_finished=draft_state.is_finished,
-            country_history=history,
-            available_pool=available_pool,
-            candidates=available_pool,
+            is_finished=bool(draft_state.is_finished),
+            country_history=history or [],
+            available_pool=available_pool or [],
+            candidates=available_pool or [],
             drafted_player_ids=sorted(list(drafted_player_ids)),
             host_squad=host_squad,
             guest_squad=guest_squad,
@@ -525,8 +553,8 @@ class DraftService:
                 host_player.user_id: host_squad,
                 guest_player.user_id: guest_squad,
             },
-            all_picks=all_picks_resp,
-            updated_at=draft_state.updated_at,
+            all_picks=all_picks_resp or [],
+            updated_at=draft_state.updated_at or now,
         )
 
     @classmethod
@@ -644,8 +672,11 @@ class DraftService:
         )
 
         # Advance Turn / Round
-        host_player = next((p for p in room.players if p.is_host), room.players[0])
-        guest_player = next((p for p in room.players if not p.is_host), room.players[1])
+        players = db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).all()
+        host_player = next((p for p in players if p.user_id == room.host_id or p.is_host), players[0])
+        guest_player = next((p for p in players if p.user_id != host_player.user_id), None)
+        if not guest_player:
+            guest_player = players[1] if len(players) > 1 else host_player
 
         now = datetime.now(timezone.utc)
         is_draft_finished = False
@@ -739,8 +770,11 @@ class DraftService:
         Constraint-based forward checking validation.
         Simulates the pick and verifies that BOTH teams can still legally complete their playing XIs.
         """
-        host_player = next((p for p in room.players if p.is_host), room.players[0])
-        guest_player = next((p for p in room.players if not p.is_host), room.players[1] if len(room.players) > 1 else host_player)
+        players = db.query(RoomPlayer).filter(RoomPlayer.room_id == room.id).all()
+        host_player = next((p for p in players if p.user_id == room.host_id or p.is_host), players[0])
+        guest_player = next((p for p in players if p.user_id != host_player.user_id), None)
+        if not guest_player:
+            guest_player = players[1] if len(players) > 1 else host_player
         team_a_user_id = host_player.user_id
         team_b_user_id = guest_player.user_id
 

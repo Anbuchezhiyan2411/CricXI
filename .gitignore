@@ -40,6 +40,8 @@ venv.bak/
 *.sqlite
 *.sqlite3
 *.db
+*.db-shm
+*.db-wal
 backend/app/cricxi.db
 
 # Node / Frontend

@@ -10,6 +10,7 @@ Provides full multiplayer lobby coordination endpoints:
 """
 
 import logging
+import traceback
 from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
@@ -197,7 +198,7 @@ async def start_game(
             DraftService.initialize_draft(db, room.room_code)
             draft_manager.start_room_timer(room.room_code)
         except Exception as draft_err:
-            logger.warning("Draft initialization in start_game warning: %s", draft_err)
+            logger.warning("Draft initialization in start_game warning: %s\n%s", draft_err, traceback.format_exc() if 'traceback' in globals() else "")
 
         # Broadcast game start
         await ws_manager.broadcast_to_room(

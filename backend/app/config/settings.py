@@ -71,8 +71,19 @@ class Settings(BaseModel):
         resolved_dataset_path = str(candidate_paths[0])
         for cp in candidate_paths:
             if cp.exists():
-                resolved_dataset_path = str(cp)
+                resolved_dataset_path = str(cp.resolve())
                 break
+
+        # Resolve database URL to canonical absolute path if using relative SQLite
+        raw_db_url = os.getenv("DATABASE_URL", "sqlite:///./cricxi.db")
+        if raw_db_url.startswith("sqlite:///./") or raw_db_url == "sqlite:///cricxi.db":
+            canonical_db = (ROOT_DIR / "cricxi.db").resolve()
+            resolved_db_url = f"sqlite:///{canonical_db.as_posix()}"
+        elif raw_db_url.startswith("sqlite:///") and not raw_db_url.startswith("sqlite:////") and ":" not in raw_db_url[10:]:
+            rel_part = raw_db_url[len("sqlite:///"):]
+            resolved_db_url = f"sqlite:///{((ROOT_DIR / rel_part)).resolve().as_posix()}"
+        else:
+            resolved_db_url = raw_db_url
 
         return cls(
             APP_NAME=os.getenv("APP_NAME", "CricXI"),
@@ -81,7 +92,7 @@ class Settings(BaseModel):
             HOST=os.getenv("HOST", "0.0.0.0"),
             PORT=int(os.getenv("PORT", "8000")),
             CORS_ORIGINS=cors_list,
-            DATABASE_URL=os.getenv("DATABASE_URL", "sqlite:///./cricxi.db"),
+            DATABASE_URL=resolved_db_url,
             DATASET_PATH=resolved_dataset_path,
             LOG_LEVEL=os.getenv("LOG_LEVEL", "INFO"),
         )

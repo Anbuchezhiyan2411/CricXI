@@ -5,6 +5,7 @@ submitting player selections, and retrieving available pools.
 """
 
 import logging
+import traceback
 from typing import List
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
@@ -71,14 +72,19 @@ async def start_draft(
             data=state_resp,
         )
     except ValueError as e:
+        logger.warning("Validation error starting draft for room %s: %s", code, e)
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
     except Exception as e:
-        logger.exception("Error starting draft for room %s: %s", code, e)
-        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to start draft.")
+        tb = traceback.format_exc()
+        logger.error("Exception starting draft for room %s: %s\n%s", code, e, tb)
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to start draft for room {code}: {str(e)}",
+        )
 
 
 @router.get("/{room_code}/state", response_model=ApiResponse[DraftStateResponse])
-def get_draft_state(
+async def get_draft_state(
     room_code: str,
     db: Session = Depends(get_db),
 ) -> ApiResponse[DraftStateResponse]:
@@ -97,10 +103,15 @@ def get_draft_state(
             data=state_resp,
         )
     except ValueError as e:
+        logger.warning("Validation error fetching draft state for room %s: %s", code, e)
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(e))
     except Exception as e:
-        logger.exception("Error fetching draft state for room %s: %s", code, e)
-        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to fetch draft state.")
+        tb = traceback.format_exc()
+        logger.error("Exception fetching draft state for room %s: %s\n%s", code, e, tb)
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to fetch draft state for room {code}: {str(e)}",
+        )
 
 
 @router.post("/{room_code}/pick", response_model=ApiResponse[DraftStateResponse])
@@ -227,10 +238,15 @@ async def make_draft_pick(
     except PermissionError as e:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=str(e))
     except ValueError as e:
+        logger.warning("Validation error making draft pick for room %s: %s", code, e)
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
     except Exception as e:
-        logger.exception("Error executing pick in room %s: %s", code, e)
-        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to execute pick.")
+        tb = traceback.format_exc()
+        logger.error("Exception executing pick in room %s: %s\n%s", code, e, tb)
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to execute pick for room {code}: {str(e)}",
+        )
 
 
 @router.get("/{room_code}/pool", response_model=ApiResponse[List[PlayerResponse]])
@@ -248,5 +264,13 @@ def get_round_pool(
             data=state_resp.available_pool,
         )
     except ValueError as e:
+        logger.warning("Validation error fetching pool for room %s: %s", code, e)
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(e))
+    except Exception as e:
+        tb = traceback.format_exc()
+        logger.error("Exception fetching pool for room %s: %s\n%s", code, e, tb)
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to fetch draft pool for room {code}: {str(e)}",
+        )
 

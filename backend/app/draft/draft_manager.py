@@ -23,6 +23,11 @@ class DraftManager:
     def __init__(self) -> None:
         # room_code -> asyncio.Task
         self._active_timers: Dict[str, asyncio.Task] = {}
+        self._loop: Optional[asyncio.AbstractEventLoop] = None
+
+    def set_event_loop(self, loop: asyncio.AbstractEventLoop) -> None:
+        """Stores the primary application event loop for cross-thread timer scheduling."""
+        self._loop = loop
 
     def is_timer_running(self, room_code: str) -> bool:
         task = self._active_timers.get(room_code.strip().upper())
@@ -32,11 +37,27 @@ class DraftManager:
         """Starts or restarts the 30-second countdown task for a room."""
         code = room_code.strip().upper()
         self.stop_room_timer(code)
+
+        target_loop = None
         try:
-            loop = asyncio.get_running_loop()
-            self._active_timers[code] = loop.create_task(self._timer_loop(code))
-            logger.info("Timer task started for draft room %s", code)
+            target_loop = asyncio.get_running_loop()
         except RuntimeError:
+            if self._loop and self._loop.is_running():
+                target_loop = self._loop
+
+        if target_loop and target_loop.is_running():
+            try:
+                current_running = asyncio.get_running_loop()
+                if current_running == target_loop:
+                    self._active_timers[code] = target_loop.create_task(self._timer_loop(code))
+                else:
+                    self._active_timers[code] = target_loop.create_task(self._timer_loop(code))
+            except RuntimeError:
+                # Dispatched from a threadpool worker
+                coro = self._timer_loop(code)
+                asyncio.run_coroutine_threadsafe(coro, target_loop)
+            logger.info("Timer task started for draft room %s", code)
+        else:
             logger.info("No running event loop; room timer for %s deferred", code)
 
     def stop_room_timer(self, room_code: str) -> None:
