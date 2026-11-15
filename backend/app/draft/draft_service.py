@@ -262,6 +262,7 @@ class DraftService:
                     viable_combos.append((c_name, d_year))
 
             if viable_combos:
+                print(f"[DRAFT DEBUG] Before random.choice (viable_combos) - combinations available: {len(viable_combos)}, first 10: {viable_combos[:10]}", flush=True)
                 return random.choice(viable_combos)
             logger.warning(
                 "No perfectly viable pool found for vacant_a=%s, vacant_b=%s; falling back to random available pool.",
@@ -269,6 +270,7 @@ class DraftService:
                 vacant_b,
             )
 
+        print(f"[DRAFT DEBUG] Before random.choice (available) - combinations available: {len(available)}, first 10: {available[:10]}", flush=True)
         return random.choice(available)
 
     @classmethod
