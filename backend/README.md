@@ -32,7 +32,7 @@ backend/
 
 ## Dataset Loading
 
-The backend automatically loads the curated Cricsheet dataset (`Dataset/output/master_players.csv`) on startup into memory via `DatasetLoader`.
+The backend automatically loads the curated Cricsheet dataset (`app/data/master_players.csv`) on startup into memory via `DatasetLoader`.
 The dataset contains 506 historically accurate players across 11 nations and 5 decades (1980s through 2020s), complete with comprehensive batting and bowling T20 statistics, strike rates, economy rates, and calculated ratings.
 
 ---

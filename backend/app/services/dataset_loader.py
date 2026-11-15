@@ -70,6 +70,7 @@ class DatasetLoader:
             raise RuntimeError(f"CRITICAL: Dataset file at {resolved} cannot be read: {read_err}") from read_err
 
         logger.info("Loading master player dataset from absolute path: %s", resolved)
+        print(f"[STARTUP] Master player dataset resolving from: {resolved}", flush=True)
         try:
             df = pd.read_csv(resolved)
             # Ensure proper handling of None/NaN strings for bowling columns
@@ -90,6 +91,7 @@ class DatasetLoader:
             self._by_id = {int(rec["player_id"]): rec for rec in records if "player_id" in rec}
             self._is_loaded = True
             logger.info("Successfully loaded %d players into memory from %s.", len(self._players), resolved)
+            print(f"[STARTUP] Master player dataset loaded successfully: {resolved} ({len(self._players)} players)", flush=True)
         except Exception as e:
             logger.exception("Failed to load and parse dataset from %s: %s", resolved, e)
             self._is_loaded = False

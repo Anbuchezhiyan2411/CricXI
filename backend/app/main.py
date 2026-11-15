@@ -57,6 +57,10 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
         logger.critical(err)
         raise RuntimeError(err)
 
+    print(
+        f"[STARTUP] Master player dataset validation PASSED: {dataset_service.count} players loaded from {dataset_service.resolved_path}",
+        flush=True,
+    )
     logger.info(
         "Dataset startup validation PASSED: %d players loaded from %s",
         dataset_service.count,

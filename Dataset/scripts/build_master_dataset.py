@@ -94,7 +94,7 @@ def build_master_dataset(
     """
     Merges players.csv with player_decade_stats.csv on [player_name, country, decade].
     Fills missing values safely for players with no T20I matches.
-    Calculates normalized ratings (0-100) and writes dataset/output/master_players.csv.
+    Calculates normalized ratings (0-100) and writes output/master_players.csv.
     """
     base_dir = Path(__file__).resolve().parent.parent
     if players_csv_path is None:
