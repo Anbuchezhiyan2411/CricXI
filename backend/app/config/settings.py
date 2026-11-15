@@ -19,16 +19,6 @@ ROOT_DIR = BACKEND_DIR.parent
 APP_DATA_DIR = (APP_DIR / "data").resolve()
 CANONICAL_DATASET_PATH = (APP_DATA_DIR / "master_players.csv").resolve()
 
-# Startup Settings Diagnostics
-print("===== SETTINGS DEBUG =====", flush=True)
-print(f"settings.__file__: {__file__}", flush=True)
-print(f"resolved BASE_DIR: {BACKEND_DIR}", flush=True)
-print(f"resolved ROOT_DIR: {ROOT_DIR}", flush=True)
-print(f"resolved APP_DIR: {APP_DIR}", flush=True)
-print(f"resolved APP_DATA_DIR: {APP_DATA_DIR}", flush=True)
-print(f"CANONICAL_DATASET_PATH: {CANONICAL_DATASET_PATH} (exists: {CANONICAL_DATASET_PATH.exists()})", flush=True)
-print("==========================", flush=True)
-
 # Load environment variables
 load_dotenv(BACKEND_DIR / ".env")
 load_dotenv(ROOT_DIR / ".env")
@@ -41,27 +31,20 @@ def resolve_dataset_path(raw_path: Optional[str] = None) -> Path:
     Supports local dev, Railway, Docker, and arbitrary working directories.
     Validates DATASET_PATH env var if provided; falls back to CANONICAL_DATASET_PATH.
     """
-    raw_env = os.getenv("DATASET_PATH")
-    print(f"[SETTINGS DEBUG] DATASET_PATH before any processing: raw_path={raw_path!r}, os.getenv('DATASET_PATH')={raw_env!r}", flush=True)
-
     env_val = (raw_path or os.getenv("DATASET_PATH", "")).strip()
     if env_val:
         # Check direct path (absolute or relative to current working dir)
         direct_cand = Path(env_val).resolve()
-        print(f"[SETTINGS DEBUG] Candidate considered: {direct_cand} | exists: {direct_cand.exists()} | is_file: {direct_cand.is_file()}", flush=True)
         if direct_cand.is_file():
             logger.info("Using valid configured DATASET_PATH: %s", direct_cand)
-            print(f"[SETTINGS DEBUG] DATASET_PATH after resolution: {direct_cand}", flush=True)
             return direct_cand
 
         # Check relative to base directories without leading/trailing slashes
         clean_rel = env_val.lstrip("/\\")
         for base in [APP_DATA_DIR, APP_DIR, BACKEND_DIR, ROOT_DIR]:
             rel_cand = (base / clean_rel).resolve()
-            print(f"[SETTINGS DEBUG] Candidate considered: {rel_cand} | exists: {rel_cand.exists()} | is_file: {rel_cand.is_file()}", flush=True)
             if rel_cand.is_file():
                 logger.info("Resolved configured DATASET_PATH relative to %s: %s", base, rel_cand)
-                print(f"[SETTINGS DEBUG] DATASET_PATH after resolution: {rel_cand}", flush=True)
                 return rel_cand
 
         logger.warning(
@@ -72,18 +55,14 @@ def resolve_dataset_path(raw_path: Optional[str] = None) -> Path:
         )
 
     # Use single canonical bundled dataset path
-    print(f"[SETTINGS DEBUG] Candidate considered: {CANONICAL_DATASET_PATH} | exists: {CANONICAL_DATASET_PATH.exists()} | is_file: {CANONICAL_DATASET_PATH.is_file()}", flush=True)
     if CANONICAL_DATASET_PATH.is_file():
         logger.info("Using canonical bundled dataset: %s", CANONICAL_DATASET_PATH)
-        print(f"[SETTINGS DEBUG] DATASET_PATH after resolution: {CANONICAL_DATASET_PATH}", flush=True)
         return CANONICAL_DATASET_PATH
 
     # Check fallback in data directory
     alt_players = (APP_DATA_DIR / "players.csv").resolve()
-    print(f"[SETTINGS DEBUG] Candidate considered: {alt_players} | exists: {alt_players.exists()} | is_file: {alt_players.is_file()}", flush=True)
     if alt_players.is_file():
         logger.warning("Using fallback players.csv at: %s", alt_players)
-        print(f"[SETTINGS DEBUG] DATASET_PATH after resolution: {alt_players}", flush=True)
         return alt_players
 
     raise FileNotFoundError(

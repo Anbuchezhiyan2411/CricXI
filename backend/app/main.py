@@ -5,8 +5,6 @@ Initializes the backend server, middleware, routes, and dataset services.
 
 from contextlib import asynccontextmanager
 import logging
-import os
-import sys
 from typing import AsyncGenerator
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -31,26 +29,10 @@ from app.api.routers import (
 setup_logging()
 logger = logging.getLogger("cricxi.main")
 
-def print_startup_debug(phase: str = "MODULE IMPORT") -> None:
-    print(f"===== STARTUP DEBUG ({phase}) =====", flush=True)
-    print(f"__file__: {__file__}", flush=True)
-    print(f"current working directory: {os.getcwd()}", flush=True)
-    print(f"Python executable: {sys.executable}", flush=True)
-    matching_env = {k: v for k, v in os.environ.items() if any(word in k.upper() for word in ["DATASET", "PATH", "RAILWAY"])}
-    print(f"environment variables (DATASET, PATH, RAILWAY): {matching_env}", flush=True)
-    print(f"dataset_service.is_loaded: {dataset_service.is_loaded}", flush=True)
-    print(f"player count: {dataset_service.count}", flush=True)
-    print("====================================", flush=True)
-
-# Print immediately during module loading
-print_startup_debug("MODULE LOAD")
-
 
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     """Lifespan event handler for application startup and shutdown."""
-    print_startup_debug("LIFESPAN STARTUP")
-
     logger.info("Initializing CricXI backend...")
 
     # Register running event loop with draft manager for cross-thread timers
@@ -75,10 +57,6 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
         logger.critical(err)
         raise RuntimeError(err)
 
-    print(
-        f"[STARTUP] Master player dataset validation PASSED: {dataset_service.count} players loaded from {dataset_service.resolved_path}",
-        flush=True,
-    )
     logger.info(
         "Dataset startup validation PASSED: %d players loaded from %s",
         dataset_service.count,

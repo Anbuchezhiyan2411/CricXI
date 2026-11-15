@@ -52,24 +52,6 @@ class DatasetLoader:
             self._is_loaded = False
             raise RuntimeError(f"CRITICAL: Dataset resolution failed: {e}") from e
 
-        path_obj = Path(resolved).resolve()
-        print("===== DATASET_LOADER DEBUG =====", flush=True)
-        print(f"dataset_loader.__file__: {__file__}", flush=True)
-        print(f"absolute path being opened: {path_obj}", flush=True)
-        print(f"pathlib.Path(path).exists(): {path_obj.exists()}", flush=True)
-        print(f"pathlib.Path(path).is_file(): {path_obj.is_file()}", flush=True)
-        if not path_obj.exists():
-            parent_dir = path_obj.parent
-            if parent_dir.exists():
-                try:
-                    contents = [p.name for p in parent_dir.iterdir()]
-                    print(f"File missing! Contents of parent directory ({parent_dir}): {contents}", flush=True)
-                except Exception as list_err:
-                    print(f"File missing! Could not list parent directory ({parent_dir}): {list_err}", flush=True)
-            else:
-                print(f"File missing! Parent directory ({parent_dir}) also does not exist.", flush=True)
-        print("================================", flush=True)
-
         if not resolved.is_file():
             err_msg = f"CRITICAL: Dataset file does not exist at resolved path: {resolved}"
             logger.critical(err_msg)
@@ -88,7 +70,6 @@ class DatasetLoader:
             raise RuntimeError(f"CRITICAL: Dataset file at {resolved} cannot be read: {read_err}") from read_err
 
         logger.info("Loading master player dataset from absolute path: %s", resolved)
-        print(f"[STARTUP] Master player dataset resolving from: {resolved}", flush=True)
         try:
             df = pd.read_csv(resolved)
             # Ensure proper handling of None/NaN strings for bowling columns
@@ -109,8 +90,6 @@ class DatasetLoader:
             self._by_id = {int(rec["player_id"]): rec for rec in records if "player_id" in rec}
             self._is_loaded = True
             logger.info("Successfully loaded %d players into memory from %s.", len(self._players), resolved)
-            print(f"[DATASET_LOADER DEBUG] Total number of players loaded: {len(self._players)}", flush=True)
-            print(f"[STARTUP] Master player dataset loaded successfully: {resolved} ({len(self._players)} players)", flush=True)
         except Exception as e:
             logger.exception("Failed to load and parse dataset from %s: %s", resolved, e)
             self._is_loaded = False
