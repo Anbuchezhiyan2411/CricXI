@@ -203,7 +203,9 @@ class DraftService:
         if not dataset_service.is_loaded:
             dataset_service.load()
         players = dataset_service.get_all_players()
-        combos = sorted(list(set((p["country"], int(p["decade"])) for p in players)))
+        if not players:
+            return []
+        combos = sorted(list(set((p["country"], int(p["decade"])) for p in players if p.get("country") and p.get("decade"))))
         return combos
 
     @classmethod
@@ -224,12 +226,22 @@ class DraftService:
         that the chosen combination contains feasible candidates for both teams.
         """
         all_combos = cls.get_all_combinations()
+        if not all_combos:
+            raise ValueError(
+                "Cannot select draft combination: The master player dataset is empty or contains no valid combinations."
+            )
+
         used_set = set((h[0], int(h[1])) for h in history if len(h) >= 2)
         available = [c for c in all_combos if c not in used_set]
 
         if not available:
             # Fallback if all 46 combinations exhausted (should not happen in 11 rounds)
             available = all_combos
+
+        if not available:
+            raise ValueError(
+                "Cannot select draft combination: No valid (Country, Decade) combinations available."
+            )
 
         # If vacant positions and role needs are provided, filter available combinations
         # to guarantee that both teams can legally finish their playing XIs

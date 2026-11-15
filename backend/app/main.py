@@ -45,12 +45,22 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     init_db()
     logger.info("Database schemas initialized.")
 
-    # 2. Load dataset into memory
-    dataset_service.load()
+    # 2. Load dataset into memory with startup validation
+    try:
+        dataset_service.load()
+    except Exception as ds_err:
+        logger.critical("STARTUP FAILED: Master player dataset could not be loaded: %s", ds_err)
+        raise RuntimeError(f"Startup failed: {ds_err}") from ds_err
+
+    if not dataset_service.is_loaded or dataset_service.count == 0:
+        err = f"STARTUP FAILED: Dataset at {dataset_service.resolved_path} is empty (0 players loaded)."
+        logger.critical(err)
+        raise RuntimeError(err)
+
     logger.info(
-        "Dataset initialized. Loaded: %s (%d players)",
-        dataset_service.is_loaded,
+        "Dataset startup validation PASSED: %d players loaded from %s",
         dataset_service.count,
+        dataset_service.resolved_path,
     )
 
     yield

@@ -7,7 +7,7 @@ import logging
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 import pandas as pd
-from app.config.settings import settings
+from app.config.settings import settings, resolve_dataset_path
 
 logger = logging.getLogger(__name__)
 
@@ -21,6 +21,7 @@ class DatasetLoader:
         self._players: List[Dict[str, Any]] = []
         self._by_id: Dict[int, Dict[str, Any]] = {}
         self._is_loaded: bool = False
+        self._resolved_path: Optional[Path] = None
 
     @property
     def is_loaded(self) -> bool:
@@ -30,30 +31,47 @@ class DatasetLoader:
     def count(self) -> int:
         return len(self._players)
 
+    @property
+    def resolved_path(self) -> Optional[Path]:
+        return self._resolved_path
+
     def load(self) -> None:
-        """Loads and parses the master player dataset."""
-        path = Path(self.dataset_path)
-        if not path.exists():
-            # Try alternate paths
-            candidates = [
-                Path("Dataset/output/master_players.csv"),
-                Path("dataset/output/master_players.csv"),
-                Path("../Dataset/output/master_players.csv"),
-                Path("../dataset/output/master_players.csv"),
-            ]
-            for cand in candidates:
-                if cand.exists():
-                    path = cand
-                    break
-
-        if not path.exists():
-            logger.error("Dataset file could not be found at %s", self.dataset_path)
-            self._is_loaded = False
-            return
-
-        logger.info("Loading master player dataset from %s", path)
+        """
+        Loads and parses the master player dataset.
+        Enforces startup validation:
+        - verifies dataset file exists
+        - verifies dataset is readable
+        - logs resolved absolute path and player count
+        - raises RuntimeError on failure instead of allowing silent crashes
+        """
         try:
-            df = pd.read_csv(path)
+            resolved = resolve_dataset_path(self.dataset_path)
+            self._resolved_path = resolved
+        except Exception as e:
+            logger.critical("Failed to resolve master player dataset path: %s", e)
+            self._is_loaded = False
+            raise RuntimeError(f"CRITICAL: Dataset resolution failed: {e}") from e
+
+        if not resolved.is_file():
+            err_msg = f"CRITICAL: Dataset file does not exist at resolved path: {resolved}"
+            logger.critical(err_msg)
+            self._is_loaded = False
+            raise RuntimeError(err_msg)
+
+        # Verify readability
+        try:
+            with open(resolved, "r", encoding="utf-8") as f:
+                header = f.readline()
+                if not header or "player_id" not in header:
+                    raise ValueError("Dataset file header is missing required 'player_id' column.")
+        except Exception as read_err:
+            logger.critical("CRITICAL: Dataset file at %s is not readable: %s", resolved, read_err)
+            self._is_loaded = False
+            raise RuntimeError(f"CRITICAL: Dataset file at {resolved} cannot be read: {read_err}") from read_err
+
+        logger.info("Loading master player dataset from absolute path: %s", resolved)
+        try:
+            df = pd.read_csv(resolved)
             # Ensure proper handling of None/NaN strings for bowling columns
             df["bowling_hand"] = df["bowling_hand"].fillna("None").astype(str).replace({"": "None", "nan": "None", "NaN": "None"})
             df["bowling_type"] = df["bowling_type"].fillna("None").astype(str).replace({"": "None", "nan": "None", "NaN": "None"})
@@ -64,14 +82,18 @@ class DatasetLoader:
 
             # Convert to python dict records
             records = df.to_dict(orient="records")
+            if not records:
+                raise ValueError(f"Dataset at {resolved} contains 0 player records.")
+
             self._df = df
             self._players = records
             self._by_id = {int(rec["player_id"]): rec for rec in records if "player_id" in rec}
             self._is_loaded = True
-            logger.info("Successfully loaded %d players into memory.", len(self._players))
+            logger.info("Successfully loaded %d players into memory from %s.", len(self._players), resolved)
         except Exception as e:
-            logger.exception("Failed to load dataset: %s", e)
+            logger.exception("Failed to load and parse dataset from %s: %s", resolved, e)
             self._is_loaded = False
+            raise RuntimeError(f"CRITICAL: Failed to parse player dataset from '{resolved}': {e}") from e
 
     def get_all_players(self) -> List[Dict[str, Any]]:
         """Returns all player records."""
@@ -103,4 +125,3 @@ class DatasetLoader:
 
 # Singleton instance
 dataset_service = DatasetLoader()
-

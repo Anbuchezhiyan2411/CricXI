@@ -72,8 +72,14 @@ async def start_draft(
             data=state_resp,
         )
     except ValueError as e:
-        logger.warning("Validation error starting draft for room %s: %s", code, e)
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
+        err_msg = str(e)
+        logger.warning("Validation error starting draft for room %s: %s", code, err_msg)
+        if "dataset" in err_msg.lower() or "combination" in err_msg.lower():
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail=f"Draft configuration error: {err_msg}",
+            )
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=err_msg)
     except Exception as e:
         tb = traceback.format_exc()
         logger.error("Exception starting draft for room %s: %s\n%s", code, e, tb)
@@ -103,8 +109,14 @@ async def get_draft_state(
             data=state_resp,
         )
     except ValueError as e:
-        logger.warning("Validation error fetching draft state for room %s: %s", code, e)
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(e))
+        err_msg = str(e)
+        logger.warning("Validation error fetching draft state for room %s: %s", code, err_msg)
+        if "dataset" in err_msg.lower() or "combination" in err_msg.lower():
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail=f"Draft configuration error: {err_msg}",
+            )
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=err_msg)
     except Exception as e:
         tb = traceback.format_exc()
         logger.error("Exception fetching draft state for room %s: %s\n%s", code, e, tb)
