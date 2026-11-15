@@ -362,20 +362,20 @@ export const LiveMatchPage: React.FC = () => {
   if (error) {
     return (
       <div className="max-w-md mx-auto text-center py-16 px-4">
-        <div className="p-8 rounded-2xl bg-slate-900 border border-slate-800 space-y-4 shadow-xl">
-          <AlertCircle className="w-10 h-10 text-rose-500 mx-auto" />
-          <h3 className="text-xl font-bold text-white">Match Arena Unavailable</h3>
-          <p className="text-sm text-slate-400">{error}</p>
+        <div className="cricket-card p-8 space-y-4 shadow-xl">
+          <AlertCircle className="w-10 h-10 text-red-400 mx-auto" />
+          <h3 className="text-xl font-black text-white">Match Arena Unavailable</h3>
+          <p className="text-sm text-[#C7D2E2]">{error}</p>
           <div className="pt-2 flex justify-center space-x-3">
             <button
               onClick={() => syncMatchState(true)}
-              className="px-4 py-2 text-xs font-bold rounded-lg bg-amber-500 text-slate-950 hover:bg-amber-400"
+              className="px-5 py-2.5 text-xs font-black rounded-xl bg-gradient-to-r from-[#F4C430] to-amber-500 text-[#081826] hover:scale-[1.02] transition-transform"
             >
               Retry
             </button>
             <button
               onClick={() => navigate(`/toss?room=${roomCode}`)}
-              className="px-4 py-2 text-xs font-bold rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:bg-slate-700"
+              className="px-5 py-2.5 text-xs font-bold rounded-xl bg-[#081826] border border-[#1E3A5F] text-[#C7D2E2] hover:text-white"
             >
               Return to Toss
             </button>
@@ -391,14 +391,14 @@ export const LiveMatchPage: React.FC = () => {
     <div className="py-6 px-3 sm:px-6 max-w-6xl mx-auto space-y-6 animate-in fade-in duration-500">
       {/* Disconnect Abandonment Modal */}
       {abandonmentNotice && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/85 backdrop-blur-md p-4 animate-in fade-in duration-300">
-          <div className="max-w-md w-full p-6 sm:p-8 rounded-2xl bg-slate-900 border border-amber-500/50 shadow-2xl text-center space-y-4">
-            <div className="w-16 h-16 rounded-full bg-amber-500/20 text-amber-400 mx-auto flex items-center justify-center border border-amber-500/40">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#081826]/85 backdrop-blur-md p-4 animate-in fade-in duration-300">
+          <div className="max-w-md w-full p-6 sm:p-8 rounded-2xl bg-[#12263A] border-2 border-[#F4C430]/60 shadow-2xl text-center space-y-4">
+            <div className="w-16 h-16 rounded-full bg-[#F4C430]/20 text-[#F4C430] mx-auto flex items-center justify-center border border-[#F4C430]/40">
               <Trophy className="w-8 h-8" />
             </div>
             <h2 className="text-xl font-black text-white">{abandonmentNotice.title}</h2>
-            <p className="text-sm font-semibold text-amber-300">{abandonmentNotice.message}</p>
-            <div className="flex items-center justify-center space-x-2 text-xs text-slate-400 pt-2">
+            <p className="text-sm font-semibold text-[#F4C430]">{abandonmentNotice.message}</p>
+            <div className="flex items-center justify-center space-x-2 text-xs text-[#C7D2E2] pt-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
               <span>{abandonmentNotice.submessage}</span>
             </div>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Users, AlertCircle, ArrowLeft, Sparkles } from "lucide-react";
-import { Card } from "../components/common/Card";
+import { AlertCircle, ArrowLeft, Sparkles, Trophy } from "lucide-react";
 import { Button } from "../components/common/Button";
 import { roomService } from "../services/roomService";
 import { useGame } from "../contexts/GameContext";
@@ -64,25 +63,28 @@ export const CreateRoomPage: React.FC = () => {
     <div className="max-w-md mx-auto py-10 px-4">
       <Link
         to="/"
-        className="inline-flex items-center space-x-1.5 text-xs font-semibold text-slate-400 hover:text-slate-200 mb-6 transition-colors"
+        className="inline-flex items-center space-x-1.5 text-xs font-bold text-slate-400 hover:text-white mb-6 transition-colors"
       >
         <ArrowLeft className="w-3.5 h-3.5" />
         <span>Back to Home</span>
       </Link>
 
-      <Card className="space-y-6 shadow-2xl border-slate-800 bg-slate-900/90 backdrop-blur-md p-6 sm:p-8">
+      <div className="cricket-card p-6 sm:p-8 space-y-6 shadow-2xl relative overflow-hidden">
+        {/* Glow accent */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0B3D91] via-[#F4C430] to-[#138A36]" />
+
         <div className="text-center space-y-2">
-          <div className="w-14 h-14 bg-accent/20 border border-accent/40 rounded-2xl flex items-center justify-center text-accent mx-auto shadow-lg shadow-accent/10">
-            <Users className="w-7 h-7" />
+          <div className="w-16 h-16 bg-[#081826] border-2 border-[#F4C430]/60 rounded-2xl flex items-center justify-center text-[#F4C430] mx-auto shadow-xl shadow-[#F4C430]/15">
+            <Trophy className="w-8 h-8 stroke-[2.2]" />
           </div>
-          <h2 className="text-2xl font-black text-white tracking-tight">Create Room</h2>
-          <p className="text-xs text-slate-400">
-            Host a room, invite an opponent with a 6-character code, and draft your XI.
+          <h2 className="text-2xl font-black text-white tracking-tight uppercase">Create Match Room</h2>
+          <p className="text-xs text-[#C7D2E2] leading-relaxed">
+            Host a room, invite an opponent with a 6-character code, and draft your ultimate XI.
           </p>
         </div>
 
         {error && (
-          <div className="p-3 bg-red-500/10 border border-red-500/30 rounded-xl flex items-center space-x-2.5 text-xs text-red-400">
+          <div className="p-3 bg-red-500/10 border border-red-500/30 rounded-xl flex items-center space-x-2.5 text-xs text-red-400 font-semibold">
             <AlertCircle className="w-4 h-4 flex-shrink-0" />
             <span>{error}</span>
           </div>
@@ -91,10 +93,10 @@ export const CreateRoomPage: React.FC = () => {
         <form onSubmit={handleCreate} className="space-y-4">
           <div className="space-y-1.5">
             <div className="flex justify-between items-center text-xs">
-              <label htmlFor="username" className="font-semibold text-slate-300">
-                Your Player Name
+              <label htmlFor="username" className="font-bold text-[#C7D2E2] uppercase tracking-wider text-[11px]">
+                Your Captain Name
               </label>
-              <span className="text-slate-500 font-mono">
+              <span className="text-slate-400 font-mono text-[11px]">
                 {username.trim().length}/20
               </span>
             </div>
@@ -107,20 +109,21 @@ export const CreateRoomPage: React.FC = () => {
                 setUsername(e.target.value);
                 if (error) setError(null);
               }}
-              className="w-full px-4 py-3 bg-background border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-accent text-sm"
+              className="w-full px-4 py-3 bg-[#081826] border border-[#1E3A5F] rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-[#F4C430] text-sm font-semibold transition-colors"
               minLength={3}
               maxLength={20}
               required
               autoFocus
             />
-            <p className="text-[11px] text-slate-500">
-              Between 3 and 20 characters. Will be visible to your opponent.
+            <p className="text-[11px] text-slate-400">
+              Between 3 and 20 characters. Will be visible to your opponent on the scoreboard.
             </p>
           </div>
 
           <Button
             type="submit"
-            className="w-full py-3.5 text-sm font-bold shadow-lg shadow-accent/20"
+            variant="gold"
+            className="w-full py-3.5 text-sm font-black shadow-xl shadow-[#F4C430]/20 tracking-wider uppercase"
             isLoading={loading}
           >
             <Sparkles className="w-4 h-4 mr-2" />
@@ -128,15 +131,15 @@ export const CreateRoomPage: React.FC = () => {
           </Button>
         </form>
 
-        <div className="pt-2 border-t border-slate-800 text-center">
-          <p className="text-xs text-slate-400">
+        <div className="pt-2 border-t border-[#1E3A5F] text-center">
+          <p className="text-xs text-[#C7D2E2]">
             Have a friend code already?{" "}
-            <Link to="/join-room" className="text-accent hover:underline font-semibold">
+            <Link to="/join-room" className="text-[#F4C430] hover:underline font-bold">
               Join with Code
             </Link>
           </p>
         </div>
-      </Card>
+      </div>
     </div>
   );
 };

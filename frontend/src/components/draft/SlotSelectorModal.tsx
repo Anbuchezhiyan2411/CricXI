@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import { X, ShieldAlert, Check, UserCheck } from "lucide-react";
+import { X, ShieldAlert, Check, UserCheck, Shield } from "lucide-react";
 import { Player, UserSquad } from "../../types";
 import { Button } from "../common/Button";
 import { Badge } from "../common/Badge";
@@ -20,7 +20,7 @@ const POSITION_LABELS: Record<number, string> = {
   3: "Top Order (Pos 3)",
   4: "Middle Order (Pos 4)",
   5: "Middle Order (Pos 5)",
-  6: "All-Rounder / Finisher (Pos 6)",
+  6: "Finisher / AR (Pos 6)",
   7: "Lower Middle (Pos 7)",
   8: "Lower Order (Pos 8)",
   9: "Bowler / Tail (Pos 9)",
@@ -81,45 +81,50 @@ export const SlotSelectorModal: React.FC<SlotSelectorModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-in fade-in duration-200">
-      <div className="relative w-full max-w-lg bg-surface border border-slate-800 rounded-2xl shadow-2xl p-6 overflow-hidden">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#081826]/85 backdrop-blur-md animate-in fade-in duration-200">
+      <div className="relative w-full max-w-lg bg-[#12263A] border-2 border-[#1E3A5F] rounded-2xl shadow-2xl p-6 sm:p-7 overflow-hidden text-white">
+        {/* Glow accent */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0B3D91] via-[#F4C430] to-[#138A36]" />
+
         {/* Close Button */}
         <button
           onClick={onClose}
           disabled={isSubmitting}
-          className="absolute top-4 right-4 p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800/80 transition-colors"
+          className="absolute top-4 right-4 p-2 rounded-xl text-slate-400 hover:text-white hover:bg-[#1E3A5F] transition-colors"
+          aria-label="Close modal"
         >
           <X className="w-5 h-5" />
         </button>
 
         {/* Modal Header */}
-        <div className="space-y-1 mb-5">
+        <div className="space-y-1.5 mb-5">
           <div className="flex items-center space-x-2">
-            <span className="text-xs uppercase font-extrabold tracking-wider text-accent">
-              Assign Batting Position
+            <span className="text-[11px] uppercase font-black tracking-widest text-[#F4C430] flex items-center space-x-1">
+              <Shield className="w-3.5 h-3.5 text-[#F4C430]" />
+              <span>Assign Batting Position</span>
             </span>
           </div>
-          <h2 className="text-xl font-black text-white">{player.player_name}</h2>
-          <div className="flex items-center space-x-2 text-xs text-slate-400">
-            <Badge variant="role" roleType={player.primary_role} className="text-[10px]">
+          <h2 className="text-2xl font-black text-white tracking-tight">{player.player_name}</h2>
+          <div className="flex items-center space-x-2.5 text-xs text-[#C7D2E2]">
+            <Badge variant="role" roleType={player.primary_role} className="text-[10px] font-bold">
               {player.primary_role}
             </Badge>
             <span>•</span>
-            <span>{player.country}</span>
+            <span className="font-medium text-slate-300">{player.country}</span>
             <span>•</span>
-            <span>OVR: {Math.round(player.overall_rating || 0)}</span>
+            <span className="font-extrabold text-[#F4C430]">OVR: {Math.round(player.overall_rating || 0)}</span>
           </div>
         </div>
 
         {/* Position Selection Area */}
         <div className="space-y-3 mb-6">
-          <label className="text-xs font-bold uppercase tracking-wider text-slate-300">
-            Select an Open Batting Slot (1–11):
+          <label className="text-xs font-black uppercase tracking-wider text-[#C7D2E2]">
+            Select Open Batting Slot (1–11):
           </label>
 
           {!hasAvailableSlot ? (
             <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-red-300 text-xs flex items-center space-x-3">
-              <ShieldAlert className="w-5 h-5 shrink-0" />
+              <ShieldAlert className="w-5 h-5 shrink-0 text-red-400" />
               <span>
                 All eligible positions for this player ({eligiblePositions.join(", ")}) are already filled in your squad.
               </span>
@@ -137,15 +142,22 @@ export const SlotSelectorModal: React.FC<SlotSelectorModalProps> = ({
                     className={cn(
                       "flex items-center justify-between p-3 rounded-xl border text-left transition-all duration-150",
                       slot.isOccupied
-                        ? "bg-slate-900/60 border-slate-800/70 text-slate-400 cursor-not-allowed opacity-50"
+                        ? "bg-[#081826]/60 border-[#1E3A5F]/50 text-slate-500 cursor-not-allowed opacity-50"
                         : isSelected
-                        ? "bg-accent/15 border-accent text-accent shadow-sm"
-                        : "bg-slate-900/40 border-slate-800 text-slate-300 hover:border-slate-700 hover:bg-slate-800/50"
+                        ? "bg-[#0B3D91]/30 border-[#F4C430] text-white shadow-md shadow-[#F4C430]/10"
+                        : "bg-[#081826]/70 border-[#1E3A5F] text-[#C7D2E2] hover:border-slate-500 hover:bg-[#1E3A5F]/40"
                     )}
                   >
                     <div>
                       <div className="font-bold text-xs flex items-center space-x-1.5">
-                        <span className="w-5 h-5 rounded-md bg-slate-800 flex items-center justify-center text-[11px] font-mono">
+                        <span
+                          className={cn(
+                            "w-5 h-5 rounded-md flex items-center justify-center text-[11px] font-mono font-bold",
+                            isSelected
+                              ? "bg-[#F4C430] text-[#081826]"
+                              : "bg-[#1E3A5F] text-slate-300"
+                          )}
+                        >
                           {slot.position}
                         </span>
                         <span className="truncate">{slot.label}</span>
@@ -159,7 +171,7 @@ export const SlotSelectorModal: React.FC<SlotSelectorModalProps> = ({
 
                     <div>
                       {isSelected && (
-                        <div className="w-5 h-5 rounded-full bg-accent flex items-center justify-center text-white">
+                        <div className="w-5 h-5 rounded-full bg-[#F4C430] flex items-center justify-center text-[#081826]">
                           <Check className="w-3.5 h-3.5 stroke-[3]" />
                         </div>
                       )}
@@ -172,24 +184,24 @@ export const SlotSelectorModal: React.FC<SlotSelectorModalProps> = ({
         </div>
 
         {/* Modal Actions */}
-        <div className="flex items-center justify-end space-x-3 pt-3 border-t border-slate-800">
+        <div className="flex items-center justify-end space-x-3 pt-4 border-t border-[#1E3A5F]">
           <Button
             type="button"
             variant="ghost"
             size="sm"
             disabled={isSubmitting}
             onClick={onClose}
-            className="text-xs"
+            className="text-xs text-[#C7D2E2] hover:text-white"
           >
             Cancel
           </Button>
           <Button
             type="button"
-            variant="primary"
+            variant="gold"
             size="sm"
             disabled={!selectedPosition || !hasAvailableSlot || isSubmitting}
             onClick={handleConfirm}
-            className="text-xs font-bold px-5"
+            className="text-xs font-black px-6 tracking-wide"
           >
             {isSubmitting ? (
               "Locking In..."

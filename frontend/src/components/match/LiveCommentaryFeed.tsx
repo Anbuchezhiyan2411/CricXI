@@ -11,47 +11,49 @@ export const LiveCommentaryFeed: React.FC<LiveCommentaryFeedProps> = ({
 }) => {
   const getOutcomeBadge = (tok: string, isWicket: boolean, isBoundary: boolean) => {
     if (isWicket) {
-      return "bg-rose-500/20 text-rose-400 border-rose-500/40 font-black";
+      return "bg-gradient-to-tr from-red-700 to-[#E53935] text-white border-red-400 font-black shadow-sm";
     }
     if (isBoundary) {
-      return "bg-amber-500/20 text-amber-300 border-amber-500/40 font-black";
+      return tok === "6"
+        ? "bg-purple-700 text-[#F4C430] border-purple-400 font-black shadow-sm"
+        : "bg-[#F4C430] text-[#081826] border-amber-300 font-black shadow-sm";
     }
     if (tok.includes("Wd") || tok.includes("Nb")) {
-      return "bg-yellow-500/20 text-yellow-300 border-yellow-500/40 font-bold";
+      return "bg-amber-500/20 text-amber-300 border-amber-500/50 font-bold";
     }
-    return "bg-slate-800 text-slate-300 border-slate-700 font-semibold";
+    return "bg-[#081826] text-[#C7D2E2] border-[#1E3A5F] font-bold";
   };
 
   return (
-    <div className="rounded-2xl bg-slate-900 border border-slate-800 p-4 sm:p-5 shadow-lg space-y-3">
-      <div className="flex items-center space-x-2 border-b border-slate-800/80 pb-2.5">
-        <MessageSquareText className="w-4 h-4 text-amber-400" />
-        <h4 className="text-xs font-black uppercase tracking-wider text-slate-300">
+    <div className="cricket-card p-4 sm:p-5 shadow-lg space-y-3">
+      <div className="flex items-center space-x-2 border-b border-[#1E3A5F] pb-2.5">
+        <MessageSquareText className="w-4 h-4 text-[#F4C430]" />
+        <h4 className="text-xs font-black uppercase tracking-wider text-[#C7D2E2]">
           Ball-by-Ball Live Commentary
         </h4>
       </div>
 
-      <div className="max-h-72 overflow-y-auto space-y-2.5 pr-1 divide-y divide-slate-800/40">
+      <div className="max-h-80 overflow-y-auto space-y-2.5 pr-1 divide-y divide-[#1E3A5F]/40 scrollbar-thin">
         {commentary.length > 0 ? (
           commentary.map((entry, idx) => (
             <div
               key={entry.id || idx}
-              className={`pt-2.5 flex items-start space-x-3 text-xs leading-relaxed animate-in fade-in duration-300 ${
+              className={`pt-2.5 flex items-start space-x-3 text-xs leading-relaxed transition-all ${
                 entry.is_wicket
-                  ? "bg-rose-500/5 -mx-2 px-2 py-1.5 rounded-lg border-l-2 border-rose-500"
+                  ? "bg-red-500/10 -mx-2 px-2.5 py-2 rounded-xl border-l-4 border-[#E53935]"
                   : entry.is_boundary
-                  ? "bg-amber-500/5 -mx-2 px-2 py-1.5 rounded-lg border-l-2 border-amber-500"
+                  ? "bg-[#F4C430]/10 -mx-2 px-2.5 py-2 rounded-xl border-l-4 border-[#F4C430]"
                   : ""
               }`}
             >
               {/* Over Number */}
-              <div className="font-mono font-bold text-slate-500 w-9 shrink-0 pt-0.5">
+              <div className="font-mono font-bold text-slate-400 w-10 shrink-0 pt-0.5 text-[11px]">
                 {entry.over_display}
               </div>
 
               {/* Short Outcome Badge */}
               <div
-                className={`w-6 h-6 shrink-0 rounded-full border flex items-center justify-center text-[11px] ${getOutcomeBadge(
+                className={`w-6 h-6 shrink-0 rounded-full border flex items-center justify-center text-[10px] font-mono ${getOutcomeBadge(
                   entry.short_outcome,
                   entry.is_wicket,
                   entry.is_boundary
@@ -61,13 +63,13 @@ export const LiveCommentaryFeed: React.FC<LiveCommentaryFeedProps> = ({
               </div>
 
               {/* Commentary Prose */}
-              <div className="text-slate-300 font-normal grow">
+              <div className="text-slate-200 font-normal grow">
                 {entry.text}
               </div>
             </div>
           ))
         ) : (
-          <div className="py-8 text-center text-slate-500 italic text-xs">
+          <div className="py-8 text-center text-slate-400 italic text-xs">
             Simulation starting... awaiting first delivery commentary.
           </div>
         )}
@@ -75,4 +77,3 @@ export const LiveCommentaryFeed: React.FC<LiveCommentaryFeedProps> = ({
     </div>
   );
 };
-

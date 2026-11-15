@@ -25,28 +25,28 @@ export const SimulationControls: React.FC<SimulationControlsProps> = ({
   }
 
   const speedOptions = [
-    { label: "0.5x Slow", val: 0.5 },
-    { label: "1.0x Normal", val: 1.0 },
-    { label: "2.0x Fast", val: 2.0 },
-    { label: "3.0x Turbo", val: 3.0 },
+    { label: "0.5x", val: 0.5 },
+    { label: "1.0x", val: 1.0 },
+    { label: "2.0x", val: 2.0 },
+    { label: "3.0x", val: 3.0 },
   ];
 
   return (
-    <div className="rounded-2xl bg-slate-900 border border-slate-800 p-4 shadow-lg flex flex-wrap items-center justify-between gap-4">
+    <div className="cricket-card p-4 shadow-lg flex flex-wrap items-center justify-between gap-4">
       {/* Play / Pause & Step Controls */}
       <div className="flex items-center space-x-3">
         {isPaused ? (
           <button
             onClick={onPlayResume}
-            className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs uppercase tracking-wider transition-all shadow-md transform hover:scale-[1.02] active:scale-[0.98]"
+            className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#F4C430] to-amber-400 hover:from-amber-400 hover:to-amber-500 text-[#081826] font-black text-xs uppercase tracking-wider transition-all shadow-lg shadow-[#F4C430]/20 transform hover:scale-[1.03] active:scale-[0.98]"
           >
-            <Play className="w-4 h-4 fill-slate-950" />
+            <Play className="w-4 h-4 fill-[#081826]" />
             <span>Resume Match</span>
           </button>
         ) : (
           <button
             onClick={onPause}
-            className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-amber-400 font-black text-xs uppercase tracking-wider transition-all shadow-md"
+            className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-[#081826] hover:bg-[#1E3A5F] border border-[#1E3A5F] text-[#F4C430] font-black text-xs uppercase tracking-wider transition-all shadow"
           >
             <Pause className="w-4 h-4" />
             <span>Pause Match</span>
@@ -56,37 +56,39 @@ export const SimulationControls: React.FC<SimulationControlsProps> = ({
         {/* Step 1 Ball Button */}
         <button
           onClick={onStep}
-          className="inline-flex items-center space-x-1.5 px-3.5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 font-bold text-xs transition-all"
+          className="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-xl bg-[#081826] hover:bg-[#1E3A5F] border border-[#1E3A5F] text-white font-bold text-xs transition-all"
           title="Simulate 1 delivery"
         >
-          <StepForward className="w-4 h-4" />
+          <StepForward className="w-4 h-4 text-[#C7D2E2]" />
           <span>Next Ball</span>
         </button>
       </div>
 
       {/* Speed Controls */}
       <div className="flex items-center space-x-2">
-        <div className="flex items-center space-x-1 text-slate-500 text-xs font-bold mr-1">
-          <Gauge className="w-3.5 h-3.5" />
+        <div className="flex items-center space-x-1 text-[#C7D2E2] text-xs font-bold mr-1">
+          <Gauge className="w-3.5 h-3.5 text-[#F4C430]" />
           <span>Speed:</span>
         </div>
-        <div className="flex items-center space-x-1.5 bg-slate-950/80 p-1 rounded-xl border border-slate-800">
-          {speedOptions.map((opt) => (
-            <button
-              key={opt.val}
-              onClick={() => onSetSpeed(opt.val)}
-              className={`px-2.5 py-1 rounded-lg text-xs font-black transition-all ${
-                simulationSpeed === opt.val
-                  ? "bg-amber-500 text-slate-950 shadow"
-                  : "text-slate-400 hover:text-white"
-              }`}
-            >
-              {opt.label.split(" ")[0]}
-            </button>
-          ))}
+        <div className="flex items-center space-x-1 bg-[#081826] p-1 rounded-xl border border-[#1E3A5F]">
+          {speedOptions.map((opt) => {
+            const isSelected = simulationSpeed === opt.val;
+            return (
+              <button
+                key={opt.val}
+                onClick={() => onSetSpeed(opt.val)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-black transition-all font-mono ${
+                  isSelected
+                    ? "bg-[#F4C430] text-[#081826] shadow-sm font-bold"
+                    : "text-slate-400 hover:text-white"
+                }`}
+              >
+                {opt.label}
+              </button>
+            );
+          })}
         </div>
       </div>
     </div>
   );
 };
-

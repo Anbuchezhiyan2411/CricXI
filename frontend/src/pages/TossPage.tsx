@@ -380,8 +380,6 @@ export const TossPage: React.FC = () => {
 
     try {
       setIsSubmitting(true);
-      // Submit via REST API, backend validates, initializes innings, updates room/match to LIVE,
-      // and broadcasts toss_completed + match_started to all players.
       const updatedState = await tossService.makeDecision(roomCode, {
         user_id: activeUserId,
         decision,
@@ -415,20 +413,20 @@ export const TossPage: React.FC = () => {
   if (error) {
     return (
       <div className="max-w-md mx-auto text-center py-16 px-4">
-        <div className="p-8 rounded-2xl bg-slate-900 border border-slate-800 space-y-4 shadow-xl">
-          <AlertCircle className="w-10 h-10 text-rose-500 mx-auto" />
-          <h3 className="text-xl font-bold text-white">Toss Ceremony Error</h3>
-          <p className="text-sm text-slate-400">{error}</p>
+        <div className="cricket-card p-8 space-y-4 shadow-xl">
+          <AlertCircle className="w-10 h-10 text-red-400 mx-auto" />
+          <h3 className="text-xl font-black text-white">Toss Ceremony Error</h3>
+          <p className="text-sm text-[#C7D2E2]">{error}</p>
           <div className="pt-2 flex justify-center space-x-3">
             <button
               onClick={() => syncTossState(true)}
-              className="px-4 py-2 text-xs font-bold rounded-lg bg-amber-500 text-slate-950 hover:bg-amber-400"
+              className="px-5 py-2.5 text-xs font-black rounded-xl bg-gradient-to-r from-[#F4C430] to-amber-500 text-[#081826] hover:scale-[1.02] transition-transform"
             >
               Retry
             </button>
             <button
               onClick={() => navigate(`/draft?room=${roomCode}`)}
-              className="px-4 py-2 text-xs font-bold rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:bg-slate-700"
+              className="px-5 py-2.5 text-xs font-bold rounded-xl bg-[#081826] border border-[#1E3A5F] text-[#C7D2E2] hover:text-white"
             >
               Return to Draft
             </button>
@@ -442,26 +440,26 @@ export const TossPage: React.FC = () => {
   if (!tossState.draft_completed) {
     return (
       <div className="max-w-lg mx-auto text-center py-16 px-4">
-        <div className="p-8 rounded-2xl bg-slate-900 border border-amber-500/40 space-y-5 shadow-2xl">
-          <Clock className="w-12 h-12 text-amber-400 mx-auto animate-pulse" />
+        <div className="cricket-card p-8 space-y-5 shadow-2xl">
+          <Clock className="w-12 h-12 text-[#F4C430] mx-auto animate-pulse" />
           <h2 className="text-2xl font-black text-white uppercase tracking-wide">
             Draft In Progress
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#C7D2E2] leading-relaxed">
             {tossState.message ||
               "Both players must draft exactly 11 players before the coin toss ceremony can begin."}
           </p>
 
-          <div className="p-4 rounded-xl bg-slate-950/80 border border-slate-800 space-y-2 text-xs text-left">
+          <div className="p-4 rounded-xl bg-[#081826] border border-[#1E3A5F] space-y-2 text-xs text-left">
             <div className="flex justify-between items-center">
-              <span className="text-slate-400">{tossState.host_team.captain_name} (Host)</span>
-              <span className="font-bold text-amber-400">
+              <span className="text-[#C7D2E2] font-medium">{tossState.host_team.captain_name} (Host)</span>
+              <span className="font-extrabold text-[#F4C430]">
                 {tossState.host_team.player_count}/11 drafted
               </span>
             </div>
             <div className="flex justify-between items-center">
-              <span className="text-slate-400">{tossState.guest_team.captain_name} (Guest)</span>
-              <span className="font-bold text-cyan-400">
+              <span className="text-[#C7D2E2] font-medium">{tossState.guest_team.captain_name} (Guest)</span>
+              <span className="font-extrabold text-[#138A36]">
                 {tossState.guest_team.player_count}/11 drafted
               </span>
             </div>
@@ -469,7 +467,7 @@ export const TossPage: React.FC = () => {
 
           <button
             onClick={() => navigate(`/draft?room=${roomCode}`)}
-            className="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm uppercase tracking-wider transition-all"
+            className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#F4C430] to-amber-400 text-[#081826] font-black text-sm uppercase tracking-wider transition-all hover:scale-[1.02]"
           >
             Continue Player Draft
           </button>
@@ -498,14 +496,14 @@ export const TossPage: React.FC = () => {
     <div className="py-8 px-4 max-w-4xl mx-auto space-y-8 animate-in fade-in duration-500">
       {/* Disconnect Abandonment Modal */}
       {abandonmentNotice && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/85 backdrop-blur-md p-4 animate-in fade-in duration-300">
-          <div className="max-w-md w-full p-6 sm:p-8 rounded-2xl bg-slate-900 border border-amber-500/50 shadow-2xl text-center space-y-4">
-            <div className="w-16 h-16 rounded-full bg-amber-500/20 text-amber-400 mx-auto flex items-center justify-center border border-amber-500/40">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#081826]/85 backdrop-blur-md p-4 animate-in fade-in duration-300">
+          <div className="max-w-md w-full p-6 sm:p-8 rounded-2xl bg-[#12263A] border-2 border-[#F4C430]/60 shadow-2xl text-center space-y-4">
+            <div className="w-16 h-16 rounded-full bg-[#F4C430]/20 text-[#F4C430] mx-auto flex items-center justify-center border border-[#F4C430]/40">
               <Trophy className="w-8 h-8" />
             </div>
             <h2 className="text-xl font-black text-white">{abandonmentNotice.title}</h2>
-            <p className="text-sm font-semibold text-amber-300">{abandonmentNotice.message}</p>
-            <div className="flex items-center justify-center space-x-2 text-xs text-slate-400 pt-2">
+            <p className="text-sm font-semibold text-[#F4C430]">{abandonmentNotice.message}</p>
+            <div className="flex items-center justify-center space-x-2 text-xs text-[#C7D2E2] pt-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
               <span>{abandonmentNotice.submessage}</span>
             </div>
@@ -530,17 +528,17 @@ export const TossPage: React.FC = () => {
       )}
 
       {/* Top Match Bar: Host vs Guest Captains */}
-      <div className="flex flex-col sm:flex-row items-center justify-between p-4 rounded-2xl bg-slate-900/80 border border-slate-800/80 backdrop-blur-md gap-4">
+      <div className="flex flex-col sm:flex-row items-center justify-between p-4 rounded-2xl cricket-card gap-4">
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center font-black text-amber-400 text-sm">
+          <div className="w-10 h-10 rounded-full bg-[#F4C430]/15 border border-[#F4C430]/40 flex items-center justify-center font-black text-[#F4C430] text-sm">
             H
           </div>
           <div>
-            <div className="text-xs text-slate-400 font-medium">Host Captain</div>
+            <div className="text-[11px] text-[#C7D2E2] font-semibold uppercase tracking-wider">Host Captain</div>
             <div className="text-sm font-black text-white">
               {tossState.host_team.captain_name}
             </div>
-            <div className="text-[11px] text-amber-400/90 font-medium">
+            <div className="text-[11px] text-[#F4C430] font-semibold">
               {tossState.host_team.team_name}
             </div>
           </div>
@@ -548,38 +546,39 @@ export const TossPage: React.FC = () => {
 
         {/* Center Room Code Pill */}
         <div className="flex flex-col items-center">
-          <span className="text-[10px] font-black tracking-widest text-slate-500 uppercase">
-            Room Code
+          <span className="text-[10px] font-black tracking-widest text-slate-400 uppercase">
+            Match Room
           </span>
-          <span className="px-3 py-0.5 rounded-full bg-slate-800 border border-slate-700 text-amber-400 font-mono font-bold text-xs">
+          <span className="px-3.5 py-1 rounded-full bg-[#081826] border border-[#1E3A5F] text-[#F4C430] font-mono font-bold text-xs tracking-wider">
             {roomCode}
           </span>
         </div>
 
         <div className="flex items-center space-x-3 text-right">
           <div>
-            <div className="text-xs text-slate-400 font-medium">Guest Captain</div>
+            <div className="text-[11px] text-[#C7D2E2] font-semibold uppercase tracking-wider">Guest Captain</div>
             <div className="text-sm font-black text-white">
               {tossState.guest_team.captain_name}
             </div>
-            <div className="text-[11px] text-cyan-400/90 font-medium">
+            <div className="text-[11px] text-[#138A36] font-semibold">
               {tossState.guest_team.team_name}
             </div>
           </div>
-          <div className="w-10 h-10 rounded-full bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center font-black text-cyan-400 text-sm">
+          <div className="w-10 h-10 rounded-full bg-[#138A36]/15 border border-[#138A36]/40 flex items-center justify-center font-black text-[#138A36] text-sm">
             G
           </div>
         </div>
       </div>
 
       {/* Main Toss Presentation Box */}
-      <div className="relative rounded-3xl bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 border border-slate-800 p-6 sm:p-10 shadow-2xl overflow-hidden text-center space-y-6">
-        {/* Ambient Top Glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-28 bg-amber-500/10 blur-3xl pointer-events-none" />
+      <div className="relative rounded-3xl cricket-card p-6 sm:p-10 shadow-2xl overflow-hidden text-center space-y-6">
+        {/* Glow accent */}
+        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#0B3D91] via-[#F4C430] to-[#138A36]" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-28 bg-[#F4C430]/10 blur-3xl pointer-events-none" />
 
         {/* Stage Badge */}
-        <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-amber-400 text-xs font-black tracking-widest uppercase">
-          <CircleDot className="w-3.5 h-3.5 animate-pulse" />
+        <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-[#081826] border border-[#1E3A5F] text-[#F4C430] text-xs font-black tracking-widest uppercase">
+          <CircleDot className="w-3.5 h-3.5 animate-pulse text-[#F4C430]" />
           <span>
             {step === "CALLING"
               ? "Phase 1 • Calling The Toss"
@@ -606,8 +605,8 @@ export const TossPage: React.FC = () => {
                   <h3 className="text-xl sm:text-2xl font-black text-white uppercase tracking-wide">
                     You Call The Toss, Captain!
                   </h3>
-                  <p className="text-xs sm:text-sm text-slate-400">
-                    Call Heads or Tails before the umpire flips the coin.
+                  <p className="text-xs sm:text-sm text-[#C7D2E2]">
+                    Call Heads or Tails before the coin flip.
                   </p>
                 </div>
 
@@ -616,16 +615,16 @@ export const TossPage: React.FC = () => {
                   <button
                     onClick={() => handleCall("HEADS")}
                     disabled={isSubmitting || isFlipping}
-                    className="group relative p-5 rounded-2xl bg-gradient-to-b from-amber-500/10 to-amber-500/5 hover:from-amber-500/20 hover:to-amber-500/10 border-2 border-amber-500/40 hover:border-amber-400 text-white transition-all transform hover:scale-[1.03] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none shadow-lg"
+                    className="group relative p-5 rounded-2xl bg-[#081826] hover:bg-[#1E3A5F]/40 border-2 border-[#1E3A5F] hover:border-[#F4C430] text-white transition-all transform hover:scale-[1.03] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none shadow-lg"
                   >
                     <div className="flex flex-col items-center space-y-2">
-                      <div className="w-12 h-12 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition-transform">
-                        <Trophy className="w-6 h-6" />
+                      <div className="w-12 h-12 rounded-full bg-[#F4C430]/20 border border-[#F4C430]/40 flex items-center justify-center text-[#F4C430] group-hover:scale-110 transition-transform">
+                        <Trophy className="w-6 h-6 stroke-[2.2]" />
                       </div>
-                      <span className="text-base font-black uppercase tracking-wider text-amber-300">
+                      <span className="text-base font-black uppercase tracking-wider text-[#F4C430]">
                         Heads
                       </span>
-                      <span className="text-[11px] text-slate-400 font-medium">
+                      <span className="text-[11px] text-[#C7D2E2] font-medium">
                         Emblem & Trophy
                       </span>
                     </div>
@@ -634,16 +633,16 @@ export const TossPage: React.FC = () => {
                   <button
                     onClick={() => handleCall("TAILS")}
                     disabled={isSubmitting || isFlipping}
-                    className="group relative p-5 rounded-2xl bg-gradient-to-b from-amber-500/10 to-amber-500/5 hover:from-amber-500/20 hover:to-amber-500/10 border-2 border-amber-500/40 hover:border-amber-400 text-white transition-all transform hover:scale-[1.03] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none shadow-lg"
+                    className="group relative p-5 rounded-2xl bg-[#081826] hover:bg-[#1E3A5F]/40 border-2 border-[#1E3A5F] hover:border-[#F4C430] text-white transition-all transform hover:scale-[1.03] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none shadow-lg"
                   >
                     <div className="flex flex-col items-center space-y-2">
-                      <div className="w-12 h-12 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition-transform">
-                        <Shield className="w-6 h-6" />
+                      <div className="w-12 h-12 rounded-full bg-[#F4C430]/20 border border-[#F4C430]/40 flex items-center justify-center text-[#F4C430] group-hover:scale-110 transition-transform">
+                        <Shield className="w-6 h-6 stroke-[2.2]" />
                       </div>
-                      <span className="text-base font-black uppercase tracking-wider text-amber-300">
+                      <span className="text-base font-black uppercase tracking-wider text-[#F4C430]">
                         Tails
                       </span>
-                      <span className="text-[11px] text-slate-400 font-medium">
+                      <span className="text-[11px] text-[#C7D2E2] font-medium">
                         Shield & Wickets
                       </span>
                     </div>
@@ -652,18 +651,18 @@ export const TossPage: React.FC = () => {
               </div>
             ) : (
               /* Current User is NOT the Caller (Waiting) */
-              <div className="p-6 rounded-2xl bg-slate-950/60 border border-slate-800 space-y-3 animate-in fade-in duration-300">
-                <div className="flex items-center justify-center space-x-2 text-amber-400">
-                  <Clock className="w-5 h-5 animate-pulse" />
+              <div className="p-6 rounded-2xl bg-[#081826] border border-[#1E3A5F] space-y-3 animate-in fade-in duration-300">
+                <div className="flex items-center justify-center space-x-2 text-[#F4C430]">
+                  <Clock className="w-5 h-5 animate-pulse text-[#F4C430]" />
                   <span className="text-xs font-black tracking-widest uppercase">
                     Opponent Calling
                   </span>
                 </div>
                 <h3 className="text-lg font-bold text-white">
-                  Waiting for <span className="text-amber-400">{caller_name}</span> to call...
+                  Waiting for <span className="text-[#F4C430]">{caller_name}</span> to call...
                 </h3>
-                <p className="text-xs text-slate-400 max-w-sm mx-auto">
-                  {caller_name} was designated by the umpire to call Heads or Tails.
+                <p className="text-xs text-[#C7D2E2] max-w-sm mx-auto">
+                  {caller_name} was designated to call Heads or Tails.
                   The result will synchronize immediately when called.
                 </p>
               </div>
@@ -675,17 +674,17 @@ export const TossPage: React.FC = () => {
         {step === "DECIDING" && (
           <div className="space-y-6 max-w-lg mx-auto">
             {/* Toss Outcome Statement */}
-            <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 space-y-1">
-              <div className="flex items-center justify-center space-x-1.5 text-amber-400 text-xs font-black uppercase tracking-wider">
+            <div className="p-4 rounded-2xl bg-[#F4C430]/10 border border-[#F4C430]/30 space-y-1">
+              <div className="flex items-center justify-center space-x-1.5 text-[#F4C430] text-xs font-black uppercase tracking-wider">
                 <CheckCircle2 className="w-4 h-4" />
                 <span>Coin Landed On {tossState.coin_result}</span>
               </div>
               <h3 className="text-xl font-black text-white uppercase tracking-wide">
-                <span className="text-amber-400">{winner_name}</span> Won The Toss!
+                <span className="text-[#F4C430]">{winner_name}</span> Won The Toss!
               </h3>
-              <p className="text-xs text-slate-400">
+              <p className="text-xs text-[#C7D2E2]">
                 Caller ({tossState.caller_name}) called{" "}
-                <span className="text-white font-semibold">{tossState.caller_choice}</span>.
+                <span className="text-white font-bold">{tossState.caller_choice}</span>.
               </p>
             </div>
 
@@ -696,8 +695,8 @@ export const TossPage: React.FC = () => {
                   <h4 className="text-lg font-black text-white uppercase tracking-wide">
                     What Will You Do First?
                   </h4>
-                  <p className="text-xs text-slate-400">
-                    Elect to set a high target or bowl first to exploit early conditions.
+                  <p className="text-xs text-[#C7D2E2]">
+                    Elect to set a high target or bowl first to exploit pitch conditions.
                   </p>
                 </div>
 
@@ -705,16 +704,16 @@ export const TossPage: React.FC = () => {
                   <button
                     onClick={() => handleDecision("BAT")}
                     disabled={isSubmitting}
-                    className="group relative p-5 rounded-2xl bg-gradient-to-b from-amber-500/15 to-amber-500/5 hover:from-amber-500/25 hover:to-amber-500/10 border-2 border-amber-500/50 hover:border-amber-400 text-white transition-all transform hover:scale-[1.03] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none shadow-lg text-center"
+                    className="group relative p-5 rounded-2xl bg-[#081826] hover:bg-[#F4C430]/10 border-2 border-[#1E3A5F] hover:border-[#F4C430] text-white transition-all transform hover:scale-[1.03] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none shadow-lg text-center"
                   >
                     <div className="flex flex-col items-center space-y-2">
-                      <div className="w-12 h-12 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition-transform font-black text-xl">
+                      <div className="w-12 h-12 rounded-full bg-[#F4C430]/20 border border-[#F4C430]/40 flex items-center justify-center text-[#F4C430] group-hover:scale-110 transition-transform font-black text-xl">
                         🏏
                       </div>
-                      <span className="text-base font-black uppercase tracking-wider text-amber-300">
+                      <span className="text-base font-black uppercase tracking-wider text-[#F4C430]">
                         Bat First
                       </span>
-                      <span className="text-[11px] text-slate-400 font-medium">
+                      <span className="text-[11px] text-[#C7D2E2] font-medium">
                         Set a massive 1st innings total
                       </span>
                     </div>
@@ -723,16 +722,16 @@ export const TossPage: React.FC = () => {
                   <button
                     onClick={() => handleDecision("BOWL")}
                     disabled={isSubmitting}
-                    className="group relative p-5 rounded-2xl bg-gradient-to-b from-cyan-500/15 to-cyan-500/5 hover:from-cyan-500/25 hover:to-cyan-500/10 border-2 border-cyan-500/50 hover:border-cyan-400 text-white transition-all transform hover:scale-[1.03] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none shadow-lg text-center"
+                    className="group relative p-5 rounded-2xl bg-[#081826] hover:bg-[#138A36]/10 border-2 border-[#1E3A5F] hover:border-[#138A36] text-white transition-all transform hover:scale-[1.03] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none shadow-lg text-center"
                   >
                     <div className="flex flex-col items-center space-y-2">
-                      <div className="w-12 h-12 rounded-full bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-300 group-hover:scale-110 transition-transform font-black text-xl">
+                      <div className="w-12 h-12 rounded-full bg-[#138A36]/20 border border-[#138A36]/40 flex items-center justify-center text-[#138A36] group-hover:scale-110 transition-transform font-black text-xl">
                         🎯
                       </div>
-                      <span className="text-base font-black uppercase tracking-wider text-cyan-300">
+                      <span className="text-base font-black uppercase tracking-wider text-[#138A36]">
                         Bowl First
                       </span>
-                      <span className="text-[11px] text-slate-400 font-medium">
+                      <span className="text-[11px] text-[#C7D2E2] font-medium">
                         Restrict opponent & chase under lights
                       </span>
                     </div>
@@ -741,17 +740,17 @@ export const TossPage: React.FC = () => {
               </div>
             ) : (
               /* Current User is NOT the Winner (Waiting for Decision) */
-              <div className="p-6 rounded-2xl bg-slate-950/60 border border-slate-800 space-y-3 animate-in fade-in duration-300">
-                <div className="flex items-center justify-center space-x-2 text-amber-400">
+              <div className="p-6 rounded-2xl bg-[#081826] border border-[#1E3A5F] space-y-3 animate-in fade-in duration-300">
+                <div className="flex items-center justify-center space-x-2 text-[#F4C430]">
                   <Clock className="w-5 h-5 animate-pulse" />
                   <span className="text-xs font-black tracking-widest uppercase">
                     Decision In Progress
                   </span>
                 </div>
                 <h4 className="text-base font-bold text-white">
-                  Waiting for <span className="text-amber-400">{winner_name}</span> to elect Bat or Bowl...
+                  Waiting for <span className="text-[#F4C430]">{winner_name}</span> to elect Bat or Bowl...
                 </h4>
-                <p className="text-xs text-slate-400 max-w-sm mx-auto">
+                <p className="text-xs text-[#C7D2E2] max-w-sm mx-auto">
                   The toss winner is making their tactical decision. Match will begin automatically once chosen.
                 </p>
               </div>

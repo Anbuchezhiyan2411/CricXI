@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Trophy, Users, Shield, Zap, Search, ArrowRight, Activity } from "lucide-react";
 import { Button } from "../components/common/Button";
-import { Card } from "../components/common/Card";
 import { Badge } from "../components/common/Badge";
 import { LoadingSpinner } from "../components/common/LoadingSpinner";
 import { usePlayers } from "../hooks/usePlayers";
@@ -25,36 +24,39 @@ export const LandingPage: React.FC = () => {
   };
 
   return (
-    <div className="space-y-16 py-4">
+    <div className="space-y-16 py-6 max-w-6xl mx-auto">
       {/* Hero Section */}
-      <section className="text-center space-y-6 max-w-3xl mx-auto">
-        <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-semibold uppercase tracking-wider">
-          <Zap className="w-3.5 h-3.5" />
-          <span>Real Cricsheet T20 Data • Multiplayer Draft</span>
+      <section className="text-center space-y-6 max-w-4xl mx-auto relative">
+        {/* Stadium ambient light */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-48 bg-[#0B3D91]/25 blur-3xl pointer-events-none" />
+
+        <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#12263A] border border-[#1E3A5F] text-[#F4C430] text-xs font-black uppercase tracking-widest shadow-md">
+          <Zap className="w-3.5 h-3.5 text-[#F4C430]" />
+          <span>Real Cricsheet T20 Data • Multiplayer Draft Simulation</span>
         </div>
 
         <h1 className="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
           Draft Your Era. <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-emerald-400">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] via-amber-300 to-[#138A36]">
             Simulate The Ultimate XI.
           </span>
         </h1>
 
-        <p className="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto">
-          Challenge friends online. In 11 intense rounds, draw a random Country & Decade, select from that era's strongest XI, lock positions, conduct the toss, and simulate a full T20 battle using real player metrics.
+        <p className="text-base sm:text-lg text-[#C7D2E2] max-w-2xl mx-auto leading-relaxed">
+          Challenge friends online in real-time. In 11 tactical rounds, draw a random Country & Decade, select from that era's greatest legends, lock batting positions, contest the coin toss, and simulate a full broadcast T20 clash powered by Cricsheet metrics.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
           <Link to="/create-room">
-            <Button size="lg" className="w-full sm:w-auto px-8 py-3.5 text-base flex items-center space-x-2">
-              <Users className="w-5 h-5" />
-              <span>Create Room</span>
+            <Button variant="gold" size="lg" className="w-full sm:w-auto px-8 py-3.5 text-base flex items-center space-x-2 font-black shadow-xl shadow-[#F4C430]/20">
+              <Users className="w-5 h-5 text-[#081826]" />
+              <span>Create Match Room</span>
             </Button>
           </Link>
           <Link to="/join-room">
-            <Button variant="secondary" size="lg" className="w-full sm:w-auto px-8 py-3.5 text-base flex items-center space-x-2">
+            <Button variant="secondary" size="lg" className="w-full sm:w-auto px-8 py-3.5 text-base flex items-center space-x-2 font-bold bg-[#12263A] border-[#1E3A5F] text-white hover:bg-[#1E3A5F]">
               <span>Join with Friend Code</span>
-              <ArrowRight className="w-4 h-4 text-slate-400" />
+              <ArrowRight className="w-4 h-4 text-[#F4C430]" />
             </Button>
           </Link>
         </div>
@@ -62,59 +64,59 @@ export const LandingPage: React.FC = () => {
 
       {/* Feature Grid */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <Card hoverEffect className="space-y-3">
-          <div className="w-10 h-10 rounded-lg bg-accent/20 border border-accent/30 flex items-center justify-center text-accent">
-            <Trophy className="w-5 h-5" />
+        <div className="cricket-card p-6 space-y-3.5 shadow-xl hover:border-[#F4C430]/50 transition-all">
+          <div className="w-12 h-12 rounded-xl bg-[#081826] border border-[#1E3A5F] flex items-center justify-center text-[#F4C430] shadow-md">
+            <Trophy className="w-6 h-6 stroke-[2.2]" />
           </div>
-          <h3 className="text-lg font-bold text-white">11-Round Decade Draft</h3>
-          <p className="text-sm text-slate-400">
-            India 1990, Australia 2010, Pakistan 1980... Pick one legend per round and lock them into their authentic batting position.
+          <h3 className="text-lg font-black text-white uppercase tracking-wide">11-Round Decade Draft</h3>
+          <p className="text-sm text-[#C7D2E2] leading-relaxed">
+            India 1990s, Australia 2010s, West Indies 1980s... Pick one legend per round and lock them into their authentic tactical batting position (1–11).
           </p>
-        </Card>
+        </div>
 
-        <Card hoverEffect className="space-y-3">
-          <div className="w-10 h-10 rounded-lg bg-highlight/20 border border-highlight/30 flex items-center justify-center text-highlight">
-            <Shield className="w-5 h-5" />
+        <div className="cricket-card p-6 space-y-3.5 shadow-xl hover:border-[#138A36]/50 transition-all">
+          <div className="w-12 h-12 rounded-xl bg-[#081826] border border-[#1E3A5F] flex items-center justify-center text-[#138A36] shadow-md">
+            <Shield className="w-6 h-6 stroke-[2.2]" />
           </div>
-          <h3 className="text-lg font-bold text-white">506 Official Legends</h3>
-          <p className="text-sm text-slate-400">
-            Accurate T20 strike rates, bowling economies, wicket counts, averages, and calculated ratings directly from Cricsheet.
+          <h3 className="text-lg font-black text-white uppercase tracking-wide">506 Official Legends</h3>
+          <p className="text-sm text-[#C7D2E2] leading-relaxed">
+            Verified T20 strike rates, bowling economies, wicket counts, averages, and calculated ratings directly calibrated from official match scorecards.
           </p>
-        </Card>
+        </div>
 
-        <Card hoverEffect className="space-y-3">
-          <div className="w-10 h-10 rounded-lg bg-blue-500/20 border border-blue-500/30 flex items-center justify-center text-blue-400">
-            <Activity className="w-5 h-5" />
+        <div className="cricket-card p-6 space-y-3.5 shadow-xl hover:border-[#0B3D91]/80 transition-all">
+          <div className="w-12 h-12 rounded-xl bg-[#081826] border border-[#1E3A5F] flex items-center justify-center text-cyan-400 shadow-md">
+            <Activity className="w-6 h-6 stroke-[2.2]" />
           </div>
-          <h3 className="text-lg font-bold text-white">Ball-by-Ball Simulation</h3>
-          <p className="text-sm text-slate-400">
-            Captains contest the toss, choose bat or bowl, and watch a probabilistic ball-by-ball T20 simulation with full scorecards.
+          <h3 className="text-lg font-black text-white uppercase tracking-wide">Ball-by-Ball Simulation</h3>
+          <p className="text-sm text-[#C7D2E2] leading-relaxed">
+            Captains contest the coin toss, elect to bat or bowl first, and watch a dynamic ball-by-ball T20 simulation with full scorecards and live commentary.
           </p>
-        </Card>
+        </div>
       </section>
 
       {/* Real Dataset Showcase */}
       <section className="space-y-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
-            <h2 className="text-2xl font-bold text-white">Loaded Player Database</h2>
-            <p className="text-sm text-slate-400">
-              Browse {total} players from the Cricsheet dataset across 11 nations and 5 decades.
+            <h2 className="text-2xl font-black text-white uppercase tracking-wide">Legends Roster</h2>
+            <p className="text-sm text-[#C7D2E2]">
+              Explore {total} legendary players across 11 cricket nations and 5 historic decades.
             </p>
           </div>
 
           <form onSubmit={handleSearchSubmit} className="flex items-center space-x-2 w-full sm:w-auto">
-            <div className="relative w-full sm:w-64">
-              <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" />
+            <div className="relative w-full sm:w-72">
+              <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
               <input
                 type="text"
                 placeholder="Search player name..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full pl-9 pr-4 py-2 bg-surface border border-slate-700 rounded-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:border-accent"
+                className="w-full pl-9 pr-4 py-2.5 bg-[#081826] border border-[#1E3A5F] rounded-xl text-xs sm:text-sm text-white placeholder-slate-400 focus:outline-none focus:border-[#F4C430] transition-colors"
               />
             </div>
-            <Button variant="secondary" type="submit" size="sm">
+            <Button variant="primary" type="submit" size="sm" className="font-black px-4">
               Search
             </Button>
           </form>
@@ -125,32 +127,32 @@ export const LandingPage: React.FC = () => {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {players.map((player) => (
-              <Card key={player.player_id} hoverEffect className="space-y-3">
+              <div key={player.player_id} className="cricket-card p-4 space-y-3 shadow-md hover:border-[#F4C430]/40 transition-all">
                 <div className="flex items-start justify-between">
                   <div>
-                    <h4 className="font-bold text-white text-base">{player.player_name}</h4>
-                    <span className="text-xs text-slate-400">{player.country} • {player.decade}s</span>
+                    <h4 className="font-black text-white text-base">{player.player_name}</h4>
+                    <span className="text-xs text-[#C7D2E2] font-medium">{player.country} • {player.decade}s</span>
                   </div>
-                  <Badge variant="role" roleType={player.primary_role}>
+                  <Badge variant="role" roleType={player.primary_role} className="font-bold text-[10px]">
                     {player.primary_role}
                   </Badge>
                 </div>
 
-                <div className="grid grid-cols-3 gap-2 pt-2 border-t border-slate-800 text-center text-xs">
-                  <div className="bg-background/60 p-2 rounded">
-                    <span className="text-slate-500 block">Rating</span>
-                    <span className="font-mono font-bold text-highlight">{formatRating(player.overall_rating)}</span>
+                <div className="grid grid-cols-3 gap-2 pt-2 border-t border-[#1E3A5F] text-center text-xs">
+                  <div className="bg-[#081826] p-2 rounded-xl border border-[#1E3A5F]/70">
+                    <span className="text-slate-400 block text-[10px] uppercase font-bold">OVR</span>
+                    <span className="font-mono font-black text-[#F4C430] text-sm">{formatRating(player.overall_rating)}</span>
                   </div>
-                  <div className="bg-background/60 p-2 rounded">
-                    <span className="text-slate-500 block">Runs</span>
-                    <span className="font-mono font-bold text-slate-200">{player.runs}</span>
+                  <div className="bg-[#081826] p-2 rounded-xl border border-[#1E3A5F]/70">
+                    <span className="text-slate-400 block text-[10px] uppercase font-bold">Runs</span>
+                    <span className="font-mono font-bold text-white text-sm">{player.runs}</span>
                   </div>
-                  <div className="bg-background/60 p-2 rounded">
-                    <span className="text-slate-500 block">Wickets</span>
-                    <span className="font-mono font-bold text-accent">{player.wickets}</span>
+                  <div className="bg-[#081826] p-2 rounded-xl border border-[#1E3A5F]/70">
+                    <span className="text-slate-400 block text-[10px] uppercase font-bold">Wkts</span>
+                    <span className="font-mono font-bold text-emerald-400 text-sm">{player.wickets}</span>
                   </div>
                 </div>
-              </Card>
+              </div>
             ))}
           </div>
         )}
@@ -158,4 +160,3 @@ export const LandingPage: React.FC = () => {
     </div>
   );
 };
-

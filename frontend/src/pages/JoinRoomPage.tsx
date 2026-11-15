@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { KeyRound, AlertCircle, CheckCircle2, ArrowLeft, Loader2 } from "lucide-react";
-import { Card } from "../components/common/Card";
 import { Button } from "../components/common/Button";
 import { roomService } from "../services/roomService";
 import { useGame } from "../contexts/GameContext";
@@ -122,25 +121,28 @@ export const JoinRoomPage: React.FC = () => {
     <div className="max-w-md mx-auto py-10 px-4">
       <Link
         to="/"
-        className="inline-flex items-center space-x-1.5 text-xs font-semibold text-slate-400 hover:text-slate-200 mb-6 transition-colors"
+        className="inline-flex items-center space-x-1.5 text-xs font-bold text-slate-400 hover:text-white mb-6 transition-colors"
       >
         <ArrowLeft className="w-3.5 h-3.5" />
         <span>Back to Home</span>
       </Link>
 
-      <Card className="space-y-6 shadow-2xl border-slate-800 bg-slate-900/90 backdrop-blur-md p-6 sm:p-8">
+      <div className="cricket-card p-6 sm:p-8 space-y-6 shadow-2xl relative overflow-hidden">
+        {/* Glow accent */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0B3D91] via-[#F4C430] to-[#138A36]" />
+
         <div className="text-center space-y-2">
-          <div className="w-14 h-14 bg-highlight/20 border border-highlight/40 rounded-2xl flex items-center justify-center text-highlight mx-auto shadow-lg shadow-highlight/10">
-            <KeyRound className="w-7 h-7" />
+          <div className="w-16 h-16 bg-[#081826] border-2 border-[#138A36]/60 rounded-2xl flex items-center justify-center text-[#138A36] mx-auto shadow-xl shadow-[#138A36]/15">
+            <KeyRound className="w-8 h-8 stroke-[2.2]" />
           </div>
-          <h2 className="text-2xl font-black text-white tracking-tight">Join Room</h2>
-          <p className="text-xs text-slate-400">
-            Enter the 6-character room code shared by your friend to join their match lobby.
+          <h2 className="text-2xl font-black text-white tracking-tight uppercase">Join Room</h2>
+          <p className="text-xs text-[#C7D2E2] leading-relaxed">
+            Enter the 6-character room code shared by your friend to enter their match lobby.
           </p>
         </div>
 
         {error && (
-          <div className="p-3 bg-red-500/10 border border-red-500/30 rounded-xl flex items-center space-x-2.5 text-xs text-red-400">
+          <div className="p-3 bg-red-500/10 border border-red-500/30 rounded-xl flex items-center space-x-2.5 text-xs text-red-400 font-semibold">
             <AlertCircle className="w-4 h-4 flex-shrink-0" />
             <span>{error}</span>
           </div>
@@ -150,19 +152,19 @@ export const JoinRoomPage: React.FC = () => {
           {/* Room Code Field */}
           <div className="space-y-1.5">
             <div className="flex justify-between items-center text-xs">
-              <label htmlFor="roomCode" className="font-semibold text-slate-300">
-                Room Code
+              <label htmlFor="roomCode" className="font-bold text-[#C7D2E2] uppercase tracking-wider text-[11px]">
+                Room Code (6 Characters)
               </label>
               {validating && (
                 <span className="flex items-center space-x-1 text-slate-400 text-[11px]">
-                  <Loader2 className="w-3 h-3 animate-spin" />
+                  <Loader2 className="w-3 h-3 animate-spin text-[#F4C430]" />
                   <span>Checking...</span>
                 </span>
               )}
               {validationResult?.valid && !validating && (
-                <span className="flex items-center space-x-1 text-accent text-[11px] font-semibold">
+                <span className="flex items-center space-x-1 text-emerald-400 text-[11px] font-bold">
                   <CheckCircle2 className="w-3.5 h-3.5" />
-                  <span>Room Available</span>
+                  <span>Room Open</span>
                 </span>
               )}
             </div>
@@ -175,7 +177,7 @@ export const JoinRoomPage: React.FC = () => {
                 setRoomCode(e.target.value.toUpperCase().replace(/[^A-Z0-9]/g, ""));
                 if (error) setError(null);
               }}
-              className="w-full px-4 py-3 bg-background border border-slate-700 rounded-xl text-white font-mono tracking-widest text-lg placeholder-slate-500 uppercase focus:outline-none focus:border-highlight text-center"
+              className="w-full px-4 py-3 bg-[#081826] border border-[#1E3A5F] rounded-xl text-[#F4C430] font-mono tracking-widest text-xl font-black placeholder-slate-500 uppercase focus:outline-none focus:border-[#F4C430] text-center transition-colors"
               maxLength={6}
               required
               autoFocus
@@ -185,10 +187,10 @@ export const JoinRoomPage: React.FC = () => {
           {/* Player Name Field */}
           <div className="space-y-1.5">
             <div className="flex justify-between items-center text-xs">
-              <label htmlFor="username" className="font-semibold text-slate-300">
-                Your Player Name
+              <label htmlFor="username" className="font-bold text-[#C7D2E2] uppercase tracking-wider text-[11px]">
+                Your Captain Name
               </label>
-              <span className="text-slate-500 font-mono">
+              <span className="text-slate-400 font-mono text-[11px]">
                 {username.trim().length}/20
               </span>
             </div>
@@ -201,36 +203,36 @@ export const JoinRoomPage: React.FC = () => {
                 setUsername(e.target.value);
                 if (error) setError(null);
               }}
-              className="w-full px-4 py-3 bg-background border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-highlight text-sm"
+              className="w-full px-4 py-3 bg-[#081826] border border-[#1E3A5F] rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-[#138A36] text-sm font-semibold transition-colors"
               minLength={3}
               maxLength={20}
               required
             />
-            <p className="text-[11px] text-slate-500">
-              Between 3 and 20 characters. Must be unique in this room.
+            <p className="text-[11px] text-slate-400">
+              Between 3 and 20 characters. Must be unique in this match room.
             </p>
           </div>
 
           <Button
             type="submit"
-            variant="primary"
-            className="w-full py-3.5 text-sm font-bold shadow-lg shadow-highlight/20 bg-highlight hover:bg-highlight-hover text-slate-950"
+            variant="success"
+            className="w-full py-3.5 text-sm font-black shadow-xl shadow-[#138A36]/20 tracking-wider uppercase text-white"
             isLoading={loading}
             disabled={validating || (validationResult !== null && !validationResult.valid)}
           >
-            <span>Enter Lobby</span>
+            <span>Enter Match Lobby</span>
           </Button>
         </form>
 
-        <div className="pt-2 border-t border-slate-800 text-center">
-          <p className="text-xs text-slate-400">
+        <div className="pt-2 border-t border-[#1E3A5F] text-center">
+          <p className="text-xs text-[#C7D2E2]">
             Want to host your own match instead?{" "}
-            <Link to="/create-room" className="text-highlight hover:underline font-semibold">
+            <Link to="/create-room" className="text-[#F4C430] hover:underline font-bold">
               Create a Room
             </Link>
           </p>
         </div>
-      </Card>
+      </div>
     </div>
   );
 };

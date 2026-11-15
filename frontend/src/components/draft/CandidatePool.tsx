@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import { Search, Filter, ArrowUpDown, Users } from "lucide-react";
+import { Search, Filter, ArrowUpDown, Users, Sparkles } from "lucide-react";
 import { Player, PlayerRole } from "../../types";
 import { CandidateCard } from "./CandidateCard";
 import { cn } from "../../utils/helpers";
@@ -14,7 +14,7 @@ interface CandidatePoolProps {
 type SortOption = "overall" | "batting" | "bowling" | "name";
 
 const ROLE_TABS: Array<{ label: string; role: PlayerRole | "ALL" }> = [
-  { label: "All", role: "ALL" },
+  { label: "ALL", role: "ALL" },
   { label: "BAT", role: "BAT" },
   { label: "WK", role: "WK" },
   { label: "AR", role: "AR" },
@@ -67,7 +67,7 @@ export const CandidatePool: React.FC<CandidatePoolProps> = ({
   return (
     <div className="space-y-4">
       {/* Search, Filter & Sort Controls */}
-      <div className="bg-surface/80 border border-slate-800 rounded-2xl p-4 space-y-3">
+      <div className="cricket-card p-4 space-y-3.5">
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
           {/* Search Box */}
           <div className="relative flex-1">
@@ -77,7 +77,7 @@ export const CandidatePool: React.FC<CandidatePoolProps> = ({
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search player name..."
-              className="w-full pl-9 pr-4 py-2 rounded-xl bg-slate-900 border border-slate-700/80 text-xs sm:text-sm text-white placeholder-slate-400 focus:outline-none focus:border-accent transition-colors"
+              className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-[#081826] border border-[#1E3A5F] text-xs sm:text-sm text-white placeholder-slate-400 focus:outline-none focus:border-[#F4C430] focus:ring-1 focus:ring-[#F4C430]/30 transition-all"
             />
           </div>
 
@@ -88,7 +88,7 @@ export const CandidatePool: React.FC<CandidatePoolProps> = ({
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as SortOption)}
-                className="pl-8 pr-7 py-2 rounded-xl bg-slate-900 border border-slate-700/80 text-xs text-slate-200 focus:outline-none focus:border-accent appearance-none cursor-pointer"
+                className="pl-8 pr-8 py-2.5 rounded-xl bg-[#081826] border border-[#1E3A5F] text-xs font-semibold text-slate-200 focus:outline-none focus:border-[#F4C430] appearance-none cursor-pointer"
               >
                 <option value="overall">Sort: Rating (High → Low)</option>
                 <option value="batting">Sort: Batting Rating</option>
@@ -97,44 +97,48 @@ export const CandidatePool: React.FC<CandidatePoolProps> = ({
               </select>
             </div>
 
-            <div className="px-3 py-2 rounded-xl bg-slate-900/90 border border-slate-800 text-xs font-semibold text-slate-300 flex items-center space-x-1.5 shrink-0">
-              <Users className="w-3.5 h-3.5 text-accent" />
+            <div className="px-3 py-2.5 rounded-xl bg-[#081826] border border-[#1E3A5F] text-xs font-bold text-[#C7D2E2] flex items-center space-x-1.5 shrink-0">
+              <Users className="w-3.5 h-3.5 text-[#F4C430]" />
               <span>
-                {availableCount} / {candidates.length} Open
+                <strong className="text-white">{availableCount}</strong> / {candidates.length} Open
               </span>
             </div>
           </div>
         </div>
 
-        {/* Role Tabs */}
+        {/* Role Filter Tabs */}
         <div className="flex items-center space-x-1.5 overflow-x-auto pb-1 scrollbar-none">
-          <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mr-1 shrink-0 flex items-center space-x-1">
-            <Filter className="w-3 h-3" />
+          <span className="text-[11px] font-black text-slate-400 uppercase tracking-wider mr-1 shrink-0 flex items-center space-x-1">
+            <Filter className="w-3 h-3 text-[#F4C430]" />
             <span>Role:</span>
           </span>
-          {ROLE_TABS.map((tab) => (
-            <button
-              key={tab.role}
-              type="button"
-              onClick={() => setSelectedRole(tab.role)}
-              className={cn(
-                "px-3 py-1 rounded-lg text-xs font-bold transition-all shrink-0",
-                selectedRole === tab.role
-                  ? "bg-accent text-white shadow-sm"
-                  : "bg-slate-900/60 text-slate-400 hover:text-slate-200 hover:bg-slate-800 border border-slate-800/80"
-              )}
-            >
-              {tab.label}
-            </button>
-          ))}
+          {ROLE_TABS.map((tab) => {
+            const isSelected = selectedRole === tab.role;
+            return (
+              <button
+                key={tab.role}
+                type="button"
+                onClick={() => setSelectedRole(tab.role)}
+                className={cn(
+                  "px-3.5 py-1.5 rounded-lg text-xs font-black transition-all shrink-0 tracking-wide",
+                  isSelected
+                    ? "bg-gradient-to-r from-[#0B3D91] to-[#1E3A5F] text-white border border-[#F4C430]/60 shadow-md shadow-[#0B3D91]/30"
+                    : "bg-[#081826] text-slate-400 hover:text-white hover:bg-[#1E3A5F]/40 border border-[#1E3A5F]"
+                )}
+              >
+                {tab.label}
+              </button>
+            );
+          })}
         </div>
       </div>
 
       {/* Candidates Grid */}
       {filteredAndSortedPlayers.length === 0 ? (
-        <div className="text-center py-12 px-4 rounded-2xl bg-surface/50 border border-slate-800 space-y-2">
-          <p className="text-sm font-semibold text-slate-300">No players found</p>
-          <p className="text-xs text-slate-400">
+        <div className="text-center py-12 px-4 rounded-2xl bg-[#12263A]/60 border border-[#1E3A5F] space-y-2">
+          <Sparkles className="w-8 h-8 text-slate-500 mx-auto" />
+          <p className="text-sm font-bold text-white">No players found</p>
+          <p className="text-xs text-[#C7D2E2]">
             No candidate matches your current search or role filters.
           </p>
         </div>
@@ -154,4 +158,3 @@ export const CandidatePool: React.FC<CandidatePoolProps> = ({
     </div>
   );
 };
-

@@ -4,31 +4,61 @@
 
 @layer base {
   body {
-    @apply bg-background text-slate-100;
-    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #081826;
+    color: #F8FAFC;
+    font-family: 'Inter', 'Manrope', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+    font-family: 'Manrope', 'Inter', system-ui, sans-serif;
+    letter-spacing: -0.02em;
   }
 }
 
-/* Custom scrollbars */
+/* Custom Sports Glassmorphism & Elevation */
+.cricket-card {
+  background-color: #12263A;
+  border: 1px solid rgba(30, 58, 95, 0.6);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.45);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cricket-card:hover {
+  border-color: rgba(244, 196, 48, 0.4);
+  box-shadow: 0 14px 35px -5px rgba(11, 61, 145, 0.25);
+}
+
+.cricket-gradient-primary {
+  background: linear-gradient(135deg, #0B3D91 0%, #1E3A5F 100%);
+}
+
+.cricket-gradient-gold {
+  background: linear-gradient(135deg, #F4C430 0%, #D4A516 100%);
+}
+
+.cricket-gradient-green {
+  background: linear-gradient(135deg, #138A36 0%, #0F6F2B 100%);
+}
+
+/* Custom modern scrollbars */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0F172A;
+  background: #081826;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #334155;
+  background: #1E3A5F;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  background: #0B3D91;
 }
 

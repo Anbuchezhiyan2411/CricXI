@@ -246,13 +246,16 @@ export const LobbyPage: React.FC = () => {
   }
 
   return (
-    <div className="space-y-6 py-6 px-4">
-      <div className="text-center space-y-1">
-        <h1 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
-          Match Lobby
+    <div className="space-y-8 py-8 px-4 max-w-5xl mx-auto relative">
+      <div className="text-center space-y-2">
+        <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#12263A] border border-[#1E3A5F] text-[#F4C430] text-xs font-black uppercase tracking-widest shadow-md">
+          <span>Official Match Pre-Game</span>
+        </div>
+        <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight font-display drop-shadow-md">
+          T20 Match Lobby
         </h1>
-        <p className="text-xs sm:text-sm text-slate-400">
-          Two-player T20 draft room • Mark ready to begin the match
+        <p className="text-xs sm:text-sm text-[#C7D2E2] max-w-md mx-auto font-medium">
+          Multiplayer squad room • Both captains confirm ready to initiate the strategic draft
         </p>
       </div>
 

@@ -492,21 +492,21 @@ export const DraftPage: React.FC = () => {
   if (error) {
     return (
       <div className="max-w-md mx-auto text-center py-16 px-4">
-        <div className="p-8 rounded-2xl bg-surface border border-slate-800 space-y-4">
-          <h3 className="text-xl font-bold text-white">Draft Unavailable</h3>
-          <p className="text-sm text-slate-400">
+        <div className="cricket-card p-8 space-y-4">
+          <h3 className="text-xl font-black text-white tracking-tight">Draft Unavailable</h3>
+          <p className="text-sm text-[#C7D2E2]">
             {error || "Unable to synchronize with the draft session."}
           </p>
           <div className="pt-2 flex justify-center space-x-3">
             <button
               onClick={() => syncDraftState()}
-              className="px-4 py-2 text-xs font-bold rounded-lg bg-accent text-white"
+              className="px-5 py-2.5 text-xs font-black rounded-xl bg-gradient-to-r from-[#0B3D91] to-[#1E3A5F] text-white border border-[#F4C430]/40 hover:scale-[1.02] transition-transform"
             >
               Retry
             </button>
             <button
               onClick={() => navigate("/lobby" + (roomCode ? `?room=${roomCode}` : ""))}
-              className="px-4 py-2 text-xs font-bold rounded-lg bg-surface border border-slate-700 text-slate-300"
+              className="px-5 py-2.5 text-xs font-bold rounded-xl bg-[#081826] border border-[#1E3A5F] text-[#C7D2E2] hover:text-white transition-colors"
             >
               Return to Lobby
             </button>
