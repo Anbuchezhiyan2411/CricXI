@@ -262,7 +262,7 @@ export const AnalyticsPage: React.FC = () => {
             { id: "stats", label: "Distributions & Dispersion", icon: BarChart3 },
             { id: "predict", label: "Win Probability Predictor", icon: Zap },
             { id: "correlation", label: "Correlation Matrix", icon: Sliders },
-            { id: "viva", label: "IDS Viva Concepts Guide", icon: HelpCircle },
+            { id: "concepts", label: "IDS Concepts Guide", icon: HelpCircle },
           ].map((tab) => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;
@@ -1322,8 +1322,8 @@ export const AnalyticsPage: React.FC = () => {
               </section>
             )}
 
-            {/* SECTION 8: IDS VIVA CONCEPTS GUIDE */}
-            {(activeTab === "viva" || activeTab === "all") && (
+            {/* SECTION 8: IDS CONCEPTS GUIDE */}
+            {(activeTab === "concepts" || activeTab === "all") && (
               <section className="space-y-6">
                 <div className="bg-[#0D2238] border border-[#1E3A5F] rounded-2xl p-6 sm:p-8 shadow-xl">
                   <div className="pb-6 border-b border-[#1E3A5F]">
@@ -1332,7 +1332,7 @@ export const AnalyticsPage: React.FC = () => {
                         Section 8
                       </span>
                       <h2 className="text-xl sm:text-2xl font-black text-white font-display">
-                        Introduction to Data Science (IDS) Viva & Review Guide
+                        Introduction to Data Science (IDS) Concepts Guide
                       </h2>
                     </div>
                     <p className="text-xs sm:text-sm text-[#8DA4C4] mt-1">

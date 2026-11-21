@@ -249,7 +249,7 @@ After every delivery and upon innings completion, the engine enforces strict cri
 
 ---
 
-## 9. Data Science Concepts Summary for Project Viva
+## 9. Data Science Concepts Summary (IDS Concepts Guide)
 
 | Concept | Implementation in CricXI | Mathematical Justification |
 | :--- | :--- | :--- |
