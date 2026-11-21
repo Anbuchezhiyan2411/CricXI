@@ -100,6 +100,45 @@ def get_match_state(
         )
 
 
+@router.post("/{room_code}/simulate", response_model=ApiResponse[LiveMatchStateResponse])
+async def simulate_match_to_completion(
+    room_code: str,
+    db: Session = Depends(get_db),
+    ws_manager: ConnectionManager = Depends(get_ws_manager),
+) -> ApiResponse[LiveMatchStateResponse]:
+    """
+    Rapidly simulates the match to completion in the background,
+    persists completed scorecard to SQLite, and broadcasts match completion.
+    """
+    code = room_code.strip().upper()
+    try:
+        final_state = MatchService.simulate_entire_match(db, code)
+        payload = final_state.model_dump(mode="json")
+
+        await ws_manager.broadcast_to_room(
+            code,
+            {
+                "type": "match_completed",
+                "room_code": code,
+                "match_state": payload,
+            },
+        )
+
+        return ApiResponse(
+            success=True,
+            data=final_state,
+            message="Match simulated to completion successfully.",
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
+    except Exception as e:
+        logger.error("Error simulating match in room %s: %s", code, str(e), exc_info=True)
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Failed to simulate match.",
+        )
+
+
 @router.post("/{room_code}/step", response_model=ApiResponse[LiveMatchStateResponse])
 async def step_match_delivery(
     room_code: str,

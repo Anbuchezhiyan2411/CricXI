@@ -9,6 +9,7 @@ from app.api.routers.draft import router as draft_router
 from app.api.routers.toss import router as toss_router
 from app.api.routers.matches import router as matches_router
 from app.api.routers.history import router as history_router
+from app.analytics.analytics_router import router as analytics_router
 from app.api.routers.websocket import router as ws_router
 
 __all__ = [
@@ -19,5 +20,6 @@ __all__ = [
     "toss_router",
     "matches_router",
     "history_router",
+    "analytics_router",
     "ws_router",
 ]

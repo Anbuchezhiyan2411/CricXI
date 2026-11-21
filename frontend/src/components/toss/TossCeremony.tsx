@@ -143,7 +143,7 @@ export const TossCeremony: React.FC<TossCeremonyProps> = ({
             onClick={onProceedToMatch}
             className="inline-flex items-center space-x-2 px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#F4C430] via-amber-400 to-[#eab308] text-[#081826] font-black text-sm tracking-wider uppercase shadow-xl shadow-[#F4C430]/20 transition-all transform hover:scale-[1.03] active:scale-[0.98]"
           >
-            <span>Enter Match Simulation Now</span>
+            <span>Simulate Match & View Scorecard</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>

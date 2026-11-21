@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Trophy, Users, History, Settings as SettingsIcon, Radio, User } from "lucide-react";
+import { Trophy, Users, History, Settings as SettingsIcon, User, BarChart3 } from "lucide-react";
 import { useGame } from "../../contexts/GameContext";
 
 export const Header: React.FC = () => {
@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
   const roomParam = searchParams.get("room");
   const { currentRoom, username } = useGame();
 
-  const isRoomRoute = ["/lobby", "/draft", "/toss", "/live", "/scorecard"].some((path) =>
+  const isRoomRoute = ["/lobby", "/draft", "/toss", "/scorecard"].some((path) =>
     location.pathname.startsWith(path)
   );
 
@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
   const navLinks = [
     { label: "Lobby", path: "/lobby", icon: Users },
     { label: "Draft", path: "/draft", icon: Trophy },
-    { label: "Live Match", path: "/live", icon: Radio },
+    { label: "Analytics", path: "/analytics", icon: BarChart3 },
     { label: "History", path: "/history", icon: History },
     { label: "Settings", path: "/settings", icon: SettingsIcon },
   ];

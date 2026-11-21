@@ -34,6 +34,17 @@ export const matchService = {
   },
 
   /**
+   * Rapidly simulates the match to completion in the background and returns the final scorecard.
+   */
+  async simulateMatch(roomCode: string): Promise<LiveMatchStateResponse> {
+    const code = roomCode.trim().toUpperCase();
+    const response = await apiClient.post<ApiResponse<LiveMatchStateResponse>>(
+      `/api/matches/${code}/simulate`
+    );
+    return response.data.data;
+  },
+
+  /**
    * Manually steps simulation by one ball (for manual testing/playback).
    */
   async stepDelivery(roomCode: string): Promise<LiveMatchStateResponse> {

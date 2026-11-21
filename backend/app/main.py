@@ -22,6 +22,7 @@ from app.api.routers import (
     toss_router,
     matches_router,
     history_router,
+    analytics_router,
     ws_router,
 )
 
@@ -94,6 +95,7 @@ app.include_router(draft_router, prefix="/api")
 app.include_router(toss_router, prefix="/api")
 app.include_router(matches_router, prefix="/api")
 app.include_router(history_router, prefix="/api")
+app.include_router(analytics_router, prefix="/api")
 app.include_router(ws_router)
 
 

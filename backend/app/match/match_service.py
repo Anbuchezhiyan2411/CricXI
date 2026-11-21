@@ -968,6 +968,7 @@ class MatchService:
                 match.completed_at = datetime.now(timezone.utc)
                 room.status = "COMPLETED"
                 logger.info("Match %d finished: %s", match.id, margin)
+                cls.finalize_match_completion(db, match, room)
 
             # Condition 2: Chasing team all out or overs completed
             elif active_innings.total_wickets >= 10 or active_innings.legal_balls_bowled >= 120:
@@ -987,6 +988,7 @@ class MatchService:
                     margin = f"{bowling_team_name} won by {run_margin} run{'s' if run_margin != 1 else ''}!"
                     match.result_margin = margin
                     logger.info("Match %d finished: %s", match.id, margin)
+                cls.finalize_match_completion(db, match, room)
 
         # Check Innings 1 Completion (Transition to Innings 2)
         elif active_innings.innings_number == 1:
@@ -1256,6 +1258,109 @@ class MatchService:
                 best_details = " & ".join(parts) if parts else f"{r} runs"
 
         return best_player_name, best_details
+
+    @classmethod
+    def finalize_match_completion(
+        cls,
+        db: Session,
+        match: Match,
+        room: Room,
+    ) -> None:
+        """
+        Permanently saves completed match telemetry, awards, and complete scorecard.
+        Logs every step of persistence and commits the transaction to SQLite.
+        """
+        logger.info("[PERSISTENCE] Saving completed match ID=%d for room %s...", match.id, room.room_code)
+        inn1 = next((i for i in match.innings if i.innings_number == 1), None)
+        inn2 = next((i for i in match.innings if i.innings_number == 2), None)
+
+        # 1. Calculate and persist Player of the Match awards
+        try:
+            potm_name, potm_details = cls._calculate_player_of_the_match(db, match, inn1, inn2)
+            match.player_of_the_match = potm_name
+            match.player_of_the_match_details = potm_details
+        except Exception as e:
+            logger.warning("Could not calculate Player of the Match for match %d: %s", match.id, e)
+
+        # 2. Ensure timestamps and completed statuses
+        if not match.completed_at:
+            match.completed_at = datetime.now(timezone.utc)
+        room.status = "COMPLETED"
+
+        # 3. Serialize and persist full scorecard JSON
+        try:
+            full_state = cls.get_live_match_state(db, room.room_code)
+            match.scorecard_json = full_state.model_dump_json()
+        except Exception as e:
+            logger.warning("Could not serialize scorecard JSON for match %d: %s", match.id, e)
+
+        db.commit()
+        db.refresh(match)
+        logger.info(
+            "[PERSISTENCE] Match %d saved successfully to SQLite. Winner: %s, Margin: %s, MVP: %s",
+            match.id,
+            match.winner_user_id,
+            match.result_margin,
+            match.player_of_the_match,
+        )
+
+    @classmethod
+    def get_match_scorecard_by_id(
+        cls,
+        db: Session,
+        match_id: int,
+    ) -> Optional[LiveMatchStateResponse]:
+        """
+        Retrieves authoritative full scorecard state for any historical completed match by match ID.
+        """
+        match = db.query(Match).filter(Match.id == match_id).first()
+        if not match:
+            return None
+
+        # If scorecard_json is stored, parse and return
+        if match.scorecard_json:
+            try:
+                import json
+                data = json.loads(match.scorecard_json)
+                return LiveMatchStateResponse.model_validate(data)
+            except Exception:
+                pass
+
+        # Build live scorecard from relational database tables
+        if match.room:
+            return cls.get_live_match_state(db, match.room.room_code)
+
+        return None
+
+    @classmethod
+    def simulate_entire_match(
+        cls,
+        db: Session,
+        room_code: str,
+    ) -> LiveMatchStateResponse:
+        """
+        Idempotently initializes and rapidly simulates all deliveries of the match
+        until completion, finalizing persistence and returning the complete scorecard state.
+        """
+        code = room_code.strip().upper()
+        state = cls.initialize_or_get_match(db, code)
+
+        # If already completed or tied, finalize and return
+        if state.status in ("COMPLETED", "TIED"):
+            room = db.query(Room).filter(Room.room_code == code).first()
+            match = db.query(Match).join(Room).filter(Room.room_code == code).first()
+            if match and room:
+                cls.finalize_match_completion(db, match, room)
+            return cls.get_live_match_state(db, code)
+
+        # Advance deliveries rapidly until match conclusion (max safety cap 300 deliveries)
+        deliveries = 0
+        while state.status not in ("COMPLETED", "TIED") and deliveries < 300:
+            _, state = cls.step_delivery(db, code)
+            deliveries += 1
+
+        logger.info("[SIMULATION] Match in room %s simulated to completion in %d deliveries. Status: %s", code, deliveries, state.status)
+        return state
 
     @classmethod
     def get_live_match_state(

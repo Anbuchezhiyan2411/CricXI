@@ -18,6 +18,9 @@ REQUIRED_COLUMNS: Dict[str, List[Tuple[str, str, str]]] = {
         ("target", "INTEGER", "DEFAULT NULL"),
         ("is_paused", "BOOLEAN", "DEFAULT 0"),
         ("simulation_speed", "FLOAT", "DEFAULT 1.0"),
+        ("player_of_the_match", "VARCHAR(100)", "DEFAULT NULL"),
+        ("player_of_the_match_details", "VARCHAR(200)", "DEFAULT NULL"),
+        ("scorecard_json", "TEXT", "DEFAULT NULL"),
     ],
     "match_innings": [
         ("legal_balls_bowled", "INTEGER", "DEFAULT 0"),

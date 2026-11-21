@@ -7,10 +7,10 @@ import { JoinRoomPage } from "../pages/JoinRoomPage";
 import { LobbyPage } from "../pages/LobbyPage";
 import { DraftPage } from "../pages/DraftPage";
 import { TossPage } from "../pages/TossPage";
-import { LiveMatchPage } from "../pages/LiveMatchPage";
 import { ScorecardPage } from "../pages/ScorecardPage";
 import { MatchHistoryPage } from "../pages/MatchHistoryPage";
 import { SettingsPage } from "../pages/SettingsPage";
+import { AnalyticsPage } from "../pages/AnalyticsPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
 
 export const AppRoutes: React.FC = () => {
@@ -23,9 +23,9 @@ export const AppRoutes: React.FC = () => {
         <Route path="lobby" element={<LobbyPage />} />
         <Route path="draft" element={<DraftPage />} />
         <Route path="toss" element={<TossPage />} />
-        <Route path="live" element={<LiveMatchPage />} />
         <Route path="scorecard" element={<ScorecardPage />} />
         <Route path="history" element={<MatchHistoryPage />} />
+        <Route path="analytics" element={<AnalyticsPage />} />
         <Route path="settings" element={<SettingsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>

@@ -25,6 +25,9 @@ class Match(Base):
     target = Column(Integer, nullable=True)
     is_paused = Column(Boolean, default=False, nullable=False)
     simulation_speed = Column(Float, default=1.0, nullable=False)  # Multiplier: 0.5 (slow), 1.0 (normal), 2.0 (fast)
+    player_of_the_match = Column(String(100), nullable=True)
+    player_of_the_match_details = Column(String(200), nullable=True)
+    scorecard_json = Column(String, nullable=True)
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
     completed_at = Column(DateTime, nullable=True)
 

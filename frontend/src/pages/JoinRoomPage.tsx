@@ -103,8 +103,8 @@ export const JoinRoomPage: React.FC = () => {
         navigate(`/draft?room=${room.room_code}`);
       } else if (room.status === "TOSS") {
         navigate(`/toss?room=${room.room_code}`);
-      } else if (room.status === "LIVE") {
-        navigate(`/live?room=${room.room_code}`);
+      } else if (room.status === "LIVE" || room.status === "COMPLETED") {
+        navigate(`/scorecard?room=${room.room_code}`);
       } else {
         navigate(`/lobby?room=${room.room_code}`);
       }

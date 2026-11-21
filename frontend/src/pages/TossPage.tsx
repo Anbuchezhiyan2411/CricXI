@@ -16,6 +16,7 @@ import { Coin3D } from "../components/toss/Coin3D";
 import { TossCeremony } from "../components/toss/TossCeremony";
 import { tossService } from "../services/tossService";
 import { roomService } from "../services/roomService";
+import { matchService } from "../services/matchService";
 import { CoinChoice, PitchDecision, TossStateResponse, Room } from "../types";
 
 export const TossPage: React.FC = () => {
@@ -64,6 +65,7 @@ export const TossPage: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [isFlipping, setIsFlipping] = useState<boolean>(false);
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const [isSimulating, setIsSimulating] = useState<boolean>(false);
 
   // Disconnect recovery state
   const [isOpponentDisconnected, setIsOpponentDisconnected] = useState<boolean>(false);
@@ -74,35 +76,46 @@ export const TossPage: React.FC = () => {
     submessage: string;
   } | null>(null);
 
-  // Single-flight navigation guard to Live Match
-  const hasNavigatedToLiveRef = useRef<boolean>(false);
-  const liveNavTimeoutRef = useRef<number | null>(null);
+  // Single-flight navigation guard to Official Scorecard
+  const hasNavigatedToScorecardRef = useRef<boolean>(false);
+  const scorecardNavTimeoutRef = useRef<number | null>(null);
 
-  const navigateToLiveMatch = useCallback(
-    (targetMatchId?: string) => {
-      if (hasNavigatedToLiveRef.current) return;
-      hasNavigatedToLiveRef.current = true;
+  const startSimulationAndNavigateToScorecard = useCallback(
+    async (targetMatchId?: string) => {
+      if (hasNavigatedToScorecardRef.current) return;
+      hasNavigatedToScorecardRef.current = true;
 
-      if (liveNavTimeoutRef.current) {
-        clearTimeout(liveNavTimeoutRef.current);
-        liveNavTimeoutRef.current = null;
+      if (scorecardNavTimeoutRef.current) {
+        clearTimeout(scorecardNavTimeoutRef.current);
+        scorecardNavTimeoutRef.current = null;
       }
 
-      const matchId = targetMatchId || tossStateRef.current?.match_id || "";
+      setIsSimulating(true);
       const cleanCode = (roomCode || "").trim().toUpperCase();
       localStorage.setItem("cricxi_room_code", cleanCode);
-      localStorage.setItem("cricxi_phase", "LIVE");
-      navigate(`/live?room=${cleanCode}${matchId ? `&match=${matchId}` : ""}`, { replace: true });
+      localStorage.setItem("cricxi_phase", "SCORECARD");
+
+      try {
+        const finalState = await matchService.simulateMatch(cleanCode);
+        const matchId = targetMatchId || finalState.match_id || tossStateRef.current?.match_id || "";
+        navigate(`/scorecard?room=${cleanCode}${matchId ? `&match=${matchId}` : ""}`, { replace: true });
+      } catch (err: unknown) {
+        console.error("Match simulation error, navigating to scorecard directly:", err);
+        const matchId = targetMatchId || tossStateRef.current?.match_id || "";
+        navigate(`/scorecard?room=${cleanCode}${matchId ? `&match=${matchId}` : ""}`, { replace: true });
+      } finally {
+        setIsSimulating(false);
+      }
     },
     [navigate, roomCode]
   );
 
-  // Cleanup pending live navigation timeouts on unmount
+  // Cleanup pending navigation timeouts on unmount
   useEffect(() => {
     return () => {
-      if (liveNavTimeoutRef.current) {
-        clearTimeout(liveNavTimeoutRef.current);
-        liveNavTimeoutRef.current = null;
+      if (scorecardNavTimeoutRef.current) {
+        clearTimeout(scorecardNavTimeoutRef.current);
+        scorecardNavTimeoutRef.current = null;
       }
     };
   }, []);
@@ -257,16 +270,16 @@ export const TossPage: React.FC = () => {
         if (room) {
           setCurrentRoomRef.current({
             ...room,
-            status: "LIVE",
+            status: "COMPLETED",
           });
         }
 
         const matchId = event.match_id || tossStateRef.current?.match_id || "";
-        if (!hasNavigatedToLiveRef.current) {
-          addToast("Toss decided! Proceeding to Live Match...", "info");
-          if (liveNavTimeoutRef.current) clearTimeout(liveNavTimeoutRef.current);
-          liveNavTimeoutRef.current = window.setTimeout(() => {
-            navigateToLiveMatch(matchId);
+        if (!hasNavigatedToScorecardRef.current) {
+          addToast("Toss decided! Simulating match in background...", "info");
+          if (scorecardNavTimeoutRef.current) clearTimeout(scorecardNavTimeoutRef.current);
+          scorecardNavTimeoutRef.current = window.setTimeout(() => {
+            startSimulationAndNavigateToScorecard(matchId);
           }, 1000);
         }
       } else if (event.type === "player_disconnected") {
@@ -319,7 +332,7 @@ export const TossPage: React.FC = () => {
         }, 2500);
       }
     },
-    [navigate, roomCode, addToast, navigateToLiveMatch]
+    [navigate, roomCode, addToast, startSimulationAndNavigateToScorecard]
   );
 
   // WebSocket Connection
@@ -399,10 +412,10 @@ export const TossPage: React.FC = () => {
     }
   };
 
-  // Transition to Live Match
+  // Transition to Scorecard via Match Simulation
   const handleProceedToMatch = useCallback(() => {
-    navigateToLiveMatch();
-  }, [navigateToLiveMatch]);
+    startSimulationAndNavigateToScorecard();
+  }, [startSimulationAndNavigateToScorecard]);
 
   // Loading State
   if (loading || !tossState) {
@@ -758,6 +771,19 @@ export const TossPage: React.FC = () => {
           </div>
         )}
       </div>
+
+      {/* Lightweight Simulation Overlay */}
+      {isSimulating && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#081826]/90 backdrop-blur-md animate-in fade-in duration-200 p-4">
+          <div className="bg-[#0D2238] border-2 border-[#1E3A5F] rounded-3xl p-8 max-w-sm w-full text-center space-y-5 shadow-2xl">
+            <div className="w-16 h-16 border-4 border-[#1E3A5F] border-t-[#F4C430] rounded-full animate-spin mx-auto" />
+            <div className="space-y-1">
+              <h3 className="text-xl font-black text-white font-display tracking-tight">Simulating Match...</h3>
+              <p className="text-xs text-[#8DA4C4]">Calculating deliveries, wickets, and official figures in the background</p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
